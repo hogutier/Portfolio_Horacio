@@ -20,10 +20,37 @@ export default () => (
         been directly responsible for delivering on the financial goals and
         growing sales for these products.
       </p>
-
       <Link to="/contact/">
         <button>Contact Me</button>
       </Link>
+      <h2>Skills</h2>
+      <h3>UX/UI Designer</h3>
+      <ul>
+        <li>UX Research & Strategy</li>
+        <li>Information Architecture</li>
+        <li>Branding</li>
+        <li>Visual Design</li>
+        <li>Wireframes & Prototypes</li>
+        <li>User Testing</li>
+      </ul>
+      <h3>Product Manager</h3>
+      <ul>
+        <li>Product Strategy & Vision</li>
+        <li>Marketing Requirements</li>
+        <li>Business Case</li>
+        <li>Roadmapping</li>
+        <li>Portfolio Management</li>
+        <li>Pricing & Merchandising</li>
+      </ul>
+      <h3>Software Engineer</h3>
+      <ul>
+        <li>Javascript</li>
+        <li>React - Redux</li>
+        <li>HTML - CSS - JQuery</li>
+        <li>Node - Express - Sequelize</li>
+        <li>PostgreSQL - GitHub</li>
+        <li>Heroku - Netlify - Gatsby</li>
+      </ul>
     </div>
   </Layout>
 )
