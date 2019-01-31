@@ -1,8 +1,9 @@
 import React from 'react'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
+import HeroImage from '../components/imgLightbulb'
 import SEO from '../components/seo'
+import { Link } from 'gatsby'
 
 const IndexPage = () => (
   <Layout>
@@ -33,11 +34,13 @@ const IndexPage = () => (
       efficient code.
     </p>
     <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
+      <HeroImage />
     </div>
     <h2>Featured Projects</h2>
     <div>
-      <h3>Property Vault</h3>
+      <Link to="/propertyvault/">
+        <h3>Property Vault</h3>
+      </Link>
       <p>UX/UI Design & Branding</p>
     </div>
     <div>

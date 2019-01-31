@@ -13,13 +13,15 @@ import Img from 'gatsby-image'
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const Image = () => (
+const DesktopHomeImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "lightbulb.png" }) {
+        placeholderImage: file(
+          relativePath: { eq: "PropertyVaultMobile.png" }
+        ) {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid(maxWidth: 150) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -29,4 +31,4 @@ const Image = () => (
     render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 )
-export default Image
+export default DesktopHomeImage
