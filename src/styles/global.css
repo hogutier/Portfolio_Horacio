@@ -1,4 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   background-color: lightcyan;
+  font-size: 10px;
 }
 

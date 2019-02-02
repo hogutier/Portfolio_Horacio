@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 
 export default () => (
   <Layout>
-    <div style={{ color: 'teal' }}>
+    <section style={{ color: 'teal' }} className="container">
       <h1>About Me</h1>
       <p>
         I’m a veteran in the technology industry with 20+ years of experience
@@ -51,6 +51,6 @@ export default () => (
         <li>PostgreSQL - GitHub</li>
         <li>Heroku - Netlify - Gatsby</li>
       </ul>
-    </div>
+    </section>
   </Layout>
 )

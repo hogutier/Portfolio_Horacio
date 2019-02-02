@@ -31,8 +31,11 @@ import HomepageMockup from '../images/HomepageMockup.png'
 
 export default () => (
   <Layout>
-    <div style={{ color: 'teal', backgroundColor: '#191919' }}>
-      <section style={{ color: '#B6B6B6', backgroundColor: '#191919' }}>
+    <section
+      style={{ color: 'teal', backgroundColor: '#191919' }}
+      className="continer"
+    >
+      <article style={{ color: '#B6B6B6', backgroundColor: '#191919' }}>
         <h1>Property Vault</h1>
         <p>
           Property Vault is a secure web application that was created with a
@@ -83,9 +86,9 @@ export default () => (
             <li>Figma & InVision</li>
           </ul>
         </div>
-      </section>
+      </article>
 
-      <section style={{ color: '#191919', backgroundColor: '#F2F2F2' }}>
+      <article style={{ color: '#191919', backgroundColor: '#F2F2F2' }}>
         <img src={iconOverview} alt="Overview" />
         <h2>Overview</h2>
         <h3>The Problem</h3>
@@ -104,9 +107,9 @@ export default () => (
           easy way to store, access and share property & tenant information in
           one place.
         </p>
-      </section>
+      </article>
 
-      <section style={{ color: '#B6B6B6', backgroundColor: '#191919' }}>
+      <article style={{ color: '#B6B6B6', backgroundColor: '#191919' }}>
         <img src={iconDiscovery} alt="Discovery Phase" />
         <h2>Discovery Phase</h2>
         <h3>User Research</h3>
@@ -158,9 +161,9 @@ export default () => (
         </p>
         <img src={PersonaA} alt="User Persona Tom" />
         <img src={PersonaB} alt="User Persona Mike" />
-      </section>
+      </article>
 
-      <section style={{ color: '#191919', backgroundColor: '#F2F2F2' }}>
+      <article style={{ color: '#191919', backgroundColor: '#F2F2F2' }}>
         <img src={iconBranding} alt="Branding & Identity" />
         <h2>Branding & Identity</h2>
         <h3>The Logo</h3>
@@ -182,9 +185,9 @@ export default () => (
           was created:
         </p>
         <img src={BrandStyleGuide} alt="Brand Style Guide" />
-      </section>
+      </article>
 
-      <section style={{ color: '#B6B6B6', backgroundColor: '#191919' }}>
+      <article style={{ color: '#B6B6B6', backgroundColor: '#191919' }}>
         <img src={iconIA} alt="Information Architecture" />
         <h2>Information Architecture</h2>
         <h3>User Stories</h3>
@@ -283,8 +286,8 @@ export default () => (
         <a href="https://app.usabilityhub.com/tests/cf94a87464a0/results/f4f2e46afa9f">
           <button>See Test Details</button>
         </a>
-      </section>
-      <section style={{ color: '#191919', backgroundColor: '#F2F2F2' }}>
+      </article>
+      <article style={{ color: '#191919', backgroundColor: '#F2F2F2' }}>
         <img src={iconConclusion} alt="Conclusion" />
         <h2>Conclusion</h2>
         <p>
@@ -317,7 +320,7 @@ export default () => (
           alt="Mockup of Homepage"
           style={{ width: '20vw', height: '35vh' }}
         />
-      </section>
-    </div>
+      </article>
+    </section>
   </Layout>
 )

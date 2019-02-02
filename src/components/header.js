@@ -1,11 +1,12 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
+import Logo from '../images/logoYellow.png'
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, siteAbout, sitePortfolio, siteContact }) => (
   <div
     style={{
-      background: 'rebeccapurple',
+      backgroundColor: '#191919',
       marginBottom: '1.45rem'
     }}
   >
@@ -16,11 +17,12 @@ const Header = ({ siteTitle }) => (
         padding: '1.45rem 1.0875rem'
       }}
     >
-      <h3 style={{ margin: 0 }}>
+      <img src={Logo} alt="Logo" />
+      <h3 style={{ margin: 0, fontSize: '2.4rem' }}>
         <Link
           to="/"
           style={{
-            color: 'white',
+            color: '#E2BE1C',
             textDecoration: 'none'
           }}
         >
@@ -28,38 +30,38 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h3>
 
-      <h3 style={{ margin: 0 }}>
+      <h3 style={{ margin: 0, fontSize: '2.4rem' }}>
         <Link
           to="/about/"
           style={{
-            color: 'white',
+            color: '#E2BE1C',
             textDecoration: 'none'
           }}
         >
-          ABOUT
+          {siteAbout}
         </Link>
       </h3>
 
-      <h3 style={{ margin: 0 }}>
+      <h3 style={{ margin: 0, fontSize: '2.4rem' }}>
         <Link
           to="/portfolio/"
           style={{
-            color: 'white',
+            color: '#E2BE1C',
             textDecoration: 'none'
           }}
         >
-          PORTFOLIO
+          {sitePortfolio}
         </Link>
       </h3>
-      <h3 style={{ margin: 0 }}>
+      <h3 style={{ margin: 0, fontSize: '2.4rem' }}>
         <Link
           to="/contact/"
           style={{
-            color: 'white',
+            color: '#E2BE1C',
             textDecoration: 'none'
           }}
         >
-          CONTACT
+          {siteContact}
         </Link>
       </h3>
     </div>

@@ -12,6 +12,9 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            about
+            contact
+            portfolio
           }
         }
       }
@@ -26,12 +29,10 @@ const Layout = ({ children }) => (
         />
         <div
           style={{
-            //backgroundColor: '#191919',
             margin: '0 auto',
             maxWidth: 960,
             padding: '0px 1.0875rem 1.45rem',
             paddingTop: 0
-            //color: '#FFFFFF'
           }}
         >
           <div>{children}</div>
