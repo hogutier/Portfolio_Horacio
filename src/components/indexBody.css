@@ -16,14 +16,14 @@
 
 .designer {
   grid-area: designer;
-  align-self: center;
   justify-self: center;
+  align-self: center;
 }
 
 .developer {
   grid-area: developer;
-  align-self: center;
   justify-self: center;
+  align-self: center;
 }
 
 .heroimage {
@@ -37,8 +37,9 @@
 
 .productmanager {
   grid-area: productmanager;
-  align-self: center;
   justify-self: center;
+  align-self: center;
+
 }
 
 .project1 {

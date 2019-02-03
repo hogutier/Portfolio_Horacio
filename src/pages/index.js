@@ -21,21 +21,21 @@ const IndexPage = () => (
     <section className="indexBodyContainer">
       <h1 className="welcome">Hi, I'm Horacio from Austin, Texas</h1>
       <div className="productmanager">
-        <h2>Product Manager</h2>
+        <h3>Product Manager</h3>
         <p>
           Experienced product leader in the creation, launch, maintenance and
           management of software & services.
         </p>
       </div>
       <div className="designer">
-        <h2>UI/UX Designer</h2>
+        <h3>UI/UX Designer</h3>
         <p>
           Digital Designer with a passion for creating beautiul and functional
           user experiences.
         </p>
       </div>
       <div className="developer">
-        <h2>Software Engineer</h2>
+        <h3>Software Engineer</h3>
         <p>
           Fullstack Software Developer who focuses on clean, modern, scalable
           and efficient code.
