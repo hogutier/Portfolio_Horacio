@@ -17,7 +17,7 @@ const IndexPage = () => (
         'Portfolio'
       ]}
     />
-    <section className="container">
+    <section>
       <h1>Hi, I'm Horacio from Austin, Texas</h1>
       <h2>Product Manager</h2>
       <p>

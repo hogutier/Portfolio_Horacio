@@ -1,0 +1,50 @@
+.headerContainer {
+  display: grid;
+  grid-template-columns: 1fr 3fr 8fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1rem 1rem;
+  grid-area: logo;
+  grid-area: name;
+  grid-area: pages;
+  grid-template-areas:
+  "logo  name  pages";
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+
+
+}
+
+.name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.pages {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+.name {
+  align-self: center;
+}
+.about {
+  align-self: center;
+}
+
+.portfolio {
+  align-self: center;
+}
+
+.contact {
+  align-self: center;
+}
+

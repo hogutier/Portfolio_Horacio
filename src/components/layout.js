@@ -8,6 +8,7 @@ import logoLinkedin from '../images/logoLinkedin.png'
 import logoGithub from '../images/logoGithub.png'
 import Header from './header'
 import './layout.css'
+import './footer.css'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -43,26 +44,40 @@ const Layout = ({ children }) => (
         >
           <div>{children}</div>
 
-          <footer>
-            <h2>Connect with me</h2>
-            <Link to="/contact/">
-              <img src={logoMessage} alt="Message" />
-            </Link>
-            <div />
-            <a href="https://www.linkedin.com/in/hogutier/">
-              <img src={logoLinkedin} alt="Linkedin" />
-            </a>
-            <div />
-            <a href="https://twitter.com/Horacio_Gtz">
-              <img src={logoTwitter} alt="Twitter" />
-            </a>
-            <div />
-            <div />
-            <a href="https://github.com/hogutier">
-              <img src={logoGithub} alt="Github" />
-            </a>
-            <div />
-            <p>© {new Date().getFullYear()} Horacio Gutierrez</p>
+          <footer className="footerContainer">
+            <div className="connect">
+              <h2>Connect with me</h2>
+            </div>
+
+            <div className="methods">
+              <div>
+                <Link to="/contact/" className="message">
+                  <img src={logoMessage} alt="Message" />
+                </Link>
+              </div>
+
+              <div className="linkedin">
+                <a href="https://www.linkedin.com/in/hogutier/">
+                  <img src={logoLinkedin} alt="Linkedin" />
+                </a>
+              </div>
+
+              <div className="twitter">
+                <a href="https://twitter.com/Horacio_Gtz">
+                  <img src={logoTwitter} alt="Twitter" />
+                </a>
+              </div>
+
+              <div>
+                <a href="https://github.com/hogutier">
+                  <img src={logoGithub} alt="github" />
+                </a>
+              </div>
+            </div>
+
+            <div className="date">
+              <p>© {new Date().getFullYear()} Horacio Gutierrez</p>
+            </div>
           </footer>
         </div>
       </>
