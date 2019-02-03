@@ -17,9 +17,7 @@ const DesktopHomeImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(
-          relativePath: { eq: "PropertyVaultMobile.png" }
-        ) {
+        file: file(relativePath: { eq: "PropertyVaultMobile.png" }) {
           childImageSharp {
             fluid(maxWidth: 150) {
               ...GatsbyImageSharpFluid
@@ -28,7 +26,7 @@ const DesktopHomeImage = () => (
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <Img fluid={data.file.childImageSharp.fluid} />}
   />
 )
 export default DesktopHomeImage

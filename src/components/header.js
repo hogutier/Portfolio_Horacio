@@ -5,15 +5,15 @@ import './header.css'
 import Logo from '../images/logoYellow.png'
 
 const Header = ({ siteTitle, siteAbout, sitePortfolio, siteContact }) => (
-  <div className="headerContainer">
-    <div
-      className="logo"
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1rem'
-      }}
-    >
+  <div
+    className="headerContainer"
+    style={{
+      margin: '0 auto',
+      maxWidth: 1000,
+      padding: '1rem'
+    }}
+  >
+    <div className="logo">
       <Link
         to="/"
         style={{

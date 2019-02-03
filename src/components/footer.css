@@ -21,12 +21,13 @@
 }
 
 .connect {
-  align-self: flex-end;
+  align-self: center;
   justify-self: center;
 }
 
 .linkedin, .twitter, .github, .message{
-  padding-left: 2rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 
 .date{

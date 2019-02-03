@@ -1,39 +1,30 @@
 .headerContainer {
   display: grid;
-  grid-template-columns: 1fr 3fr 8fr;
+  grid-template-columns: 1.5fr 4fr 6.5fr;
   grid-auto-rows: minmax(100px, auto);
   grid-gap: 1rem 1rem;
-  grid-area: logo;
-  grid-area: name;
-  grid-area: pages;
+
+
+
   grid-template-areas:
   "logo  name  pages";
 }
 
 .logo {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  align-content: center;
-
-
-}
-
-.name {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  align-content: center;
+  grid-area: logo;
+  align-self: center;
 }
 
 .pages {
   display: flex;
+  grid-area: pages;
   justify-content: flex-end;
   align-items: center;
   align-content: center;
 }
 
 .name {
+  grid-area: name;
   align-self: center;
 }
 .about {

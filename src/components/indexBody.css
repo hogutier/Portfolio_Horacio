@@ -1,0 +1,62 @@
+.indexBodyContainer {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 3rem 3rem;
+  grid-template-areas:
+  "welcome           welcome           welcome"
+  "   .              productmanager        ."
+  "designer          heroimage         developer"
+  "designer          heroimage         developer"
+  "   .              heroimage             ."
+  "featuredprojects  featuredprojects  featuredprojects"
+  "project1          project2          project3";
+  margin: 0 auto;
+}
+
+.designer {
+  grid-area: designer;
+  align-self: center;
+  justify-self: center;
+}
+
+.developer {
+  grid-area: developer;
+  align-self: center;
+  justify-self: center;
+}
+
+.heroimage {
+  grid-area: heroimage;
+
+}
+
+.featuredprojects {
+  grid-area: featuredprojects;
+}
+
+.productmanager {
+  grid-area: productmanager;
+  align-self: center;
+  justify-self: center;
+}
+
+.project1 {
+  grid-area: project1;
+
+}
+
+.project2 {
+  grid-area: project2;
+}
+
+.project3 {
+  grid-area: project3;
+}
+
+.welcome {
+  grid-area: welcome;
+  align-self: center;
+  justify-self: center;
+}
+
