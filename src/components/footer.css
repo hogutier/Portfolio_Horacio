@@ -1,34 +1,37 @@
 .footerContainer {
   display: grid;
-  grid-template-columns: 4fr 4fr 4fr;
-  grid-auto-rows: minmax(100px, auto);
-  grid-gap: 1rem 1rem;
+  grid-template-columns: 12fr;
+  grid-auto-rows: minmax(5rem, auto);
+  grid-gap: 1rem;
   grid-area: connect;
   grid-area: message;
-  grid-area: twitter;
-  grid-area: linkedin;
-  grid-area: github;
+  grid-area: date;
+
   grid-template-areas:
-  "connect connect connect"
-  ". . .";
+  "connect"
+  "methods"
+  "date";
 }
 
-.connect {
+.methods {
   display: flex;
   justify-content: center;
   align-content: center;
-  align-self: center;
+  align-items: center;
 }
 
-.name {
-  display: flex;
-  justify-content: flex-start;
-  align-content: center;
-  align-self: center;
+.connect {
+  align-self: flex-end;
+  justify-self: center;
 }
 
-.pages {
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
+.linkedin, .twitter, .github, .message{
+  padding-left: 2rem;
 }
+
+.date{
+  align-self: flex-start;
+  justify-self: center;
+}
+
+

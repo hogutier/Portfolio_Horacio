@@ -14,20 +14,30 @@ const Header = ({ siteTitle, siteAbout, sitePortfolio, siteContact }) => (
         padding: '1rem'
       }}
     >
-      <img src={Logo} alt="Logo" />
+      <Link
+        to="/"
+        style={{
+          color: '#E2BE1C',
+          textDecoration: 'none'
+        }}
+      >
+        <img src={Logo} alt="Logo" />
+      </Link>
     </div>
     <div className="name">
-      <h3>
-        <Link
-          to="/"
-          style={{
-            color: '#E2BE1C',
-            textDecoration: 'none'
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h3>
+      <div>
+        <h3>
+          <Link
+            to="/"
+            style={{
+              color: '#E2BE1C',
+              textDecoration: 'none'
+            }}
+          >
+            {siteTitle}
+          </Link>
+        </h3>
+      </div>
     </div>
 
     <div className="pages">

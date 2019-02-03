@@ -50,8 +50,8 @@ const Layout = ({ children }) => (
             </div>
 
             <div className="methods">
-              <div>
-                <Link to="/contact/" className="message">
+              <div className="message">
+                <Link to="/contact/">
                   <img src={logoMessage} alt="Message" />
                 </Link>
               </div>
@@ -68,7 +68,7 @@ const Layout = ({ children }) => (
                 </a>
               </div>
 
-              <div>
+              <div className="github">
                 <a href="https://github.com/hogutier">
                   <img src={logoGithub} alt="github" />
                 </a>
