@@ -3,9 +3,9 @@
   grid-template-columns: 12fr;
   grid-auto-rows: minmax(5rem, auto);
   grid-gap: 1rem;
-  grid-area: connect;
-  grid-area: message;
-  grid-area: date;
+
+
+
 
   grid-template-areas:
   "connect"
@@ -13,16 +13,28 @@
   "date";
 }
 
-.methods {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+.connect {
+  grid-area: connect;
+  align-self: flex-end;
+  justify-self: center;
+  padding-top: 2em;
 }
 
-.connect {
-  align-self: center;
+.date{
+  grid-area: date;
+  align-self:  flex-start;
   justify-self: center;
+}
+
+.message {
+  grid-area: message;
+}
+
+.methods {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .linkedin, .twitter, .github, .message{
@@ -30,9 +42,9 @@
   padding-right: 3.5rem;
 }
 
-.date{
-  align-self: flex-start;
-  justify-self: center;
-}
+
+
+
+
 
 

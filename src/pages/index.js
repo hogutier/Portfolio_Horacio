@@ -5,6 +5,9 @@ import HeroImage from '../components/imgLightbulb'
 import SEO from '../components/seo'
 import { Link } from 'gatsby'
 import '../components/indexBody.css'
+import iconRealEstate from '../images/iconRealEstate.png'
+import iconBusyBus from '../images/iconBusyBus.png'
+import iconPortfolio from '../images/iconPortfolio.png'
 
 const IndexPage = () => (
   <Layout>
@@ -54,17 +57,21 @@ const IndexPage = () => (
 
       <div className="project1">
         <Link to="/propertyvault/">
-          <h3>Property Vault</h3>
+          <img src={iconRealEstate} alt="Property Vault Project" />
         </Link>
         <p>UX/UI Design & Branding</p>
       </div>
       <div className="project2">
-        <h3>Busy Bus</h3>
+        <Link to="/propertyvault/">
+          <img src={iconBusyBus} alt="Busy Bus Project" />
+        </Link>
         <p>UX/UI Design & Development</p>
       </div>
       <div className="project3">
-        <h3>Personal Portfolio</h3>
-        <p>UX/UI Design, Branding & Branding</p>
+        <Link to="/propertyvault/">
+          <img src={iconPortfolio} alt="Portfolio Project" />
+        </Link>
+        <p>UX/UI Design, Branding & Development</p>
       </div>
     </section>
   </Layout>
