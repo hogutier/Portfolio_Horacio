@@ -1,0 +1,60 @@
+.propertyVaultContainer {
+  color: #B6B6B6;
+  background-color: #191919;
+}
+
+.prototypesContainer {
+  padding-bottom: 15rem;
+}
+
+.desktopHomeImage {
+  width: 20vw;
+  height: 20rem;
+  padding-bottom: .5rem;
+}
+
+.mobileHomeImage {
+  width: 20vw;
+  height: 20rem;
+  padding-bottom: .5rem;
+}
+
+.containerOverview {
+  color: #191919;
+  background-color: #f2f2f2;
+}
+
+.containerDiscovery {
+  color: #B6B6B6;
+  background-color: #191919;
+}
+
+.containerBranding {
+  color: #191919;
+  background-color: #f2f2f2;
+}
+
+.iaContainer {
+  color: #B6B6B6;
+  background-color: #191919;
+}
+
+.conclusionContainer {
+  color: #191919;
+  background-color: #f2f2f2;
+}
+
+.homePageSketch {
+  width: 20vw;
+  height: 35vh;
+}
+
+.homePageWireframe {
+  width: 20vw;
+  height: 35vh;
+}
+
+.homePageMockup {
+  width: 20vw;
+  height: 35vh;
+}

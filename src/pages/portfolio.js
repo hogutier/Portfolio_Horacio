@@ -2,10 +2,11 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
+import '../styles/portfolio.css'
 
 const PortfolioPage = () => (
   <Layout>
-    <section className="container">
+    <section className="portfolioContainer">
       <div>
         <Link to="/propertyvault/">
           <h3>Property Vault</h3>

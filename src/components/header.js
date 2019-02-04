@@ -1,18 +1,11 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
-import './header.css'
+import '../styles/header.css'
 import Logo from '../images/logoYellow.png'
 
 const Header = ({ siteTitle, siteAbout, sitePortfolio, siteContact }) => (
-  <div
-    className="headerContainer"
-    style={{
-      margin: '0 auto',
-      maxWidth: 1000,
-      padding: '1rem'
-    }}
-  >
+  <div className="headerContainer">
     <div className="logo">
       <Link
         to="/"

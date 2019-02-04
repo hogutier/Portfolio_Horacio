@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import '../styles/propertyvault.css'
 
 import DesktopHomeImage from '../components/imgDesktopHome'
 import MobileHomeImage from '../components/imgMobileHome'
@@ -31,11 +32,8 @@ import HomepageMockup from '../images/HomepageMockup.png'
 
 export default () => (
   <Layout>
-    <section
-      style={{ color: 'teal', backgroundColor: '#191919' }}
-      className="continer"
-    >
-      <article style={{ color: '#B6B6B6', backgroundColor: '#191919' }}>
+    <section className="propertyVaultContainer">
+      <article>
         <h1>Property Vault</h1>
         <p>
           Property Vault is a secure web application that was created with a
@@ -46,12 +44,12 @@ export default () => (
           <button>View Prototype</button>
         </a>
         <p />
-        <div style={{ paddingBottom: '150px' }}>
-          <div style={{ width: '15vw', height: '200px', paddingBottom: '5px' }}>
+        <div className="prototypesContainer">
+          <div className="desktopHomeImage">
             <DesktopHomeImage />
           </div>
 
-          <div style={{ width: '15vw', height: '200px', paddingBottom: '5px' }}>
+          <div className="mobileHomeImage">
             <MobileHomeImage />
           </div>
         </div>
@@ -88,7 +86,7 @@ export default () => (
         </div>
       </article>
 
-      <article style={{ color: '#191919', backgroundColor: '#F2F2F2' }}>
+      <article className="containerOverview">
         <img src={iconOverview} alt="Overview" />
         <h2>Overview</h2>
         <h3>The Problem</h3>
@@ -109,7 +107,7 @@ export default () => (
         </p>
       </article>
 
-      <article style={{ color: '#B6B6B6', backgroundColor: '#191919' }}>
+      <article className="containerDiscovery">
         <img src={iconDiscovery} alt="Discovery Phase" />
         <h2>Discovery Phase</h2>
         <h3>User Research</h3>
@@ -163,7 +161,7 @@ export default () => (
         <img src={PersonaB} alt="User Persona Mike" />
       </article>
 
-      <article style={{ color: '#191919', backgroundColor: '#F2F2F2' }}>
+      <article className="containerBranding">
         <img src={iconBranding} alt="Branding & Identity" />
         <h2>Branding & Identity</h2>
         <h3>The Logo</h3>
@@ -187,7 +185,7 @@ export default () => (
         <img src={BrandStyleGuide} alt="Brand Style Guide" />
       </article>
 
-      <article style={{ color: '#B6B6B6', backgroundColor: '#191919' }}>
+      <article className="iaContainer">
         <img src={iconIA} alt="Information Architecture" />
         <h2>Information Architecture</h2>
         <h3>User Stories</h3>
@@ -287,7 +285,7 @@ export default () => (
           <button>See Test Details</button>
         </a>
       </article>
-      <article style={{ color: '#191919', backgroundColor: '#F2F2F2' }}>
+      <article className="conclusionContainer">
         <img src={iconConclusion} alt="Conclusion" />
         <h2>Conclusion</h2>
         <p>
@@ -306,19 +304,19 @@ export default () => (
           the evolution of the web application throughout the project:
         </p>
         <img
+          className="homePageSketch"
           src={HomepageSketch}
           alt="Pen & Paper Sketch of Homepage"
-          style={{ width: '20vw', height: '35vh' }}
         />
         <img
+          className="homePageWireframe"
           src={HomepageWireframe}
           alt="Wireframe of Homepage"
-          style={{ width: '20vw', height: '35vh' }}
         />
         <img
+          className="homePageMockup"
           src={HomepageMockup}
           alt="Mockup of Homepage"
-          style={{ width: '20vw', height: '35vh' }}
         />
       </article>
     </section>

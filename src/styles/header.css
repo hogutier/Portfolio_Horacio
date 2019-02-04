@@ -5,6 +5,9 @@
   grid-gap: 2rem 2rem;
   grid-template-areas:
   "logo  name  pages";
+  margin: 0 auto;
+  max-width: 1000;
+  padding: 1rem;
 }
 .about {
   align-self: center;

@@ -1,10 +1,11 @@
 import React from 'react'
 import Layout from '../components/layout'
 import { Link } from 'gatsby'
+import '../styles/about.css'
 
 export default () => (
   <Layout>
-    <section style={{ color: 'teal' }} className="container">
+    <section className="aboutContainer">
       <h1>About Me</h1>
       <p>
         I’m a veteran in the technology industry with 20+ years of experience

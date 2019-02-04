@@ -1,10 +1,11 @@
 import React from 'react'
 import Layout from '../components/layout'
+import '../styles/contact.css'
 
 export default () => (
   <Layout>
-    <section className="container">
-      <div style={{ color: 'teal' }}>
+    <section className="contactContainer">
+      <div>
         <h2>Let's Work Together</h2>
         <p>
           Send me a message if you would like to discuss a project or want to
