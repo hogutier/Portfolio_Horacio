@@ -27,6 +27,8 @@ h3 {
 
 .heroimage {
   grid-area: heroimage;
+  max-width: 100%;
+  margin-bottom: 1.45rem;
 }
 
 img {

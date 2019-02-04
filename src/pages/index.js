@@ -45,10 +45,7 @@ const IndexPage = () => (
         </p>
       </div>
 
-      <div
-        className="heroimage"
-        style={{ maxWidth: '300px', marginBottom: '1.45rem' }}
-      >
+      <div className="heroimage">
         <HeroImage />
       </div>
       <div className="featuredprojects">

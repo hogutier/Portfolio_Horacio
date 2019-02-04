@@ -19,7 +19,7 @@ const HeroImage = () => (
       query {
         file: file(relativePath: { eq: "lightbulb.png" }) {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid(maxWidth: 900) {
               ...GatsbyImageSharpFluid
             }
           }
