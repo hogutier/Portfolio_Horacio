@@ -58,20 +58,32 @@ const IndexPage = () => (
       <div className="project1">
         <Link to="/propertyvault/">
           <img src={iconRealEstate} alt="Property Vault Project" />
+          <h3>Property Vault</h3>
+          <p>
+            UX/UI Design & <br />
+            Branding
+          </p>
         </Link>
-        <p>UX/UI Design & Branding</p>
       </div>
       <div className="project2">
         <Link to="/propertyvault/">
           <img src={iconBusyBus} alt="Busy Bus Project" />
+          <h3>Public Transportation</h3>
+          <p>
+            UX/UI Design & <br />
+            Development
+          </p>
         </Link>
-        <p>UX/UI Design & Development</p>
       </div>
       <div className="project3">
         <Link to="/propertyvault/">
           <img src={iconPortfolio} alt="Portfolio Project" />
+          <h3>Portfolio</h3>
+          <p>
+            UX/UI Design, Branding & <br />
+            Development
+          </p>
         </Link>
-        <p>UX/UI Design, Branding & Development</p>
       </div>
     </section>
   </Layout>

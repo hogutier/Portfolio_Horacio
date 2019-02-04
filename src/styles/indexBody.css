@@ -52,6 +52,7 @@
   justify-self: center;
   text-align: center;
 
+
 }
 
 .project2 {
@@ -85,4 +86,9 @@ h3 {
 
 p {
   text-align: center;
+}
+
+a {
+  color: #B6B6B6;
+  text-decoration: none;
 }
