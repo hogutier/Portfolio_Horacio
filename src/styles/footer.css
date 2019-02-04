@@ -1,3 +1,16 @@
+.connect {
+  grid-area: connect;
+  align-self: flex-end;
+  justify-self: center;
+  padding-top: 2em;
+}
+
+.date{
+  grid-area: date;
+  align-self:  flex-start;
+  justify-self: center;
+}
+
 .footerContainer {
   display: grid;
   grid-template-columns: 12fr;
@@ -11,19 +24,6 @@
   "connect"
   "methods"
   "date";
-}
-
-.connect {
-  grid-area: connect;
-  align-self: flex-end;
-  justify-self: center;
-  padding-top: 2em;
-}
-
-.date{
-  grid-area: date;
-  align-self:  flex-start;
-  justify-self: center;
 }
 
 .message {

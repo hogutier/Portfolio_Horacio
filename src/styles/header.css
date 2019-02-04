@@ -25,6 +25,12 @@
   justify-self: flex-end;
 }
 
+.name {
+  grid-area: name;
+  align-self: center;
+  justify-self: flex-start;
+}
+
 .pages {
   display: flex;
   grid-area: pages;
@@ -32,13 +38,6 @@
   align-items: center;
   align-content: center;
 }
-
-.name {
-  grid-area: name;
-  align-self: center;
-  justify-self: flex-start;
-}
-
 
 .portfolio {
   align-self: center;

@@ -1,3 +1,40 @@
+a {
+  color: #B6B6B6;
+  text-decoration: none;
+}
+
+.designer {
+  grid-area: designer;
+  justify-self: center;
+  align-self: center;
+}
+
+.developer {
+  grid-area: developer;
+  justify-self: center;
+  align-self: center;
+}
+
+.featuredprojects {
+  grid-area: featuredprojects;
+  justify-self: center;
+  align-self: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.heroimage {
+  grid-area: heroimage;
+}
+
+img {
+  align-self: center;
+align-items: center;
+
+}
+
 .indexBodyContainer {
   display: grid;
   grid-template-columns: 4fr 4fr 4fr;
@@ -18,26 +55,8 @@
 
 }
 
-.designer {
-  grid-area: designer;
-  justify-self: center;
-  align-self: center;
-}
-
-.developer {
-  grid-area: developer;
-  justify-self: center;
-  align-self: center;
-}
-
-.heroimage {
-  grid-area: heroimage;
-}
-
-.featuredprojects {
-  grid-area: featuredprojects;
-  justify-self: center;
-  align-self: center;
+p {
+  text-align: center;
 }
 
 .productmanager {
@@ -74,21 +93,9 @@
   justify-self: center;
 }
 
- img {
-  align-self: center;
-align-items: center;
 
-}
 
-h3 {
-  text-align: center;
-}
 
-p {
-  text-align: center;
-}
 
-a {
-  color: #B6B6B6;
-  text-decoration: none;
-}
+
+
