@@ -4,7 +4,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+  margin: 0 auto;
 }
 article,
 aside,
@@ -189,7 +189,7 @@ html {
   font-family: georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
-
+  margin: 0 auto;
 }
 * {
   box-sizing: inherit;
@@ -632,7 +632,7 @@ pre tt:after {
 
 }
 
-#__gatsby {
+html body {
   margin: 0 auto;
 }
 
