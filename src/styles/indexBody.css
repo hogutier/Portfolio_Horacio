@@ -31,7 +31,7 @@ h3 {
 .heroimage {
   grid-area: heroimage;
   margin-bottom: 2rem;
-  width: 80%;
+  width: 60%;
   justify-self: center;
   align-self: center;
 }
