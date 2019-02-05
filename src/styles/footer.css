@@ -3,24 +3,23 @@
   align-self: flex-end;
   justify-self: center;
   padding-top: 2em;
+  color: #B6B6B6;
 }
 
 .date{
   grid-area: date;
   align-self:  flex-start;
   justify-self: center;
+  color: #B6B6B6;
 }
 
 .footerContainer {
   display: grid;
   grid-template-columns: 12fr;
-  grid-auto-rows: minmax(5rem, auto);
-  grid-gap: 1rem;
-
-
-
-
+  grid-auto-rows: minmax(.1rem, auto);
+  grid-gap: .01rem 1.5rem;
   grid-template-areas:
+  "yellowLine"
   "connect"
   "methods"
   "date";
@@ -41,6 +40,7 @@
   padding-left: 3.5rem;
   padding-right: 3.5rem;
 }
+
 
 
 

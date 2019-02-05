@@ -8,6 +8,7 @@ import '../styles/indexBody.css'
 import iconRealEstate from '../images/iconRealEstate.png'
 import iconBusyBus from '../images/iconBusyBus.png'
 import iconPortfolio from '../images/iconPortfolio.png'
+import Line from '../components/line'
 
 const IndexPage = () => (
   <Layout>
@@ -48,6 +49,7 @@ const IndexPage = () => (
       <div className="heroimage">
         <HeroImage />
       </div>
+      <Line />
       <div className="featuredprojects">
         <h2>Featured Projects</h2>
       </div>

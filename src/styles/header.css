@@ -1,12 +1,11 @@
 .headerContainer {
   display: grid;
   grid-template-columns: 1.5fr 4fr 6.5fr;
-  grid-auto-rows: minmax(100px, auto);
-  grid-gap: 2rem 2rem;
+  grid-auto-rows: minmax(.1rem, auto);
+  grid-gap: .01rem 1.5rem;
   grid-template-areas:
-  "logo  name  pages";
-  margin: 0 auto;
-  max-width: 1000;
+  "logo        name        pages"
+  "yellowLine  yellowLine  yellowLine";
   padding: 1rem;
 }
 .about {
@@ -23,12 +22,22 @@
   grid-area: logo;
   align-self: center;
   justify-self: flex-end;
+  color: #e2be1c;
+  text-decoration: none;
+  padding-top: .5rem;
 }
 
 .name {
   grid-area: name;
   align-self: center;
   justify-self: flex-start;
+  padding-top: .5rem;
+
+}
+
+.link {
+  color: #e2be1c;
+  text-decoration: none;
 }
 
 .pages {
@@ -37,12 +46,20 @@
   justify-content: flex-end;
   align-items: center;
   align-content: center;
+  padding-top: .5rem;
 }
 
 .portfolio {
   align-self: center;
   padding-right: 3rem;
 }
+
+.yellowLine {
+  grid-area: yellowLine;
+  background-color: #E2BE1C;
+  height: .2rem;
+}
+
 
 
 
