@@ -184,8 +184,9 @@ textarea {
 }
 html {
 /*  font: 112.5%/1.45em georgia, serif;  */
-
-  font: 10px georgia, serif;
+  font-size: 7.8px;
+  line-height: 145%;
+  font-family: georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -208,7 +209,7 @@ body {
   -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
   -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
   font-feature-settings: 'kern', 'liga', 'clig', 'calt';
-  max-width: 1200px;
+  max-width: 1025px;
   margin: 0 auto;
 }
 img {
