@@ -1,5 +1,4 @@
 .aboutContainer {
-  color: '#B6B6B6';
   display: grid;
   grid-template-columns: 4fr 4fr 4fr;
   grid-auto-rows: minmax(.1rem, auto);
