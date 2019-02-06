@@ -46,7 +46,7 @@ img {
   display: grid;
   grid-template-columns: 4fr 4fr 4fr;
   grid-auto-rows: minmax(.1rem, auto);
-  grid-gap: 1.5rem 1.5rem;
+  grid-gap: 1rem 1rem;
   grid-template-areas:
   "welcome           welcome           welcome"
   "   .              productmanager        ."
@@ -59,6 +59,7 @@ img {
   align-items: center;
   justify-content: center;
   align-content: center;
+  margin-top: -1.5rem;
 }
 
 p {
@@ -69,7 +70,8 @@ p {
   grid-area: productmanager;
   justify-self: center;
   align-self: center;
-  padding-top: 1rem;
+  padding-top: 0rem;
+  margin-top: 0rem;
 }
 
 .project1 {
@@ -101,6 +103,7 @@ p {
   align-self: center;
   justify-self: center;
   padding-top: 3rem;
+  margin-bottom: 0rem;
 }
 
 

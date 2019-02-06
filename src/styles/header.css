@@ -2,37 +2,37 @@
   display: grid;
   grid-template-columns: 1.5fr 4fr 6.5fr;
   grid-auto-rows: minmax(.1rem, auto);
-  grid-gap: .01rem 1.5rem;
+  grid-gap: 0rem 0rem;
   grid-template-areas:
   "logo        name        pages"
   "yellowLine  yellowLine  yellowLine";
-  padding: 1rem;
+  padding-top: .5rem;
 }
 .about {
   align-self: center;
-  padding-right: 3rem;
+  justify-self: center;
+  padding-right: 2rem;
 }
 
 .contact {
   align-self: center;
-  padding-right: 3rem;
+  justify-self: center;
 }
 
 .logo {
   grid-area: logo;
   align-self: center;
-  justify-self: flex-end;
+  justify-self: center;
   color: #e2be1c;
   text-decoration: none;
-  padding-top: .5rem;
+  margin-bottom: -1.2rem;
 }
 
 .name {
   grid-area: name;
   align-self: center;
   justify-self: flex-start;
-  padding-top: .5rem;
-
+  padding-top: .8rem;
 }
 
 .link {
@@ -46,12 +46,13 @@
   justify-content: flex-end;
   align-items: center;
   align-content: center;
-  padding-top: .5rem;
+  padding-top: .8rem;
 }
 
 .portfolio {
   align-self: center;
-  padding-right: 3rem;
+  justify-self: center;
+  padding-right: 2rem;
 }
 
 .yellowLine {
@@ -59,6 +60,8 @@
   background-color: #E2BE1C;
   height: .2rem;
 }
+
+
 
 
 
