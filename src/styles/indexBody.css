@@ -3,14 +3,14 @@ a {
   text-decoration: none;
 }
 
-.designer {
+.designerhero {
   grid-area: designer;
   justify-self: center;
   align-self: center;
   padding-top: 3rem;
 }
 
-.designer > p {
+.designerhero > p {
   margin-top: -1rem;
 }
 

@@ -31,7 +31,7 @@ const IndexPage = () => (
           management of software & services.
         </p>
       </div>
-      <div className="designer">
+      <div className="designerhero">
         <h3>UI/UX Designer</h3>
         <p>
           Digital Designer with a passion for creating beautiul and functional

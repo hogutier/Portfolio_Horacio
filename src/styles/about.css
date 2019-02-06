@@ -1,3 +1,115 @@
 .aboutContainer {
   color: '#B6B6B6';
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-auto-rows: minmax(.1rem, auto);
+  grid-gap: 1rem 1rem;
+  grid-template-areas:
+  "about          about         photo"
+  "about          about         photo"
+  "about          about         photo"
+  "yellowLine     yellowLine    yellowLine"
+  "skills         skills        skills"
+  "designer       product       software"
+  "designerskills productskills softwareskills";
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.about {
+  grid-area: about;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.about > p {
+  text-align: left;
+}
+
+.button {
+  background-color: #E2BE1C;
+  color: #191919;
+  border-radius: 2px;
+  border: 0px;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+}
+
+.designer {
+  grid-area: designer;
+  padding-top: 0;
+  align-self: center;
+  justify-self: flex-start;
+  display: flex;
+}
+
+.designerskills {
+  grid-area: designerskills;
+  margin-top: -1.5rem;
+}
+
+.icon {
+  margin-right: 1rem;
+}
+
+.photo {
+  grid-area: photo;
+  margin-top: -1.5rem;
+}
+
+.product {
+  grid-area: product;
+  align-self: center;
+  justify-self: flex-start;
+  display: flex;
+}
+
+.productskills {
+  grid-area: productskills;
+  margin-top: -1.5rem;
+}
+
+.skills {
+  grid-area: skills;
+  align-self: center;
+  justify-self: center;
+  padding-top: .5rem;
+  padding-bottom: -1rem;
+  margin-bottom: -.2rem;
+}
+
+.software {
+  grid-area: software;
+  display: flex;
+  align-self: center;
+  justify-self: flex-start;
+}
+
+.software > icon {
+  float: left;
+}
+
+.softwareskills {
+  grid-area: softwareskills;
+  margin-top: -1.5rem;
+}
+
+ul li {
+  list-style: none;
+  list-style-type: circle;
+}
+
+ul li::before {
+  font-size: 2.5rem;
+  margin-left: -1rem;
+  padding-right: 1rem;
+  color: #E2BE1C;
+}
+
+.yellowLine {
+  grid-area: yellowLine;
+  margin-top: 1rem;
 }

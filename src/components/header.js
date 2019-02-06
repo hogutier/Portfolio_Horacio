@@ -21,7 +21,7 @@ const Header = ({ siteTitle, siteAbout, sitePortfolio, siteContact }) => (
     </div>
 
     <div className="pages">
-      <div className="about">
+      <div className="aboutnav">
         <h3>
           <Link to="/about/" className="link">
             {siteAbout}
