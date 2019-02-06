@@ -110,50 +110,47 @@ export default class Contact extends React.Component {
                 />
               </p>
             </div>
-            <fieldset>
-              <legend>Type of Service</legend>
-              <p>
-                <label htmlFor="service">Select list</label>
-                <select name="service" id="myList" onChange={this.handleChange}>
-                  <option name="service" value="Consulting">
-                    Consulting
-                  </option>
-                  <option name="service" value="UX/UI Design">
-                    UX/UI Design
-                  </option>
-                  <option name="service" value="Software Development">
-                    Software Development
-                  </option>
-                  <option name="service" value="Product Management">
-                    Product Management
-                  </option>
-                </select>
-              </p>
-            </fieldset>
-            <fieldset>
-              <legend>Project Start Date</legend>
-              <p>
-                <label htmlFor="startDate">Select list</label>
-                <select
-                  name="startDate"
-                  id="startDate"
-                  onChange={this.handleChange}
-                >
-                  <option name="startDate" value="Less than 3 months">
-                    Less than 3 months
-                  </option>
-                  <option name="startDate" value="Between 3 to 6 months">
-                    Between 3 to 6 months
-                  </option>
-                  <option name="startDate" value="Between 6 months to 1 yr">
-                    Between 6 months to 1 yr
-                  </option>
-                  <option name="startDate" value="More than 1yr">
-                    More than 1yr
-                  </option>
-                </select>
-              </p>
-            </fieldset>
+
+            <div>
+              <label htmlFor="service">Type of Service</label>
+              <select name="service" id="myList" onChange={this.handleChange}>
+                <option name="service" value="Consulting">
+                  Consulting
+                </option>
+                <option name="service" value="UX/UI Design">
+                  UX/UI Design
+                </option>
+                <option name="service" value="Software Development">
+                  Software Development
+                </option>
+                <option name="service" value="Product Management">
+                  Product Management
+                </option>
+              </select>
+            </div>
+
+            <div>
+              <label htmlFor="startDate">Project Start Date</label>
+              <select
+                name="startDate"
+                id="startDate"
+                onChange={this.handleChange}
+              >
+                <option name="startDate" value="Less than 3 months">
+                  Less than 3 months
+                </option>
+                <option name="startDate" value="Between 3 to 6 months">
+                  Between 3 to 6 months
+                </option>
+                <option name="startDate" value="Between 6 months to 1 yr">
+                  Between 6 months to 1 yr
+                </option>
+                <option name="startDate" value="More than 1yr">
+                  More than 1yr
+                </option>
+              </select>
+            </div>
+
             <div>
               <button className="button">Submit</button>
             </div>
