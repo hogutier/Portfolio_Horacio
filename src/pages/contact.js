@@ -13,16 +13,26 @@ export default () => (
         </p>
       </div>
 
-      <form method="post" action="#">
-        <div className="field half first">
+      <form
+        name="HoracioContactForm"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
+        <p style={{ display: 'none' }}>
+          <label>
+            Don't fill this out: <input name="bot-field" />
+          </label>
+        </p>
+        <div className="first_name">
           <label htmlFor="firstName">First Name</label>
           <input type="text" name="firstName" id="firstName" />
         </div>
-        <div className="field half first">
+        <div className="last_name">
           <label htmlFor="lastName">Last Name</label>
           <input type="text" name="lastName" id="lastName" />
         </div>
-        <div className="field half">
+        <div className="phone_number">
           <label htmlFor="phone">Phone</label>
           <input type="text" name="phone" id="phone" />
         </div>
