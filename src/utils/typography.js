@@ -34,7 +34,6 @@ const typography = new Typography({
       fontFamily: ['Montserrat', 'sans-serif'].join(','),
       ...adjustFontSizeTo('18px')
     }
-
   })
 })
 
