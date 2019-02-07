@@ -8,12 +8,12 @@ import iconProductMgr from '../images/iconProductMgr.png'
 import iconDeveloper from '../images/iconDeveloper.png'
 
 import Line from '../components/line'
-import '../styles/about.css'
+import aboutStyles from '../styles/about.module.css'
 
 export default () => (
   <Layout>
-    <section className="aboutContainer">
-      <div className="about">
+    <section className={aboutStyles.aboutContainer}>
+      <div className={aboutStyles.about}>
         <h1>About Me</h1>
         <p>
           I’m a veteran in the technology industry with 20+ years of experience
@@ -31,21 +31,21 @@ export default () => (
           and growing sales for these products.
         </p>
         <Link to="/contact/">
-          <button className="button">Contact Me</button>
+          <button className={aboutStyles.button}>Contact Me</button>
         </Link>
       </div>
 
-      <div className="photo">
+      <div className={aboutStyles.photo}>
         <HoracioImage />
       </div>
       <Line />
-      <h2 className="skills">Skills</h2>
-      <div className="designer">
-        <img className="icon" src={iconDesigner} alt="Designer Icon" />
+      <h2 className={aboutStyles.skills}>Skills</h2>
+      <div className={aboutStyles.designer}>
+        <img className={aboutStyles.icon} src={iconDesigner} alt="Designer Icon" />
         <h3>UX/UI Designer</h3>
       </div>
 
-      <div className="designerskills">
+      <div className={aboutStyles.designerskills}>
         <ul>
           <li>UX Research & Strategy</li>
           <li>Information Architecture</li>
@@ -55,12 +55,12 @@ export default () => (
           <li>User Testing</li>
         </ul>
       </div>
-      <div className="product">
-        <img className="icon" src={iconProductMgr} alt="Product Manager Icon" />
+      <div className={aboutStyles.product}>
+        <img className={aboutStyles.icon} src={iconProductMgr} alt="Product Manager Icon" />
         <h3>Product Manager</h3>
       </div>
 
-      <div className="productskills">
+      <div className={aboutStyles.productskills}>
         <ul>
           <li>Product Strategy & Vision</li>
           <li>Marketing Requirements</li>
@@ -70,12 +70,12 @@ export default () => (
           <li>Pricing & Merchandising</li>
         </ul>
       </div>
-      <div className="software">
-        <img className="icon" src={iconDeveloper} alt="Product Manager Icon" />
+      <div className={aboutStyles.software}>
+        <img className={aboutStyles.icon} src={iconDeveloper} alt="Product Manager Icon" />
         <h3>Software Engineer</h3>
       </div>
 
-      <div className="softwareskills">
+      <div className={aboutStyles.softwareskills}>
         <ul>
           <li>Javascript</li>
           <li>React - Redux</li>

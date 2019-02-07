@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import { navigateTo } from 'gatsby-link'
-import '../styles/contact.css'
+import contactStyles from '../styles/contact.module.css'
 
 function encode(data) {
   return Object.keys(data)
@@ -37,17 +37,17 @@ export default class Contact extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="contactContainer">
-          <div className="worktogether">
+        <section className={contactStyles.contactContainer}>
+          <div className={contactStyles.worktogether}>
             <h2>Let's Work Together</h2>
             <p>
               Send me a message if you would like to discuss a project or want
               to find out more about me or my work, get in touch!
             </p>
           </div>
-          <div className="formitems">
+          <div className={contactStyles.formitems}>
             <form
-              className="form"
+              className={contactStyles.form}
               name="HoracioContactForm"
               method="post"
               action="/thanks/"
@@ -69,20 +69,20 @@ export default class Contact extends React.Component {
                 </label>
               </p>
 
-              <div className="first_name">
+              <div className={contactStyles.first_name}>
                 <label htmlFor="firstName">First Name</label>
                 <input
-                  className="field-divided"
+                  className={contactStyles.field_divided}
                   type="text"
                   name="firstName"
                   id="firstName"
                   onChange={this.handleChange}
                 />
               </div>
-              <div className="last_name">
+              <div className={contactStyles.last_name}>
                 <label htmlFor="lastName">Last Name</label>
                 <input
-                  className="field-divided"
+                  className={contactStyles.field_divided}
                   type="text"
                   name="lastName"
                   id="lastName"
@@ -90,31 +90,31 @@ export default class Contact extends React.Component {
                 />
               </div>
 
-              <div className="phone_number field-divided">
+              <div className={[contactStyles.phone_number,  contactStyles.field_divided].join(' ')}>
                 <label htmlFor="phone">Phone</label>
                 <input
-                  className="field-divided"
+                  className={contactStyles.field_divided}
                   type="text"
                   name="phone"
                   id="phone"
                   onChange={this.handleChange}
                 />
               </div>
-              <div className="email field-divided">
+              <div className={[contactStyles.email, contactStyles.field_divided].join(' ')}>
                 <label htmlFor="email">Email</label>
                 <input
-                  className="field-divided"
+                  className={contactStyles.field_divided}
                   type="text"
                   name="email"
                   id="email"
                   onChange={this.handleChange}
                 />
               </div>
-              <div className="description">
+              <div className={contactStyles.field_full}>
                 <label htmlFor="description">Project Description</label>
                 <p>
                   <textarea
-                    className="field-full"
+                    className={contactStyles.field_full}
                     name="description"
                     id="description"
                     rows="6"
@@ -124,14 +124,18 @@ export default class Contact extends React.Component {
               </div>
 
               <div>
-                <label htmlFor="service">Type of Service</label>
+                <label 
+                className={contactStyles.service}
+                htmlFor="service">Type of Service</label>
                 <select
-                  className="field-divided"
+                  className={contactStyles.field_divided}
                   name="service"
                   id="myList"
                   onChange={this.handleChange}
                 >
-                  <option name="service" value="Consulting">
+                  <option 
+                  className={contactStyles.field_divided}
+                  name="service" value="Consulting">
                     Consulting
                   </option>
                   <option name="service" value="UX/UI Design">
@@ -147,29 +151,32 @@ export default class Contact extends React.Component {
               </div>
 
               <div>
-                <label htmlFor="startDate">Project Start Date</label>
+                <label 
+                className={contactStyles.startDate}
+                htmlFor="startDate">Project Start Date</label>
                 <select
-                  className="field-divided"
+                  className={contactStyles.field_divided}
                   name="startDate"
                   id="startDate"
                   onChange={this.handleChange}
                 >
-                  <option name="startDate" value="Less than 3 months">
+                  <option 
+                  className={contactStyles.field_divided}name="startDate" value="Less than 3 months">
                     Less than 3 months
                   </option>
                   <option name="startDate" value="Between 3 to 6 months">
                     Between 3 to 6 months
                   </option>
                   <option name="startDate" value="Between 6 months to 1 yr">
-                    Between 6 months to 1 yr
+                    Between 6 to 12 months
                   </option>
                   <option name="startDate" value="More than 1yr">
-                    More than 1yr
+                    More than 12 months
                   </option>
                 </select>
               </div>
-              <div className="buttonholder">
-                <button className="buttonsubmit">Submit</button>
+              <div className={contactStyles.buttonholder}>
+                <button className={contactStyles.buttonsubmit}>Submit</button>
               </div>
             </form>
           </div>
