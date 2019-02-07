@@ -1,0 +1,17 @@
+.thankyoucontainer {
+  display: grid;
+  grid-template-columns: 12fr;
+  grid-auto-rows: minmax(30rem, auto);
+  grid-gap: 2rem 2rem;
+  grid-template-areas:
+  "thankyounote";
+  justify-content: center;
+  align-content: center;
+}
+
+.thankyounote {
+  grid-area: thankyounote;
+  justify-self: center;
+  align-self: center;
+}
+
