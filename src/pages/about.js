@@ -59,7 +59,6 @@ export default () => (
         <img className={aboutStyles.icon} src={iconProductMgr} alt="Product Manager Icon" />
         <h3>Product Manager</h3>
       </div>
-
       <div className={aboutStyles.productskills}>
         <ul>
           <li>Product Strategy & Vision</li>

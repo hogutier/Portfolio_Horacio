@@ -9,9 +9,8 @@ import logoGithub from '../images/logoGithub.png'
 import Header from './header'
 import Line from './line'
 
-import '../styles/layout.css'
-import '../styles/header.css'
-import '../styles/footer.css'
+import layoutStyles from '../styles/layout.module.css'
+import footerStyles from '../styles/footer.module.css'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -35,39 +34,39 @@ const Layout = ({ children }) => (
           siteContact={data.site.siteMetadata.contact}
           sitePortfolio={data.site.siteMetadata.portfolio}
         />
-        <div className="layoutStyles">
+        <div className={layoutStyles.layoutStyles}>
           <div>{children}</div>
         </div>
 
-        <footer className="footerContainer">
+        <footer className={footerStyles.footerContainer}>
           <Line />
-          <div className="connect">
+          <div className={footerStyles.connect}>
             <h2>Connect with me</h2>
           </div>
 
-          <div className="methods">
-            <div className="message">
+          <div className={footerStyles.methods}>
+            <div className={footerStyles.message}>
               <Link to="/contact/">
                 <img src={logoMessage} alt="Message" />
               </Link>
             </div>
-            <div className="linkedin">
+            <div className={footerStyles.linkedin}>
               <a href="https://www.linkedin.com/in/hogutier/">
                 <img src={logoLinkedin} alt="Linkedin" />
               </a>
             </div>
-            <div className="twitter">
+            <div className={footerStyles.twitter}>
               <a href="https://twitter.com/Horacio_Gtz">
                 <img src={logoTwitter} alt="Twitter" />
               </a>
             </div>
-            <div className="github">
+            <div className={footerStyles.github}>
               <a href="https://github.com/hogutier">
                 <img src={logoGithub} alt="github" />
               </a>
             </div>
           </div>
-          <div className="date">
+          <div className={footerStyles.date}>
             <p>© {new Date().getFullYear()} Horacio Gutierrez</p>
           </div>
         </footer>

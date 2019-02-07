@@ -2,15 +2,15 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import '../styles/portfolio.css'
+import portfolioStyles from '../styles/portfolio.module.css'
 import iconRealEstate from '../images/iconRealEstate.png'
 import iconBusyBus from '../images/iconBusyBus.png'
 import iconPortfolio from '../images/iconPortfolio.png'
 
 const PortfolioPage = () => (
   <Layout>
-    <section className="portfolioContainer">
-      <div className="propertyVault">
+    <section className={portfolioStyles.portfolioContainer}>
+      <div className={portfolioStyles.propertyVault}>
         <Link to="/propertyvault/">
           <img src={iconRealEstate} alt="Property Vault Project" />
           <h3>Property Vault</h3>
@@ -21,7 +21,7 @@ const PortfolioPage = () => (
         </Link>
       </div>
 
-      <div className="busyBus">
+      <div className={portfolioStyles.busyBus}>
         <Link to="/propertyvault/">
           <img src={iconBusyBus} alt="Busy Bus Project" />
           <h3>Public Transportation</h3>
@@ -32,7 +32,7 @@ const PortfolioPage = () => (
         </Link>
       </div>
 
-      <div className="personalPortfolio">
+      <div className={portfolioStyles.personalPortfolio}>
         <Link to="/propertyvault/">
           <img src={iconPortfolio} alt="Portfolio Project" />
           <h3>Portfolio</h3>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import '../styles/propertyvault.css'
+import propertyVaultStyles from '../styles/propertyvault.module.css'
 
 import DesktopHomeImage from '../components/imgDesktopHome'
 import MobileHomeImage from '../components/imgMobileHome'
@@ -32,7 +32,7 @@ import HomepageMockup from '../images/HomepageMockup.png'
 
 export default () => (
   <Layout>
-    <section className="propertyVaultContainer">
+    <section className={propertyVaultStyles.propertyVaultContainer}>
       <article>
         <h1>Property Vault</h1>
         <p>
@@ -44,12 +44,12 @@ export default () => (
           <button>View Prototype</button>
         </a>
         <p />
-        <div className="prototypesContainer">
-          <div className="desktopHomeImage">
+        <div className={propertyVaultStyles.prototypesContainer}>
+          <div className={propertyVaultStyles.desktopHomeImage}>
             <DesktopHomeImage />
           </div>
 
-          <div className="mobileHomeImage">
+          <div className={propertyVaultStyles.mobileHomeImage}>
             <MobileHomeImage />
           </div>
         </div>
@@ -86,7 +86,7 @@ export default () => (
         </div>
       </article>
 
-      <article className="containerOverview">
+      <article className={propertyVaultStyles.containerOverview}>
         <img src={iconOverview} alt="Overview" />
         <h2>Overview</h2>
         <h3>The Problem</h3>
@@ -107,7 +107,7 @@ export default () => (
         </p>
       </article>
 
-      <article className="containerDiscovery">
+      <article className={propertyVaultStyles.containerDiscovery}>
         <img src={iconDiscovery} alt="Discovery Phase" />
         <h2>Discovery Phase</h2>
         <h3>User Research</h3>
@@ -161,7 +161,7 @@ export default () => (
         <img src={PersonaB} alt="User Persona Mike" />
       </article>
 
-      <article className="containerBranding">
+      <article className={propertyVaultStyles.containerBranding}>
         <img src={iconBranding} alt="Branding & Identity" />
         <h2>Branding & Identity</h2>
         <h3>The Logo</h3>
@@ -185,7 +185,7 @@ export default () => (
         <img src={BrandStyleGuide} alt="Brand Style Guide" />
       </article>
 
-      <article className="iaContainer">
+      <article className={propertyVaultStyles.iaContainer}>
         <img src={iconIA} alt="Information Architecture" />
         <h2>Information Architecture</h2>
         <h3>User Stories</h3>
@@ -285,7 +285,7 @@ export default () => (
           <button>See Test Details</button>
         </a>
       </article>
-      <article className="conclusionContainer">
+      <article className={propertyVaultStyles.conclusionContainer}>
         <img src={iconConclusion} alt="Conclusion" />
         <h2>Conclusion</h2>
         <p>
@@ -304,17 +304,17 @@ export default () => (
           the evolution of the web application throughout the project:
         </p>
         <img
-          className="homePageSketch"
+          className={propertyVaultStyles.homePageSketch}
           src={HomepageSketch}
           alt="Pen & Paper Sketch of Homepage"
         />
         <img
-          className="homePageWireframe"
+          className={propertyVaultStyles.homePageWireframe}
           src={HomepageWireframe}
           alt="Wireframe of Homepage"
         />
         <img
-          className="homePageMockup"
+          className={propertyVaultStyles.homePageMockup}
           src={HomepageMockup}
           alt="Mockup of Homepage"
         />

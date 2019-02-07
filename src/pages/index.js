@@ -4,7 +4,8 @@ import Layout from '../components/layout'
 import HeroImage from '../components/imgLightbulb'
 import SEO from '../components/seo'
 import { Link } from 'gatsby'
-import '../styles/indexBody.css'
+
+import indexBodyStyles from '../styles/indexBody.module.css'
 import iconRealEstate from '../images/iconRealEstate.png'
 import iconBusyBus from '../images/iconBusyBus.png'
 import iconPortfolio from '../images/iconPortfolio.png'
@@ -22,23 +23,23 @@ const IndexPage = () => (
         'Portfolio'
       ]}
     />
-    <section className="indexBodyContainer">
-      <h1 className="welcome">Hi, I'm Horacio from Austin, Texas</h1>
-      <div className="productmanager">
+    <section className={indexBodyStyles.indexBodyContainer}>
+      <h1 className={indexBodyStyles.welcome}>Hi, I'm Horacio from Austin, Texas</h1>
+      <div className={indexBodyStyles.productmanager}>
         <h3>Product Manager</h3>
         <p>
           Experienced product leader in the creation, launch, maintenance and
           management of software & services.
         </p>
       </div>
-      <div className="designerhero">
+      <div className={indexBodyStyles.designerhero}>
         <h3>UI/UX Designer</h3>
         <p>
           Digital Designer with a passion for creating beautiul and functional
           user experiences.
         </p>
       </div>
-      <div className="developer">
+      <div className={indexBodyStyles.developer}>
         <h3>Software Engineer</h3>
         <p>
           Fullstack Software Developer who focuses on clean, modern, scalable
@@ -46,15 +47,15 @@ const IndexPage = () => (
         </p>
       </div>
 
-      <div className="heroimage">
+      <div className={indexBodyStyles.heroimage}>
         <HeroImage />
       </div>
       <Line />
-      <div className="featuredprojects">
+      <div className={indexBodyStyles.featuredprojects}>
         <h2>Featured Projects</h2>
       </div>
 
-      <div className="project1">
+      <div className={indexBodyStyles.project1}>
         <Link to="/propertyvault/">
           <img src={iconRealEstate} alt="Property Vault Project" />
           <h3>Property Vault</h3>
@@ -64,7 +65,7 @@ const IndexPage = () => (
           </p>
         </Link>
       </div>
-      <div className="project2">
+      <div className={indexBodyStyles.project2}>
         <Link to="/propertyvault/">
           <img src={iconBusyBus} alt="Busy Bus Project" />
           <h3>Public Transportation</h3>
@@ -74,7 +75,7 @@ const IndexPage = () => (
           </p>
         </Link>
       </div>
-      <div className="project3">
+      <div className={indexBodyStyles.project3}>
         <Link to="/propertyvault/">
           <img src={iconPortfolio} alt="Portfolio Project" />
           <h3>Portfolio</h3>

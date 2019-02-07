@@ -1,9 +1,8 @@
 import React from 'react'
-import '../styles/header.css'
-import '../styles/footer.css'
+import headerStyles from '../styles/header.module.css'
 
 const Line = () => (
-  <div className="yellowLine">
+  <div className={headerStyles.yellowLine}>
     <hr />
   </div>
 )
