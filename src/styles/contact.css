@@ -1,3 +1,87 @@
-.contactContainer {
-  color: '#B6B6B6';
+
+.buttonholder {
+  width: 100%;
 }
+.buttonsubmit {
+  display: block;
+  background-color: #E2BE1C;
+  color: #191919;
+  border-radius: 2px;
+  border: 0px;
+  padding: 1rem 2rem 1rem 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: -1rem;
+}
+
+.contactContainer {
+  display: grid;
+  grid-template-columns: 12fr;
+  grid-auto-rows: minmax(1rem, auto);
+  grid-gap: 1rem 1rem;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas:
+  "worktogether"
+  "formitems";
+  color: #B6B6B6;
+}
+
+
+.field-divided {
+  width: 20rem;
+  background: transparent;
+  border-color: #B6B6B6;
+  color: #B6B6B6;
+  border-width: .1rem;
+}
+
+.field-full {
+  width: 46.3rem;
+  background: transparent;
+  border-color: #B6B6B6;
+  color: #B6B6B6;
+}
+
+.first_name, .last_name, .phone_number, .email {
+  padding-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: form;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 80%
+}
+
+.formitems {
+  grid-area: formitems;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+}
+
+label {
+display: block;
+}
+
+.worktogether {
+  grid-area: worktogether;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  width: 60%;
+  margin-top: 1.5rem;
+}
+
+
+
+
+
