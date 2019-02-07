@@ -35,6 +35,14 @@
   align-self: center;
   justify-self: center;
   text-align: center;
-  padding-top: 2rem;
-  margin-bottom: -1rem;
+  padding-top: 1rem;
+  margin-bottom: -.3rem;
+}
+
+.propertyVault h3 {
+  margin-top: -2rem;
+}
+
+.propertyVault p {
+  margin-top: -1rem;
 }

@@ -63,7 +63,7 @@ img {
   "   .              heroimage             ."
   "yellowLine        yellowLine        yellowLine"
   "featuredprojects  featuredprojects  featuredprojects"
-  "project1          project2          project3";
+  "project1                 project1          project1";
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -90,8 +90,15 @@ p {
   grid-area: project1;
   justify-self: center;
   text-align: center;
+margin-top: -1rem;
+}
 
+.project1 h3 {
+  margin-top: -2rem;
+}
 
+.project1 p {
+  margin-top: -1rem;
 }
 
 .project2 {

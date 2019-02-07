@@ -7,8 +7,10 @@ import { Link } from 'gatsby'
 
 import indexBodyStyles from '../styles/indexBody.module.css'
 import iconRealEstate from '../images/iconRealEstate.png'
+
+/* To include when these case studies are ready to publish
 import iconBusyBus from '../images/iconBusyBus.png'
-import iconPortfolio from '../images/iconPortfolio.png'
+import iconPortfolio from '../images/iconPortfolio.png' */
 import Line from '../components/line'
 
 const IndexPage = () => (
@@ -65,7 +67,9 @@ const IndexPage = () => (
           </p>
         </Link>
       </div>
-      <div className={indexBodyStyles.project2}>
+      
+     {/*  Will include commented sections below when these case studies are ready to be published */}
+      {/* <div className={indexBodyStyles.project2}>
         <Link to="/propertyvault/">
           <img src={iconBusyBus} alt="Busy Bus Project" />
           <h3>Public Transportation</h3>
@@ -84,7 +88,7 @@ const IndexPage = () => (
             Development
           </p>
         </Link>
-      </div>
+      </div> */}
     </section>
   </Layout>
 )
