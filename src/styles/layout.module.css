@@ -210,7 +210,7 @@ body {
   -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
   -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
   font-feature-settings: 'kern', 'liga', 'clig', 'calt';
-  max-width: 1080px;
+  /* max-width: 1080px; */
   margin: 0 auto;
 }
 img {
@@ -624,8 +624,8 @@ pre tt:after {
 
 .layoutStyles {
   margin: 0 auto;
-  max-width: 1080px;
-  padding: 0 1.0875rem 1.45rem;
+  /* max-width: 1080px; */
+  /* padding: 0 1.0875rem 1.45rem; */
   padding-top: 0px;
   color: #b6b6b6;
   background-color: #191919;
@@ -634,6 +634,7 @@ pre tt:after {
 
 html body {
   margin: 0 auto;
+  padding: 0;
 }
 
 @media only screen and (max-width: 480px) {

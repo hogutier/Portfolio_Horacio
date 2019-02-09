@@ -57,53 +57,66 @@ export default () => (
           </div>
         </div>
 
- 
-          
-    <div className={propertyVaultStyles.rolesContainer}>
-        <div className={propertyVaultStyles.design}>
-          <img className={propertyVaultStyles.icon} src={iconDesigner} alt="Design Roles Icon" />
-          <h3>Design Roles</h3>
-        </div>
+        <div className={propertyVaultStyles.rolesContainer}>
+          <div className={propertyVaultStyles.design}>
+            <img
+              className={propertyVaultStyles.icon}
+              src={iconDesigner}
+              alt="Design Roles Icon"
+            />
+            <h3>Design Roles</h3>
+          </div>
 
-        <div className={propertyVaultStyles.designroles}>
-          <ul>
-            <li>UX Research & Strategy</li>
-            <li>Information Architecture</li>
-            <li>Branding</li>
-            <li>Visual Design</li>
-            <li>Wireframes & Prototypes</li>
-            <li>User Testing</li>
-          </ul>
-        </div>
-          
-          
-        <div className={propertyVaultStyles.deliverables}>
-        <img className={propertyVaultStyles.icon} src={iconProductMgr} alt="Deliverables Icon" />
-        <h3>Deliverables</h3>
-        </div>
-        
-        <div className={propertyVaultStyles.deliverableslist}>
-              <ul>
-                <li>User Surveys & Personas</li>
-                <li>Competitive Analysis</li>
-                <li>Logo & Brand Style Guide</li>
-                <li>User Stories & Flows</li>
-                <li>Wireframes & Prototypes</li>
-                <li>Usability Testing</li>
-              </ul>
-        </div>
-          
+          <div className={propertyVaultStyles.designroles}>
+            <ul>
+              <li>UX Research & Strategy</li>
+              <li>Information Architecture</li>
+              <li>Branding</li>
+              <li>Visual Design</li>
+              <li>Wireframes & Prototypes</li>
+              <li>User Testing</li>
+            </ul>
+          </div>
+
+          <div className={propertyVaultStyles.deliverables}>
+            <img
+              className={propertyVaultStyles.icon}
+              src={iconProductMgr}
+              alt="Deliverables Icon"
+            />
+            <h3>Deliverables</h3>
+          </div>
+
+          <div className={propertyVaultStyles.deliverableslist}>
+            <ul>
+              <li>User Surveys & Personas</li>
+              <li>Competitive Analysis</li>
+              <li>Logo & Brand Style Guide</li>
+              <li>User Stories & Flows</li>
+              <li>Wireframes & Prototypes</li>
+              <li>Usability Testing</li>
+            </ul>
+          </div>
+
           <div className={propertyVaultStyles.durationtools}>
             <div className={propertyVaultStyles.duration}>
-            <img className={propertyVaultStyles.icon} src={iconDeveloper} alt="Developer Icon" />
+              <img
+                className={propertyVaultStyles.icon}
+                src={iconDeveloper}
+                alt="Developer Icon"
+              />
               <h3>Project Duration</h3>
               <ul>
                 <li>2 months</li>
               </ul>
             </div>
-            
+
             <div className={propertyVaultStyles.tools}>
-              <img className={propertyVaultStyles.icon} src={iconDeveloper} alt="Developer Icon" />
+              <img
+                className={propertyVaultStyles.icon}
+                src={iconDeveloper}
+                alt="Developer Icon"
+              />
               <h3>Tools</h3>
               <ul>
                 <li>Google Forms & Draw.io</li>
@@ -116,24 +129,30 @@ export default () => (
       </article>
 
       <article className={propertyVaultStyles.overview}>
-        <img src={iconOverview} alt="Overview" />
-        <h2>Overview</h2>
-        <h3>The Problem</h3>
-        <p>
-          Most online storage & collaboration solutions are too broad and lack
-          focus to solve a problem for a specific industry. This oftentimes
-          leads to user confusion making it difficult to understand how to apply
-          these tools in the business environment.
-        </p>
-        <h3>The Solution</h3>
-        <p>
-          Through comprehensive user research, competitive analysis and user
-          testing, we created Property Vault - a secure online storage web
-          application with a specific focus on the Real Estate Market. Our
-          process (detailed in the next section) found that our users wanted an
-          easy way to store, access and share property & tenant information in
-          one place.
-        </p>
+        <div className={propertyVaultStyles.overviewtitle}>
+          <img src={iconOverview} alt="Overview" />
+          <h2>Overview</h2>
+        </div>
+        <div className={propertyVaultStyles.overviewproblem}>
+          <h3>The Problem</h3>
+          <p>
+            Most online storage & collaboration solutions are too broad and lack
+            focus to solve a problem for a specific industry. This oftentimes
+            leads to user confusion making it difficult to understand how to
+            apply these tools in the business environment.
+          </p>
+        </div>
+        <div className={propertyVaultStyles.overviewsolution}>
+          <h3>The Solution</h3>
+          <p>
+            Through comprehensive user research, competitive analysis and user
+            testing, we created Property Vault - a secure online storage web
+            application with a specific focus on the Real Estate Market. Our
+            process (detailed in the next section) found that our users wanted
+            an easy way to store, access and share property & tenant information
+            in one place.
+          </p>
+        </div>
       </article>
 
       <article className={propertyVaultStyles.discovery}>

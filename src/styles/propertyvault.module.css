@@ -11,7 +11,6 @@
   grid-area: conclusion;
 }
 
-
 .deliverables {
   grid-area: deliverables;
   padding-top: 0;
@@ -84,24 +83,6 @@
   flex-wrap: wrap;
 }
 
-.tools {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: .5rem;
-}
-
-.tools h3 {
-  margin-left: .5rem;
-}
-
-.tools ul {
-  margin-top: -1rem;
-}
-
-
-
-
-
 .homePageMockup {
   width: 20vw;
   height: 35vh;
@@ -146,12 +127,51 @@
     margin: 0 auto 3rem auto;
 }
 
-
 .overview {
   grid-area: overview;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  grid-auto-rows: minmax(.1rem, auto);
+  grid-gap: 1rem 1rem;
+  grid-template-areas:
+  "overviewtitle    overviewtitle"
+  "overviewproblem  overviewsolution";
   color: #191919;
   background-color: #f2f2f2;
+  margin-top: -1rem;
+  justify-content: center;
+  align-items: flex-start;
+}
 
+.overviewtitle {
+  grid-area: overviewtitle;
+  align-self: center;
+  justify-self: center;
+}
+
+.overviewtitle img {
+  display: block;
+  margin: 2rem auto 0 auto;
+}
+
+.overviewproblem {
+  grid-area: overviewproblem;
+  width: 95%;
+  padding-left: 1rem;
+}
+
+.overviewproblem p {
+  text-align: left;
+}
+
+.overviewsolution {
+  grid-area: overviewsolution;
+  width: 95%;
+  padding-left: 1rem;
+}
+
+.overviewsolution p {
+  text-align: left;
 }
 
 .mobileHomeImage {
@@ -162,8 +182,8 @@
 }
 
 .propertyVaultContainer {
-  color: #B6B6B6;
-  background-color: #191919;
+  /* color: #B6B6B6;
+  background-color: #191919; */
   display: grid;
   grid-template-columns: 4fr 4fr 4fr;
   grid-auto-rows: minmax(.1rem, auto);
@@ -189,6 +209,7 @@
   ". desktopHomeImage mobileHomeImage .";
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .rolesContainer {
@@ -203,6 +224,24 @@
   "design      deliverables     durationtools"
   "designroles deliverableslist durationtools"
 }
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: .5rem;
+}
+
+.tools h3 {
+  margin-left: .5rem;
+}
+
+.tools ul {
+  margin-top: -1rem;
+}
+
+
+
+
 
 
 
