@@ -1,47 +1,106 @@
-.conclusionContainer {
+
+.branding {
   color: #191919;
   background-color: #f2f2f2;
+  grid-area: branding;
 }
 
-.containerBranding {
+.conclusion {
   color: #191919;
   background-color: #f2f2f2;
-}
-.containerDiscovery {
-  color: #B6B6B6;
-  background-color: #191919;
+  grid-area: conclusion;
 }
 
-.containerOverview {
-  color: #191919;
-  background-color: #f2f2f2;
+
+.deliverables {
+  grid-area: deliverables;
+  padding-top: 0;
+  align-self: center;
+  justify-self: flex-start;
+  display: flex;
+}
+
+.deliverables h3 {
+  margin-left: .5rem;
+}
+
+.deliverableslist {
+  grid-area: deliverableslist;
+  margin-top: -3rem;
+}
+
+.design {
+  grid-area: design;
+  padding-top: 0;
+  align-self: center;
+  justify-self: flex-start;
+  display: flex;
+}
+
+.design h3 {
+  margin-left: .5rem;
+}
+
+.designroles {
+  grid-area: designroles;
+  margin-top: -3rem;
 }
 
 .desktopHomeImage {
-  width: 20vw;
-  height: 20rem;
-  padding-bottom: .5rem;
+  grid-area: desktopHomeImage;
+  align-self: center;
+  justify-self: flex-end;
+  width: 70%;
 }
 
-.iaContainer {
+.discovery {
   color: #B6B6B6;
   background-color: #191919;
+  grid-area: discovery;
 }
 
-.mobileHomeImage {
-  width: 20vw;
-  height: 20rem;
-  padding-bottom: .5rem;
+.duration {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: .5rem;
 }
 
-.propertyVaultContainer {
-  color: #B6B6B6;
-  background-color: #191919;
+.duration h3 {
+  margin-left: .5rem;
+  align-self: center;
+  justify-self: center;
 }
 
-.prototypesContainer {
-  padding-bottom: 15rem;
+.duration ul {
+  margin-top: -1rem;
+
 }
+
+.durationtools {
+  grid-area: durationtools;
+  align-self: center;
+  justify-self: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: .5rem;
+}
+
+.tools h3 {
+  margin-left: .5rem;
+}
+
+.tools ul {
+  margin-top: -1rem;
+}
+
+
+
+
 
 .homePageMockup {
   width: 20vw;
@@ -57,5 +116,94 @@
   width: 20vw;
   height: 35vh;
 }
+
+.ia {
+  color: #B6B6B6;
+  background-color: #191919;
+  grid-area: ia;
+}
+
+.intro {
+  grid-area: intro;
+}
+
+.intro h1 {
+  text-align: center;
+  margin-top: 1.7rem;
+}
+
+.intro p {
+  text-align: center;
+  width: 80%;
+  margin: -1rem auto 1rem auto;
+}
+
+.intro a {
+    display: block;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin: 0 auto 3rem auto;
+}
+
+
+.overview {
+  grid-area: overview;
+  color: #191919;
+  background-color: #f2f2f2;
+
+}
+
+.mobileHomeImage {
+  grid-area: mobileHomeImage;
+  align-self: center;
+  justify-self: flex-start;
+  width: 70%
+}
+
+.propertyVaultContainer {
+  color: #B6B6B6;
+  background-color: #191919;
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-auto-rows: minmax(.1rem, auto);
+  grid-gap: 1rem 1rem;
+  grid-template-areas:
+  "intro             intro              intro"
+  "overview          overview           overview"
+  "discovery         discovery          discovery"
+  "branding          branding           branding"
+  "ia                ia                 ia"
+  "conclusion        conclusion         conclusion";
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.prototypesContainer {
+  display:grid;
+  grid-template-columns: 2fr 4fr 4fr 2fr;
+  grid-auto-rows: minmax(.1rem, auto);
+  grid-gap: 1rem 1rem;
+  grid-template-areas:
+  ". desktopHomeImage mobileHomeImage .";
+  justify-content: center;
+  align-items: center;
+}
+
+.rolesContainer {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  grid-auto-rows: minmax(.1rem, auto);
+  grid-gap: 1rem 1rem;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas:
+  "design      deliverables     durationtools"
+  "designroles deliverableslist durationtools"
+}
+
+
 
 

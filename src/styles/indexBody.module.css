@@ -29,7 +29,8 @@ a {
   grid-area: featuredprojects;
   justify-self: center;
   align-self: center;
-  padding-top: 1rem;
+  padding-top: 0rem;
+  margin-top: .5rem;
 }
 
 h3 {
@@ -38,7 +39,7 @@ h3 {
 
 .heroimage {
   grid-area: heroimage;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   width: 70%;
   justify-self: center;
   align-self: center;
@@ -79,7 +80,7 @@ p {
   justify-self: center;
   align-self: center;
   padding-top: 1rem;
-  margin-top: 0rem;
+  margin-top: -1rem;
 }
 
 .productmanager > p {
@@ -90,7 +91,7 @@ p {
   grid-area: project1;
   justify-self: center;
   text-align: center;
-margin-top: -1rem;
+  margin-top: -1.2rem;
 }
 
 .project1 h3 {
@@ -99,6 +100,7 @@ margin-top: -1rem;
 
 .project1 p {
   margin-top: -1rem;
+  margin-bottom: 1.6rem;
 }
 
 .project2 {
@@ -121,7 +123,7 @@ margin-top: -1rem;
   grid-area: welcome;
   align-self: center;
   justify-self: center;
-  padding-top: 4rem;
+  padding-top: 3rem;
   margin-bottom: 0rem;
 }
 

@@ -19,7 +19,7 @@ const DesktopHomeImage = () => (
       query {
         file: file(relativePath: { eq: "PropertyVaultMobile.png" }) {
           childImageSharp {
-            fluid(maxWidth: 150) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }

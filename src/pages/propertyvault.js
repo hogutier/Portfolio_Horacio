@@ -9,6 +9,9 @@ import iconBranding from '../images/iconBranding.png'
 import iconDiscovery from '../images/iconDiscovery.png'
 import iconIA from '../images/iconIA.png'
 import iconConclusion from '../images/iconConclusion.png'
+import iconDesigner from '../images/iconDesigner.png'
+import iconProductMgr from '../images/iconProductMgr.png'
+import iconDeveloper from '../images/iconDeveloper.png'
 import CompetitiveAnalysis from '../images/CompetitiveAnalysis.png'
 import PersonaA from '../images/PersonaA.png'
 import PersonaB from '../images/PersonaB.png'
@@ -33,7 +36,7 @@ import HomepageMockup from '../images/HomepageMockup.png'
 export default () => (
   <Layout>
     <section className={propertyVaultStyles.propertyVaultContainer}>
-      <article>
+      <article className={propertyVaultStyles.intro}>
         <h1>Property Vault</h1>
         <p>
           Property Vault is a secure web application that was created with a
@@ -54,8 +57,15 @@ export default () => (
           </div>
         </div>
 
-        <div>
+ 
+          
+    <div className={propertyVaultStyles.rolesContainer}>
+        <div className={propertyVaultStyles.design}>
+          <img className={propertyVaultStyles.icon} src={iconDesigner} alt="Design Roles Icon" />
           <h3>Design Roles</h3>
+        </div>
+
+        <div className={propertyVaultStyles.designroles}>
           <ul>
             <li>UX Research & Strategy</li>
             <li>Information Architecture</li>
@@ -64,29 +74,48 @@ export default () => (
             <li>Wireframes & Prototypes</li>
             <li>User Testing</li>
           </ul>
-          <h3>Deliverables</h3>
-          <ul>
-            <li>User Surveys & Personas</li>
-            <li>Competitive Analysis</li>
-            <li>Logo & Brand Style Guide</li>
-            <li>User Stories & Flows</li>
-            <li>Wireframes & Prototypes</li>
-            <li>Usability Testing</li>
-          </ul>
-          <h3>Project Duration</h3>
-          <ul>
-            <li>2 months</li>
-          </ul>
-          <h3>Tools</h3>
-          <ul>
-            <li>Google Forms & Draw.io</li>
-            <li>Balsamiq & Usability Hub</li>
-            <li>Figma & InVision</li>
-          </ul>
+        </div>
+          
+          
+        <div className={propertyVaultStyles.deliverables}>
+        <img className={propertyVaultStyles.icon} src={iconProductMgr} alt="Deliverables Icon" />
+        <h3>Deliverables</h3>
+        </div>
+        
+        <div className={propertyVaultStyles.deliverableslist}>
+              <ul>
+                <li>User Surveys & Personas</li>
+                <li>Competitive Analysis</li>
+                <li>Logo & Brand Style Guide</li>
+                <li>User Stories & Flows</li>
+                <li>Wireframes & Prototypes</li>
+                <li>Usability Testing</li>
+              </ul>
+        </div>
+          
+          <div className={propertyVaultStyles.durationtools}>
+            <div className={propertyVaultStyles.duration}>
+            <img className={propertyVaultStyles.icon} src={iconDeveloper} alt="Developer Icon" />
+              <h3>Project Duration</h3>
+              <ul>
+                <li>2 months</li>
+              </ul>
+            </div>
+            
+            <div className={propertyVaultStyles.tools}>
+              <img className={propertyVaultStyles.icon} src={iconDeveloper} alt="Developer Icon" />
+              <h3>Tools</h3>
+              <ul>
+                <li>Google Forms & Draw.io</li>
+                <li>Balsamiq & Usability Hub</li>
+                <li>Figma & InVision</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </article>
 
-      <article className={propertyVaultStyles.containerOverview}>
+      <article className={propertyVaultStyles.overview}>
         <img src={iconOverview} alt="Overview" />
         <h2>Overview</h2>
         <h3>The Problem</h3>
@@ -107,7 +136,7 @@ export default () => (
         </p>
       </article>
 
-      <article className={propertyVaultStyles.containerDiscovery}>
+      <article className={propertyVaultStyles.discovery}>
         <img src={iconDiscovery} alt="Discovery Phase" />
         <h2>Discovery Phase</h2>
         <h3>User Research</h3>
@@ -161,7 +190,7 @@ export default () => (
         <img src={PersonaB} alt="User Persona Mike" />
       </article>
 
-      <article className={propertyVaultStyles.containerBranding}>
+      <article className={propertyVaultStyles.branding}>
         <img src={iconBranding} alt="Branding & Identity" />
         <h2>Branding & Identity</h2>
         <h3>The Logo</h3>
@@ -185,7 +214,7 @@ export default () => (
         <img src={BrandStyleGuide} alt="Brand Style Guide" />
       </article>
 
-      <article className={propertyVaultStyles.iaContainer}>
+      <article className={propertyVaultStyles.ia}>
         <img src={iconIA} alt="Information Architecture" />
         <h2>Information Architecture</h2>
         <h3>User Stories</h3>
@@ -285,7 +314,7 @@ export default () => (
           <button>See Test Details</button>
         </a>
       </article>
-      <article className={propertyVaultStyles.conclusionContainer}>
+      <article className={propertyVaultStyles.conclusion}>
         <img src={iconConclusion} alt="Conclusion" />
         <h2>Conclusion</h2>
         <p>

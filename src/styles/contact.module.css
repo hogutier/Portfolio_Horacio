@@ -48,7 +48,7 @@
 }
 
 .first_name, .last_name, .phone_number, .email, .description, .service, .startDate {
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
   width: 49%
 }
 
@@ -81,6 +81,11 @@ display: block;
   text-align: center;
   width: 60%;
   margin-top: 1.5rem;
+  margin-bottom: -.7rem;
+}
+
+.worktogether p {
+  margin-top: -1rem;
 }
 
 

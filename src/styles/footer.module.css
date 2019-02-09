@@ -2,8 +2,9 @@
   grid-area: connect;
   align-self: flex-end;
   justify-self: center;
-  padding-top: 1em;
   color: #B6B6B6;
+  margin-top: 1.7rem;
+  margin-bottom: -1rem;
 }
 
 .date{
@@ -11,6 +12,8 @@
   align-self:  flex-start;
   justify-self: center;
   color: #B6B6B6;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
 }
 
 .footerContainer {
@@ -35,6 +38,7 @@
   justify-items: center;
   align-items: center;
   justify-content: center;
+  margin-bottom: -1rem;
 }
 
 .linkedin, .twitter, .github, .message{
