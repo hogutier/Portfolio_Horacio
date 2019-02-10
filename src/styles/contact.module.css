@@ -1,17 +1,11 @@
 
 .buttonholder {
   width: 100%;
-}
-.buttonsubmit {
-  display: block;
-  background-color: #E2BE1C;
-  color: #191919;
-  border-radius: 2px;
-  border: 0px;
-  padding: 1rem 2rem 1rem 2rem;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contactContainer {
@@ -47,9 +41,14 @@
   border-radius: 3px;
 }
 
-.first_name, .last_name, .phone_number, .email, .description, .service, .startDate {
+.first_name, .last_name, .phone_number, .email, .description {
   padding-bottom: 1rem;
   width: 49%
+}
+
+.service, .startDate {
+  padding-bottom: 1rem;
+  width: 100%;
 }
 
 .form {

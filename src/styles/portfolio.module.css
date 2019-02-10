@@ -24,7 +24,7 @@
   grid-auto-rows: minmax(.1rem, auto);
   grid-gap: 1rem 1rem;
   grid-template-areas:
-  "busyBus propertyVault personalPortfolio";
+  ". propertyVault .";
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -36,7 +36,7 @@
   justify-self: center;
   text-align: center;
   margin-top: 1.1rem;
-  margin-bottom: -.3rem;
+  margin-bottom: 1rem;
 }
 
 .propertyVault h3 {

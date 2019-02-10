@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import { navigateTo } from 'gatsby-link'
 import contactStyles from '../styles/contact.module.css'
+import Button from '../components/button'
 
 function encode(data) {
   return Object.keys(data)
@@ -90,7 +91,12 @@ export default class Contact extends React.Component {
                 />
               </div>
 
-              <div className={[contactStyles.phone_number,  contactStyles.field_divided].join(' ')}>
+              <div
+                className={[
+                  contactStyles.phone_number,
+                  contactStyles.field_divided
+                ].join(' ')}
+              >
                 <label htmlFor="phone">Phone</label>
                 <input
                   className={contactStyles.field_divided}
@@ -100,7 +106,12 @@ export default class Contact extends React.Component {
                   onChange={this.handleChange}
                 />
               </div>
-              <div className={[contactStyles.email, contactStyles.field_divided].join(' ')}>
+              <div
+                className={[
+                  contactStyles.email,
+                  contactStyles.field_divided
+                ].join(' ')}
+              >
                 <label htmlFor="email">Email</label>
                 <input
                   className={contactStyles.field_divided}
@@ -124,18 +135,20 @@ export default class Contact extends React.Component {
               </div>
 
               <div>
-                <label 
-                className={contactStyles.service}
-                htmlFor="service">Type of Service</label>
+                <label className={contactStyles.service} htmlFor="service">
+                  Type of Service
+                </label>
                 <select
                   className={contactStyles.field_divided}
                   name="service"
                   id="myList"
                   onChange={this.handleChange}
                 >
-                  <option 
-                  className={contactStyles.field_divided}
-                  name="service" value="Consulting">
+                  <option
+                    className={contactStyles.field_divided}
+                    name="service"
+                    value="Consulting"
+                  >
                     Consulting
                   </option>
                   <option name="service" value="UX/UI Design">
@@ -151,17 +164,20 @@ export default class Contact extends React.Component {
               </div>
 
               <div>
-                <label 
-                className={contactStyles.startDate}
-                htmlFor="startDate">Project Start Date</label>
+                <label className={contactStyles.startDate} htmlFor="startDate">
+                  Project Start Date
+                </label>
                 <select
                   className={contactStyles.field_divided}
                   name="startDate"
                   id="startDate"
                   onChange={this.handleChange}
                 >
-                  <option 
-                  className={contactStyles.field_divided}name="startDate" value="Less than 3 months">
+                  <option
+                    className={contactStyles.field_divided}
+                    name="startDate"
+                    value="Less than 3 months"
+                  >
                     Less than 3 months
                   </option>
                   <option name="startDate" value="Between 3 to 6 months">
@@ -176,7 +192,7 @@ export default class Contact extends React.Component {
                 </select>
               </div>
               <div className={contactStyles.buttonholder}>
-                <button className={contactStyles.buttonsubmit}>Submit</button>
+                <Button name="Submit" />
               </div>
             </form>
           </div>

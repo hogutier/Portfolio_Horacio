@@ -26,7 +26,9 @@ const IndexPage = () => (
       ]}
     />
     <section className={indexBodyStyles.indexBodyContainer}>
-      <h1 className={indexBodyStyles.welcome}>Hi, I'm Horacio from Austin, Texas</h1>
+      <h2 className={indexBodyStyles.welcome}>
+        Hi, I'm Horacio from Austin, Texas
+      </h2>
       <div className={indexBodyStyles.productmanager}>
         <h3>Product Manager</h3>
         <p>
@@ -67,8 +69,8 @@ const IndexPage = () => (
           </p>
         </Link>
       </div>
-      
-     {/*  Will include commented sections below when these case studies are ready to be published */}
+
+      {/*  Will include commented sections below when these case studies are ready to be published */}
       {/* <div className={indexBodyStyles.project2}>
         <Link to="/propertyvault/">
           <img src={iconBusyBus} alt="Busy Bus Project" />

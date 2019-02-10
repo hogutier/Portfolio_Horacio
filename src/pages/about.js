@@ -8,13 +8,14 @@ import iconProductMgr from '../images/iconProductMgr.png'
 import iconDeveloper from '../images/iconDeveloper.png'
 
 import Line from '../components/line'
+import Button from '../components/button'
 import aboutStyles from '../styles/about.module.css'
 
 export default () => (
   <Layout>
     <section className={aboutStyles.aboutContainer}>
       <div className={aboutStyles.about}>
-        <h1>About Me</h1>
+        <h2>About Me</h2>
         <p>
           I’m a veteran in the technology industry with 20+ years of experience
           working for tech giants like Cisco Systems and Dell Technologies. I’m
@@ -24,6 +25,7 @@ export default () => (
           businesses and government institutions in the United States and
           Mexico.
         </p>
+        <br />
         <p>
           Throughout my career, I’ve lead cross-functional teams to develop
           various software and service products from concept to launch. I’ve
@@ -31,7 +33,7 @@ export default () => (
           and growing sales for these products.
         </p>
         <Link to="/contact/">
-          <button className={aboutStyles.button}>Contact Me</button>
+          <Button name="Contact Me" />
         </Link>
       </div>
 
@@ -41,7 +43,11 @@ export default () => (
       <Line />
       <h2 className={aboutStyles.skills}>Skills</h2>
       <div className={aboutStyles.designer}>
-        <img className={aboutStyles.icon} src={iconDesigner} alt="Designer Icon" />
+        <img
+          className={aboutStyles.icon}
+          src={iconDesigner}
+          alt="Designer Icon"
+        />
         <h3>UX/UI Designer</h3>
       </div>
 
@@ -56,7 +62,11 @@ export default () => (
         </ul>
       </div>
       <div className={aboutStyles.product}>
-        <img className={aboutStyles.icon} src={iconProductMgr} alt="Product Manager Icon" />
+        <img
+          className={aboutStyles.icon}
+          src={iconProductMgr}
+          alt="Product Manager Icon"
+        />
         <h3>Product Manager</h3>
       </div>
       <div className={aboutStyles.productskills}>
@@ -70,7 +80,11 @@ export default () => (
         </ul>
       </div>
       <div className={aboutStyles.software}>
-        <img className={aboutStyles.icon} src={iconDeveloper} alt="Product Manager Icon" />
+        <img
+          className={aboutStyles.icon}
+          src={iconDeveloper}
+          alt="Product Manager Icon"
+        />
         <h3>Software Engineer</h3>
       </div>
 

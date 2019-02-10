@@ -1,6 +1,6 @@
 .headerContainer {
   display: grid;
-  grid-template-columns: 1.5fr 4fr 6.5fr;
+  grid-template-columns: 1fr 4.5fr 6.5fr;
   grid-auto-rows: minmax(.1rem, auto);
   grid-gap: 0rem 0rem;
   grid-template-areas:
@@ -26,6 +26,7 @@
   color: #e2be1c;
   text-decoration: none;
   margin-bottom: -1.2rem;
+  margin-left: 2.5%;
 }
 
 .name {
@@ -47,6 +48,7 @@
   align-items: center;
   align-content: center;
   padding-top: .8rem;
+  margin-right: 3%;
 }
 
 .portfolio {
@@ -58,7 +60,9 @@
 .yellowLine {
   grid-area: yellowLine;
   background-color: #E2BE1C;
-  height: .2rem;
+  height: .1rem;
+  width: 97%;
+  margin: 0 auto;
 }
 
 

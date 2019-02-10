@@ -22,11 +22,13 @@
   justify-self: center;
   text-align: center;
   margin-top: 1.5rem;
+  margin-left: 2.5%;
 }
 
 .about > p {
   text-align: left;
-  margin-top: .2rem;
+  margin-top: -1rem;
+
 }
 
 .button {
@@ -41,15 +43,18 @@
 
 .designer {
   grid-area: designer;
-  padding-top: 0;
   align-self: center;
-  justify-self: flex-start;
+  justify-self: flex-end;
   display: flex;
+  padding-right: 4%;
+
 }
 
 .designerskills {
   grid-area: designerskills;
-  margin-top: -1.5rem;
+  justify-self: flex-end;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
 }
 
 .icon {
@@ -58,7 +63,8 @@
 
 .photo {
   grid-area: photo;
-  margin-top: -1.5rem;
+  margin-top: 1rem;
+  margin-right: 5%;
 }
 
 .product {
@@ -66,11 +72,14 @@
   align-self: center;
   justify-self: flex-start;
   display: flex;
+  margin: 0 auto;
 }
 
 .productskills {
   grid-area: productskills;
-  margin-top: -1.5rem;
+  justify-self: center;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
 }
 
 .skills {
@@ -87,6 +96,7 @@
   display: flex;
   align-self: center;
   justify-self: flex-start;
+  margin-left: 5%;
 }
 
 .software > icon {
@@ -95,7 +105,9 @@
 
 .softwareskills {
   grid-area: softwareskills;
-  margin-top: -1.5rem;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  margin-left: 5%;
 }
 
 ul li {

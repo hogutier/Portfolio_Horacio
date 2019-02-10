@@ -4,6 +4,7 @@ import propertyVaultStyles from '../styles/propertyvault.module.css'
 
 import DesktopHomeImage from '../components/imgDesktopHome'
 import MobileHomeImage from '../components/imgMobileHome'
+import Button from '../components/button'
 import iconOverview from '../images/iconOverview.png'
 import iconBranding from '../images/iconBranding.png'
 import iconDiscovery from '../images/iconDiscovery.png'
@@ -44,7 +45,7 @@ export default () => (
           store, access and share property & tenant information in one place.
         </p>
         <a href="https://invis.io/Z6OXOYQHSVP">
-          <button>View Prototype</button>
+          <Button name="View Prototype" />
         </a>
         <p />
         <div className={propertyVaultStyles.prototypesContainer}>
@@ -156,61 +157,75 @@ export default () => (
       </article>
 
       <article className={propertyVaultStyles.discovery}>
-        <img src={iconDiscovery} alt="Discovery Phase" />
-        <h2>Discovery Phase</h2>
-        <h3>User Research</h3>
-        <p>
-          Before diving into any sketches or design tools, it was very important
-          to become familiar with our potential users and better understand
-          their needs. Below are the key survey takeaways:
-        </p>
-        <ul>
-          <li>
-            72% of participants believed the most important features are:
-            <ul>
-              <li>Sharing files with others.</li>
-              <li>Controlling who has access to view/edit files.</li>
-              <li>Storing files/folders & organizing them by category.</li>
-              <li>
-                Accessing content from anywhere with an Internet connection.
-              </li>
-            </ul>
-          </li>
-          <li>
-            90% of participants will use a Desktop or Laptop to access the
-            online storage service.
-          </li>
-          <li>
-            95% of participants liked Email as the preferred method to share
-            files/folders.
-          </li>
-          <li>
-            79% of participants liked the idea of using a Property Management
-            Cloud Storage Service
-          </li>
-        </ul>
-        <a href="https://docs.google.com/forms/d/1gV6LB6otU2QJBnmYf1cgYuiJhQyCauzxu3mzxNWFg-Q/edit?usp=sharing">
-          <button>View Survey</button>
-        </a>
-        <h3>Competitive Analysis</h3>
-        <img src={CompetitiveAnalysis} alt="Competitive Analysis Chart" />
-        <p>To view more details, click on the button below:</p>
-        <a href="https://drive.google.com/open?id=16m4NiOa0KVsNUPanjVzKXqxtm5H-eBKxlwqL_4nDsYs">
-          <button>SWOT Analysis</button>
-        </a>
-        <h3>User Personas</h3>
-        <p>
-          After analyzing the user survey results, I was able to validate many
-          assumptions, understand user demographics and preferences of users in
-          our target market. With this information, the following user personas
-          were born:
-        </p>
-        <img src={PersonaA} alt="User Persona Tom" />
-        <img src={PersonaB} alt="User Persona Mike" />
+        <div className={propertyVaultStyles.discoverytitle}>
+          <img src={iconDiscovery} alt="Discovery Phase" />
+          <h2>Discovery Phase</h2>
+        </div>
+        <div className={propertyVaultStyles.discoveryur}>
+          <h3>User Research</h3>
+          <p>
+            Before diving into any sketches or design tools, it was very
+            important to become familiar with our potential users and better
+            understand their needs. Below are the key survey takeaways:
+          </p>
+          <ul>
+            <li>
+              72% of participants believed the most important features are:
+              <ul>
+                <li>Sharing files with others.</li>
+                <li>Controlling who has access to view/edit files.</li>
+                <li>Storing files/folders & organizing them by category.</li>
+                <li>
+                  Accessing content from anywhere with an Internet connection.
+                </li>
+              </ul>
+            </li>
+            <li>
+              90% of participants will use a Desktop or Laptop to access the
+              online storage service.
+            </li>
+            <li>
+              95% of participants liked Email as the preferred method to share
+              files/folders.
+            </li>
+            <li>
+              79% of participants liked the idea of using a Property Management
+              Cloud Storage Service
+            </li>
+          </ul>
+          <a href="https://docs.google.com/forms/d/1gV6LB6otU2QJBnmYf1cgYuiJhQyCauzxu3mzxNWFg-Q/edit?usp=sharing">
+            <Button name="View Survey" />
+          </a>
+        </div>
+
+        <div className={propertyVaultStyles.discoveryca}>
+          <h3>Competitive Analysis</h3>
+          <img src={CompetitiveAnalysis} alt="Competitive Analysis Chart" />
+          <p>To view more details, click on the button below:</p>
+          <a href="https://drive.google.com/open?id=16m4NiOa0KVsNUPanjVzKXqxtm5H-eBKxlwqL_4nDsYs">
+            <Button name="SWOT Analysis" />
+          </a>
+        </div>
+        <div className={propertyVaultStyles.discoveryuptitle}>
+          <h3>User Personas</h3>
+          <p>
+            After analyzing the user survey results, I was able to validate many
+            assumptions, understand user demographics and preferences of users
+            in our target market. With this information, the following user
+            personas were born:
+          </p>
+        </div>
+        <div className={propertyVaultStyles.discoveryupimages}>
+          <img src={PersonaA} alt="User Persona Tom" />
+          <img src={PersonaB} alt="User Persona Mike" />
+        </div>
       </article>
 
       <article className={propertyVaultStyles.branding}>
-        <img src={iconBranding} alt="Branding & Identity" />
+        <div className={propertyVaultStyles.brandingicon}>
+          <img src={iconBranding} alt="Branding & Identity" />
+        </div>
+
         <h2>Branding & Identity</h2>
         <h3>The Logo</h3>
         <p>
@@ -235,7 +250,9 @@ export default () => (
 
       <article className={propertyVaultStyles.ia}>
         <img src={iconIA} alt="Information Architecture" />
-        <h2>Information Architecture</h2>
+        <h2 className={propertyVaultStyles.iatitle}>
+          Information Architecture
+        </h2>
         <h3>User Stories</h3>
         <p>
           Below are the user flows for our Minimum Viable Product (MVP) that
@@ -253,7 +270,7 @@ export default () => (
           </li>
         </ul>
         <a href="https://drive.google.com/open?id=1GodrqA5JKi_Cag9u7k5ctZ9m3kGfXpBvCmyBpCIjI6M">
-          <button>All Stories</button>
+          <Button name="All Stories" />
         </a>
         <h3>User Flows</h3>
         <p>
@@ -270,7 +287,7 @@ export default () => (
         <img src={RolesAccessProcess} alt="Configure roles & access control" />
 
         <a href="https://drive.google.com/file/d/1lKziE9i_QQKT_BM5vVl5dsAilqEhreZZ/view">
-          <button>All User Flows</button>
+          <Button name="All User Flows" />
         </a>
 
         <h3>Sitemap</h3>
@@ -316,21 +333,21 @@ export default () => (
         </div>
 
         <a href="https://app.usabilityhub.com/tests/1acf51d436ec/results/d1166ccf5bb8">
-          <button>See Test Details</button>
+          <Button name="See Test Details" />
         </a>
         <h4>Desktop Dashboard Home</h4>
         <div>
           <img src={ABDesktopHome} alt="Desktop Dashboard Home A/B Test" />
         </div>
         <a href="https://app.usabilityhub.com/tests/bb420b68792a/results/8992c776c275">
-          <button>See Test Details</button>
+          <Button name="See Test Details" />
         </a>
         <h4>Mobile Dashboard Home</h4>
         <div>
           <img src={ABMobileHome} alt="Mobile Dashboard Home A/B Test" />
         </div>
         <a href="https://app.usabilityhub.com/tests/cf94a87464a0/results/f4f2e46afa9f">
-          <button>See Test Details</button>
+          <Button name="See Test Details" />
         </a>
       </article>
       <article className={propertyVaultStyles.conclusion}>
@@ -351,21 +368,23 @@ export default () => (
           types of users in the real estate industry. Below are images that show
           the evolution of the web application throughout the project:
         </p>
-        <img
-          className={propertyVaultStyles.homePageSketch}
-          src={HomepageSketch}
-          alt="Pen & Paper Sketch of Homepage"
-        />
-        <img
-          className={propertyVaultStyles.homePageWireframe}
-          src={HomepageWireframe}
-          alt="Wireframe of Homepage"
-        />
-        <img
-          className={propertyVaultStyles.homePageMockup}
-          src={HomepageMockup}
-          alt="Mockup of Homepage"
-        />
+        <div className={propertyVaultStyles.conclusionimages}>
+          <img
+            className={propertyVaultStyles.homePageSketch}
+            src={HomepageSketch}
+            alt="Pen & Paper Sketch of Homepage"
+          />
+          <img
+            className={propertyVaultStyles.homePageWireframe}
+            src={HomepageWireframe}
+            alt="Wireframe of Homepage"
+          />
+          <img
+            className={propertyVaultStyles.homePageMockup}
+            src={HomepageMockup}
+            alt="Mockup of Homepage"
+          />
+        </div>
       </article>
     </section>
   </Layout>

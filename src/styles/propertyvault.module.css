@@ -3,20 +3,64 @@
   color: #191919;
   background-color: #f2f2f2;
   grid-area: branding;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.branding p {
+  width: 60%;
+}
+
+.brandingicon {
+  margin-top: 2rem;
 }
 
 .conclusion {
   color: #191919;
   background-color: #f2f2f2;
   grid-area: conclusion;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  padding-top: 1rem;
+  margin-bottom: .8rem;
+  padding-bottom: 1rem;
+  z-index: 2;
+}
+
+.conclusion h2 {
+  margin-top: .2rem;
+}
+
+.conclusion p {
+  width: 60%;
+  text-align: left;
+}
+
+.conclusionimages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+  width: 70%;
 }
 
 .deliverables {
   grid-area: deliverables;
   padding-top: 0;
   align-self: center;
-  justify-self: flex-start;
+  justify-self: center;
   display: flex;
+  padding-right: 20%;
 }
 
 .deliverables h3 {
@@ -25,6 +69,7 @@
 
 .deliverableslist {
   grid-area: deliverableslist;
+  justify-self: center;
   margin-top: -3rem;
 }
 
@@ -32,8 +77,10 @@
   grid-area: design;
   padding-top: 0;
   align-self: center;
-  justify-self: flex-start;
+  justify-self: center;
   display: flex;
+  margin-left: 3rem;
+  padding-right: 17%;
 }
 
 .design h3 {
@@ -42,7 +89,9 @@
 
 .designroles {
   grid-area: designroles;
+  justify-self: center;
   margin-top: -3rem;
+  margin-left: 3rem;
 }
 
 .desktopHomeImage {
@@ -53,9 +102,110 @@
 }
 
 .discovery {
+  display: grid;
+  grid-area: discovery;
+  grid-template-columns: 3fr 6fr 3fr;
+  grid-auto-rows: minmax(.1rem, auto);
+  grid-gap: 1rem 1rem;
+  grid-template-areas:
+  ".  discoverytitle  ."
+  ".  discoveryur     ."
+  ".  discoveryca     ."
+  ".  discoveryuptitle     ."
+  "discoveryupimages discoveryupimages discoveryupimages";
   color: #B6B6B6;
   background-color: #191919;
-  grid-area: discovery;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.discovery img {
+  display: block;
+}
+
+.discovery h2 {
+  width: 100%;
+}
+
+.discovery p {
+  text-align: left;
+  width: 100%;
+
+}
+
+.discoverytitle {
+  grid-area: discoverytitle;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.discoverytitle h2 {
+  margin-top: -1rem;
+}
+
+.discoveryur {
+  grid-area: discoveryur;
+  align-self: center;
+  justify-self: center;
+  text-align: left;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -1rem;
+}
+
+.discoveryca {
+  grid-area: discoveryca;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.discoveryca p {
+  text-align: center;
+}
+
+.discoveryupimages {
+  grid-area: discoveryupimages;
+  align-self: center;
+  justify-self: center;
+  text-align: left;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.discoveryupimages img {
+  display: block;
+  width: 40%;
+}
+
+.discoveryuptitle {
+  grid-area: discoveryuptitle;
+  align-self: center;
+  justify-self: center;
+  text-align: left;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.discoveryuptitle p {
+  margin-top: -1rem;
 }
 
 .duration {
@@ -72,7 +222,7 @@
 
 .duration ul {
   margin-top: -1rem;
-
+  width: 100%;
 }
 
 .durationtools {
@@ -98,10 +248,35 @@
   height: 35vh;
 }
 
+
+
 .ia {
   color: #B6B6B6;
   background-color: #191919;
   grid-area: ia;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-top: 1rem;
+}
+
+.ia p {
+  width: 60%;
+}
+
+.ia ul {
+  margin-bottom: 0rem;
+}
+
+.ia h3 {
+  margin-top: 1rem;
+}
+
+.iatitle {
+  margin-top: -2rem;
+  margin-bottom: 1rem;
 }
 
 .intro {
@@ -124,7 +299,7 @@
     text-align: center;
     align-self: center;
     justify-self: center;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto 2rem auto;
 }
 
 .overview {
@@ -139,6 +314,7 @@
   color: #191919;
   background-color: #f2f2f2;
   margin-top: -1rem;
+  margin-bottom: 1rem;
   justify-content: center;
   align-items: flex-start;
 }
@@ -237,6 +413,7 @@
 
 .tools ul {
   margin-top: -1rem;
+  width: 100%;
 }
 
 

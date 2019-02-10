@@ -20,7 +20,7 @@ const typography = new Typography({
     },
     h4: {
       fontFamily: ['Montserrat', 'sans-serif'].join(','),
-      ...adjustFontSizeTo('24px')
+      ...adjustFontSizeTo('22px')
     },
     h5: {
       fontFamily: ['Montserrat', 'sans-serif'].join(','),
@@ -32,7 +32,7 @@ const typography = new Typography({
     },
     p: {
       fontFamily: ['Montserrat', 'sans-serif'].join(','),
-      ...adjustFontSizeTo('18px')
+      ...adjustFontSizeTo('16px')
     }
   })
 })
