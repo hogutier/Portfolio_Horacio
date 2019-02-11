@@ -47,22 +47,38 @@ const Layout = ({ children }) => (
           <div className={footerStyles.methods}>
             <div className={footerStyles.message}>
               <Link to="/contact/">
-                <img src={logoMessage} alt="Message" />
+                <img
+                  className={footerStyles.social}
+                  src={logoMessage}
+                  alt="Message"
+                />
               </Link>
             </div>
             <div className={footerStyles.linkedin}>
               <a href="https://www.linkedin.com/in/hogutier/">
-                <img src={logoLinkedin} alt="Linkedin" />
+                <img
+                  className={footerStyles.social}
+                  src={logoLinkedin}
+                  alt="Linkedin"
+                />
               </a>
             </div>
             <div className={footerStyles.twitter}>
               <a href="https://twitter.com/Horacio_Gtz">
-                <img src={logoTwitter} alt="Twitter" />
+                <img
+                  className={footerStyles.social}
+                  src={logoTwitter}
+                  alt="Twitter"
+                />
               </a>
             </div>
             <div className={footerStyles.github}>
               <a href="https://github.com/hogutier">
-                <img src={logoGithub} alt="github" />
+                <img
+                  className={footerStyles.social}
+                  src={logoGithub}
+                  alt="github"
+                />
               </a>
             </div>
           </div>

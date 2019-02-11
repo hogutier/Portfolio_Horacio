@@ -12,7 +12,7 @@ a {
 }
 
 .designerhero > p {
-  margin-top: -1rem;
+  margin-top: -1.5rem;
 }
 
 .developer {
@@ -24,7 +24,7 @@ a {
 }
 
 .developer > p {
-  margin-top: -1rem;
+  margin-top: -1.5rem;
 }
 
 .featuredprojects {
@@ -42,7 +42,7 @@ h3 {
 .heroimage {
   grid-area: heroimage;
   margin-bottom: 1rem;
-  width: 40%;
+  width: 50%;
   justify-self: center;
   align-self: center;
   margin-top: -1.5rem;
@@ -87,7 +87,7 @@ p {
 }
 
 .productmanager > p {
-  margin-top: -1rem;
+  margin-top: -1.5rem;
 }
 
 .project1 {
@@ -131,8 +131,48 @@ p {
 }
 
 
+@media only screen and (max-width: 414px) {
+
+html {
+  margin: 0 auto;
+}
+
+  .productmanager > p {
+    display: none;
+
+  }
+  .designerhero > p {
+    display: none;
+  }
+  .developer > p {
+    display: none;
+  }
+  .welcome {
+    font-size: 1.6rem;
+  }
+
+}
 
 
+@media only screen and (max-width: 768px) {
+
+.productmanager p {
+  font-size: 14px;
+}
+
+.designerhero p {
+  font-size: 14px;
+}
+
+.developer p {
+  font-size: 14px;
+}
+
+.heroimage {
+  width: 80%;
+}
+
+}
 
 
 

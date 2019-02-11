@@ -65,7 +65,42 @@
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 768px) {
+  html {
+    width: 100%;
+    margin: 0 auto;
 
+  }
+
+  .headerContainer {
+    display: grid;
+    grid-template-columns: 3fr .5fr 8.5fr;
+    grid-auto-rows: minmax(.1rem, auto);
+    grid-gap: 0rem 0rem;
+    grid-template-areas:
+    "logo        name        pages"
+    "yellowLine  yellowLine  yellowLine";
+    padding-top: .5rem;
+    margin: 0 auto;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .logo {
+    align-self: center;
+    justify-self: flex-start;
+    padding-left: .5rem;
+    width: 61px;
+  }
+
+  .link {
+    font-size: 16px;
+
+  }
+
+}
 
 
 

@@ -44,8 +44,42 @@
 .linkedin, .twitter, .github, .message{
   padding-left: 3.5rem;
   padding-right: 3.5rem;
+  flex-shrink: 0;
 }
 
+.social {
+  flex-shrink: .5;
+  width: 80%;
+}
+
+@media only screen and (max-width: 414px) {
+  html {
+    font-size: 100%;
+  }
+
+  .connect h2 {
+    font-size: 1.6rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .social {
+    width: 50%;
+
+  }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 100%;
+  }
+
+  .social {
+    width: 70%;
+  }
+}
 
 
 

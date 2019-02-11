@@ -632,13 +632,12 @@ pre tt:after {
 
 }
 
-html body {
+html {
   margin: 0 auto;
-  padding: 0;
 }
 
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
+html body {
+  margin: 0 auto;
 }
+
+
