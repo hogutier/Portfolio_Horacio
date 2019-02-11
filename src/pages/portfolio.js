@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import portfolioStyles from '../styles/portfolio.module.css'
 import iconRealEstate from '../images/iconRealEstate.png'
 
-/*  Will include commented sections below when these case studies are ready to be published 
+/*  Will include commented sections below when these case studies are ready to be published
  import iconBusyBus from '../images/iconBusyBus.png'
 import iconPortfolio from '../images/iconPortfolio.png' */
 
@@ -23,7 +23,7 @@ const PortfolioPage = () => (
         </Link>
       </div>
 
-{/*  Will include commented sections below when these case studies are ready to be published */}
+      {/*  Will include commented sections below when these case studies are ready to be published */}
       {/* <div className={portfolioStyles.busyBus}>
         <Link to="/propertyvault/">
           <img src={iconBusyBus} alt="Busy Bus Project" />
