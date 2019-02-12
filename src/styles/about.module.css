@@ -80,6 +80,7 @@
   justify-self: center;
   margin-top: -2rem;
   margin-bottom: 2rem;
+  display: flex;
 }
 
 .skills {
@@ -108,6 +109,7 @@
   margin-top: -2rem;
   margin-bottom: 2rem;
   margin-left: 5%;
+  display: flex;
 }
 
 ul li {
@@ -125,4 +127,110 @@ ul li::before {
 .yellowLine {
   grid-area: yellowLine;
   margin-top: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .about p {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .about h2 {
+    margin-top: -1rem;
+    margin-bottom: .5rem;
+    text-align: center;
+  }
+
+  .aboutContainer {
+    grid-gap: .5rem .5rem;
+    grid-template-areas:
+    ".              photo         ."
+    "about          about         about"
+    "about          about         about"
+    "yellowLine     yellowLine    yellowLine"
+    "skills         skills        skills"
+    "designer       product       software"
+    "designerskills productskills softwareskills";
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .designer {
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  .designer h3 {
+    font-size: 18px;
+  }
+
+  .designer img {
+    padding: 0;
+    margin-right: .5rem;
+  }
+
+  .designerskills {
+    justify-self: flex-start;
+    padding-left: .5rem;
+    padding-top: .5rem;
+  }
+
+  .designerskills ul {
+    font-size: 14px;
+  }
+
+  .paragraph {
+    padding-bottom: 1rem;
+  }
+
+  .photo {
+    width: 100%;
+    margin: 1rem auto -1rem auto-;
+  }
+  .product {
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  .product h3 {
+    font-size: 18px;
+  }
+
+  .product img {
+    padding: 0;
+    margin-right: .5rem;
+  }
+
+  .productskills ul {
+    justify-self: flex-start;
+    font-size: 14px;
+    padding-left: .5rem;
+    padding-top: .5rem;
+  }
+
+  .software {
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  .software h3 {
+    font-size: 18px;
+  }
+
+  .softwareskills {
+    justify-self: flex-start;
+    padding-left: .5rem;
+    padding-top: .5rem;
+  }
+
+  .softwareskills ul {
+    font-size: 14px;
+  }
+
+}
+
+@media only screen and (max-width: 414px) {
+
+
 }

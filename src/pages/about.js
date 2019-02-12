@@ -26,7 +26,7 @@ export default () => (
           Mexico.
         </p>
         <br />
-        <p>
+        <p className={aboutStyles.paragraph}>
           Throughout my career, I’ve lead cross-functional teams to develop
           various software and service products from concept to launch. I’ve
           also been directly responsible for delivering on the financial goals
