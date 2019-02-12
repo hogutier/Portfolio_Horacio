@@ -8,7 +8,7 @@ a {
   justify-self: center;
   align-self: center;
   padding-top: 1rem;
-  margin-left: 5%;
+  /* margin-left: 5%; */
 }
 
 .designerhero > p {
@@ -20,7 +20,7 @@ a {
   justify-self: center;
   align-self: center;
   padding-top: 1rem;
-  margin-right: 5%;
+  /* margin-right: 5%; */
 }
 
 .developer > p {
@@ -71,7 +71,7 @@ img {
   align-items: center;
   justify-content: center;
   align-content: center;
-  margin-top: -1.5rem;
+  /* margin-top: -1.5rem; */
 }
 
 p {
@@ -130,48 +130,85 @@ p {
   margin-bottom: 0rem;
 }
 
+@media only screen and (max-width: 768px) {
 
-@media only screen and (max-width: 414px) {
+  .productmanager p {
+    font-size: 13px;
+  }
 
-html {
-  margin: 0 auto;
+  .designerhero p {
+    font-size: 13px;
+  }
+
+  .developer p {
+    font-size: 13px;
+  }
+
+  .heroimage {
+    width: 80%;
+  }
+
+  .welcome {
+    margin-top: -1.5rem;
+  }
+
 }
 
-  .productmanager > p {
-    display: none;
-
-  }
+@media only screen and (max-width: 414px) {
   .designerhero > p {
     display: none;
   }
   .developer > p {
     display: none;
   }
-  .welcome {
-    font-size: 1.6rem;
+
+  .designerhero > h3 {
+    font-size: 18px;
   }
 
-}
+  .developer > h3 {
+    font-size: 18px;
+  }
 
+  .featuredprojects h2 {
+    font-size: 20px;
+  }
 
-@media only screen and (max-width: 768px) {
+  .indexBodyContainer {
+    grid-gap: .2rem .2rem;
+  }
 
-.productmanager p {
-  font-size: 14px;
-}
+  .productmanager > p {
+    display: none;
+  }
 
-.designerhero p {
-  font-size: 14px;
-}
+  .productmanager > h3 {
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
 
-.developer p {
-  font-size: 14px;
-}
+  .project1 h3 {
+    font-size: 20px;
+  }
 
-.heroimage {
-  width: 80%;
-}
+  .project1 p {
+    font-size: 16px;
+    margin-top: -25px;
+  }
 
+  .project1 img {
+    margin-top: -1rem;
+  }
+
+  .project1 {
+    margin-bottom: -10px;
+  }
+
+  .welcome {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+  }
 }
 
 

@@ -1,39 +1,37 @@
 .headerContainer {
   display: grid;
-  grid-template-columns: 1fr 4.5fr 6.5fr;
+  grid-template-columns: 1fr 4fr 6.8fr .2fr;
   grid-auto-rows: minmax(.1rem, auto);
-  grid-gap: 0rem 0rem;
+  grid-gap: 0rem 1rem;
   grid-template-areas:
-  "logo        name        pages"
-  "yellowLine  yellowLine  yellowLine";
-  padding-top: .5rem;
+  "logo        name        pages      ."
+  "yellowLine  yellowLine  yellowLine yellowLine";
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 .aboutnav {
-  align-self: center;
-  justify-self: center;
   padding-right: 2rem;
 }
 
-.contact {
-  align-self: center;
-  justify-self: center;
+.logo a {
+  height: 0px;
 }
 
 .logo {
   grid-area: logo;
-  align-self: center;
-  justify-self: center;
   color: #e2be1c;
   text-decoration: none;
-  margin-bottom: -1.2rem;
-  margin-left: 2.5%;
+  align-self: center;
+  justify-self: flex-end;
+  margin-bottom: -.7rem;
+  /* margin-left: 2.5%; */
 }
 
 .name {
   grid-area: name;
-  align-self: center;
-  justify-self: flex-start;
-  padding-top: .8rem;
+  margin-bottom: -.4rem;
 }
 
 .link {
@@ -46,14 +44,14 @@
   grid-area: pages;
   justify-content: flex-end;
   align-items: center;
-  align-content: center;
-  padding-top: .8rem;
-  margin-right: 3%;
+  margin-bottom: -.4rem;
+
+
+  /* padding-top: .8rem; */
+  /* margin-right: 3%; */
 }
 
 .portfolio {
-  align-self: center;
-  justify-self: center;
   padding-right: 2rem;
 }
 
@@ -61,46 +59,69 @@
   grid-area: yellowLine;
   background-color: #E2BE1C;
   height: .1rem;
-  width: 97%;
+  width: 100%;
   margin: 0 auto;
+
 }
 
 @media only screen and (max-width: 768px) {
-  html {
-    width: 100%;
-    margin: 0 auto;
-
-  }
 
   .headerContainer {
-    display: grid;
-    grid-template-columns: 3fr .5fr 8.5fr;
-    grid-auto-rows: minmax(.1rem, auto);
-    grid-gap: 0rem 0rem;
-    grid-template-areas:
-    "logo        name        pages"
-    "yellowLine  yellowLine  yellowLine";
-    padding-top: .5rem;
-    margin: 0 auto;
-  }
-
-  .name {
-    display: none;
+    grid-gap: 0rem .3rem;
   }
 
   .logo {
     align-self: center;
     justify-self: flex-start;
-    padding-left: .5rem;
-    width: 61px;
+    /* padding-left: .5rem; */
+  }
+
+  .logo img {
+    width: 50px;
   }
 
   .link {
     font-size: 16px;
+  }
 
+  .portfolio {
+    padding-right: 1rem;
+  }
+
+  .aboutnav {
+    padding-right: 1rem;
   }
 
 }
+
+@media only screen and (max-width: 414px) {
+  .headerContainer {
+  grid-template-columns: .1fr 5.9fr 5.9fr .1fr;
+  grid-auto-rows: minmax(.1rem, auto);
+  grid-gap: 0rem 1rem;
+  grid-template-areas:
+  ". logo        pages      ."
+  "yellowLine  yellowLine  yellowLine yellowLine";
+  }
+  .name {
+    display: none;
+  }
+
+  .logo img {
+    width: 40px;
+  }
+
+  .portfolio {
+    padding-right: .3rem;
+  }
+
+  .aboutnav {
+    padding-right: .3rem;
+  }
+
+}
+
+
 
 
 

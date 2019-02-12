@@ -42,8 +42,6 @@
 }
 
 .linkedin, .twitter, .github, .message{
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
   flex-shrink: 0;
 }
 
@@ -52,34 +50,70 @@
   width: 80%;
 }
 
-@media only screen and (max-width: 414px) {
-  html {
-    font-size: 100%;
-  }
-
-  .connect h2 {
-    font-size: 1.6rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-  }
-
-  .social {
-    width: 50%;
-
-  }
-
-}
-
-
 @media only screen and (max-width: 768px) {
-  html {
-    font-size: 100%;
-  }
-
   .social {
     width: 70%;
   }
 }
+
+@media only screen and (max-width: 414px) {
+  .connect h2 {
+    font-size: 20px;
+    margin-top: -1rem;
+    margin-bottom: 0rem;
+  }
+
+  .date {
+    margin-top: 0px;
+
+  }
+
+  .date p {
+    font-size: 12px;
+  }
+
+  .designerhero > p {
+    display: none;
+  }
+  .developer > p {
+    display: none;
+  }
+
+  .designerhero > h3 {
+    font-size: 18px;
+  }
+
+  .developer > h3 {
+    font-size: 18px;
+  }
+
+  .featuredprojects h2 {
+    font-size: 20px;
+  }
+
+  .indexBodyContainer {
+    grid-gap: .2rem .2rem;
+  }
+
+  .productmanager > p {
+    display: none;
+  }
+
+  .productmanager > h3 {
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+
+  .project1 h3 {
+    font-size: 20px;
+  }
+
+  .social {
+    width: 50%;
+  }
+
+}
+
 
 
 
