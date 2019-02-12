@@ -30,6 +30,7 @@
   color: #B6B6B6;
   border-width: .1rem;
   border-radius: 3px;
+  text-align: left;
 }
 
 .field_full {
@@ -39,15 +40,18 @@
   color: #B6B6B6;
   border-width: .1rem;
   border-radius: 3px;
+  text-align: left;
 }
 
 .first_name, .last_name, .phone_number, .email, .description {
   padding-bottom: 1rem;
-  width: 49%
+  width: 49%;
+  text-align: left;
 }
 
 .service, .startDate {
   width: 100%;
+  text-align: left;
 }
 
 .form {
@@ -63,8 +67,8 @@
   grid-area: formitems;
   justify-self: center;
   align-self: space-between;
-  text-align: space;
-  width: 60%;
+  text-align: center;
+  width: 50%;
 
 }
 
@@ -86,6 +90,44 @@ display: block;
   margin-top: -1rem;
 }
 
+
+
+@media only screen and (max-width: 768px) {
+  .formitems {
+    width: 70%;
+  }
+
+  .worktogether {
+    width: 70%;
+  }
+
+  .worktogether h2 {
+    font-size: 24px;
+  }
+
+  .first_name, .last_name, .phone_number, .email, .description {
+    padding-bottom: 1rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .service, .startDate {
+    width: 100%;
+    text-align: left;
+  }
+
+
+}
+
+@media only screen and (max-width: 414px) {
+  .startDate {
+    padding-top: 1rem;
+  }
+  .buttonholder{
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+  }
+}
 
 
 
