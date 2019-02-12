@@ -1,4 +1,7 @@
-
+a {
+  color: #B6B6B6;
+  text-decoration: none;
+}
 
 .busyBus {
   grid-area: busyBus;
@@ -24,7 +27,9 @@
   grid-auto-rows: minmax(.1rem, auto);
   grid-gap: 1rem 1rem;
   grid-template-areas:
-  ". propertyVault .";
+  ". . ."
+  "propertyVault propertyVault propertyVault"
+  ". . .";
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -47,3 +52,4 @@
   margin-top: -1rem;
   margin-bottom: 1.5rem;
 }
+
