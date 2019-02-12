@@ -51,7 +51,7 @@
   justify-content: space-evenly;
   align-items: center;
   justify-items: center;
-  width: 70%;
+  width: 90%;
 }
 
 .deliverables {
@@ -234,21 +234,19 @@
 }
 
 .homePageMockup {
-  width: 20vw;
-  height: 35vh;
+  width: 25%;
+  height: 20rem;
 }
 
 .homePageSketch {
-  width: 20vw;
-  height: 35vh;
+  width: 25%;
+  height: 20rem;
 }
 
 .homePageWireframe {
-  width: 20vw;
-  height: 35vh;
+  width: 25%;
+  height: 20rem;
 }
-
-
 
 .ia {
   color: #B6B6B6;
@@ -416,6 +414,26 @@
   width: 100%;
 }
 
+
+@media only screen and (max-width: 1024px) {
+
+  .flowChart{
+    width: 96%;
+    margin: 0 auto;
+  }
+
+  .siteMap{
+    width: 96%;
+    margin: 0 auto;
+  }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+}
 
 
 

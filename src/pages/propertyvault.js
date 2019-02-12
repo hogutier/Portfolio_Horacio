@@ -280,11 +280,22 @@ export default () => (
           user stories:{' '}
         </p>
         <h4>Sign up process</h4>
-        <img src={SignUpProcess} alt="Sign Up Process" />
+        <div className={propertyVaultStyles.flowChart}>
+          <img src={SignUpProcess} alt="Sign Up Process" />
+        </div>
+
         <h4>View file/folder shared with tenant</h4>
-        <img src={ViewFilesProcess} alt="View Files/Folders Process" />
+        <div className={propertyVaultStyles.flowChart}>
+          <img src={ViewFilesProcess} alt="View Files/Folders Process" />
+        </div>
+
         <h4>Configure roles & access control</h4>
-        <img src={RolesAccessProcess} alt="Configure roles & access control" />
+        <div className={propertyVaultStyles.flowChart}>
+          <img
+            src={RolesAccessProcess}
+            alt="Configure roles & access control"
+          />
+        </div>
 
         <a href="https://drive.google.com/file/d/1lKziE9i_QQKT_BM5vVl5dsAilqEhreZZ/view">
           <Button name="All User Flows" />
@@ -296,7 +307,10 @@ export default () => (
           the research we performed, user stories and user flows, in this next
           step I created the following sitemap:
         </p>
-        <img src={Sitemap} alt="Sitemap" />
+        <div className={propertyVaultStyles.siteMap}>
+          <img src={Sitemap} alt="Sitemap" />
+        </div>
+
         <h3>Pen & Paper Wireframes</h3>
         <p>
           This phase of the project was the first attempt at visualizing all of
