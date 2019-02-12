@@ -173,6 +173,8 @@ ul li::before {
   .designerskills {
     justify-self: flex-start;
     padding-left: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
 
   }
 
@@ -202,11 +204,16 @@ ul li::before {
     margin-right: .5rem;
   }
 
+  .productskills {
+    margin-bottom: 1rem;
+  }
+
   .productskills ul {
     justify-self: flex-start;
     font-size: 14px;
     margin-left: .5rem;
     padding-top: .5rem;
+    padding-bottom: 0;
   }
 
   .software {
@@ -219,8 +226,8 @@ ul li::before {
 
   .softwareskills {
     justify-self: flex-start;
-
     padding-top: .5rem;
+    margin-bottom: 1rem;
   }
 
   .softwareskills ul {
