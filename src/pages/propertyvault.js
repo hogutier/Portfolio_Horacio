@@ -233,19 +233,27 @@ export default () => (
           looking for and stand for with their brand, I started with the
           following sketches for their logo:
         </p>
-        <img src={LogoSketches} alt="Logo Sketches" />
+        <div className={propertyVaultStyles.brandimages}>
+          <img src={LogoSketches} alt="Logo Sketches" />
+        </div>
+
         <p>
           Once the client showed a preference on what type of logo they liked,
           the following refined options were created:
         </p>
-        <img src={LogoRefined} alt="Logo Refined Mockups" />
+        <div className={propertyVaultStyles.brandimages}>
+          <img src={LogoRefined} alt="Logo Refined Mockups" />
+        </div>
+
         <h3>Brand Style Guide</h3>
         <p>
           After sketching and defining the target market for this product and
           the feelings the client wanted to convey, the following style guide
           was created:
         </p>
-        <img src={BrandStyleGuide} alt="Brand Style Guide" />
+        <div className={propertyVaultStyles.brandimages}>
+          <img src={BrandStyleGuide} alt="Brand Style Guide" />
+        </div>
       </article>
 
       <article className={propertyVaultStyles.ia}>
@@ -318,13 +326,19 @@ export default () => (
           its best, the following wireframes were created with pen & paper to
           figure out the best possible layouts to apply to this product:
         </p>
-        <img src={PenPaperWireframes} alt="Pen & Paper Wireframes" />
+        <div className={propertyVaultStyles.iaimages}>
+          <img src={PenPaperWireframes} alt="Pen & Paper Wireframes" />
+        </div>
+
         <h3>Digital Wireframes</h3>
         <p>
           With a better idea on which sketch layouts worked best, the following
           digital wireframes were created using Balsamiq:
         </p>
-        <img src={DigitalWireframes} alt="Digital Wireframes" />
+        <div className={propertyVaultStyles.iaimages}>
+          <img src={DigitalWireframes} alt="Digital Wireframes" />
+        </div>
+
         <h3>Prototypes</h3>
         <p>
           Using Figma & InVision and referencing the brand style guide, the

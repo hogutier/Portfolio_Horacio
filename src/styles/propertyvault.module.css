@@ -431,8 +431,65 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .brandimages{
+    width: 96%;
+    margin: 0 auto;
+  }
 
+ .design h3 {
+   font-size: 16px;
+ }
 
+ .designroles {
+    padding-top: 1rem;
+
+ }
+ .designroles ul {
+  font-size: 14px;
+  }
+
+ .deliverables h3 {
+  font-size: 16px;
+  }
+  .deliverableslist {
+    margin-bottom: 1rem;
+  }
+  .deliverableslist ul {
+    font-size: 14px;
+  }
+
+  .discovery {
+    grid-template-columns: .5fr 11fr .5fr;
+    grid-template-areas:
+    ".  discoverytitle  ."
+    ".  discoveryur     ."
+    ".  discoveryca     ."
+    ".  discoveryuptitle     ."
+    "discoveryupimages discoveryupimages discoveryupimages";
+  }
+
+  .duration {
+    margin-top: -1rem;
+  }
+  .duration h3 {
+    font-size: 16px;
+  }
+
+  .duration ul {
+    font-size: 14px;
+
+  }
+
+  .iaimages{
+    width: 96%;
+    margin: 0 auto;
+  }
+  .tools h3 {
+    font-size: 16px;
+  }
+  .tools ul {
+    font-size: 14px;
+  }
 }
 
 
