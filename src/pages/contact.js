@@ -134,7 +134,7 @@ export default class Contact extends React.Component {
                 </p>
               </div>
 
-              <div>
+              <div className={contactStyles.pulldown}>
                 <label className={contactStyles.service} htmlFor="service">
                   Type of Service
                 </label>
@@ -163,12 +163,15 @@ export default class Contact extends React.Component {
                 </select>
               </div>
 
-              <div>
+              <div className={contactStyles.pulldown}>
                 <label className={contactStyles.startDate} htmlFor="startDate">
                   Project Start Date
                 </label>
                 <select
-                  className={contactStyles.field_divided}
+                  className={[
+                    contactStyles.field_divided,
+                    contactStyles.select
+                  ].join(' ')}
                   name="startDate"
                   id="startDate"
                   onChange={this.handleChange}

@@ -1,4 +1,8 @@
 
+  .abtests img {
+    width: 96%;
+  }
+
 .branding {
   color: #191919;
   background-color: #f2f2f2;
@@ -263,6 +267,11 @@
 .ia p {
   width: 60%;
 }
+.ia h2 {
+  width: 40%;
+  justify-self: center;
+  align-self: center;
+}
 
 .ia ul {
   margin-bottom: 0rem;
@@ -273,8 +282,13 @@
 }
 
 .iatitle {
-  margin-top: -2rem;
-  margin-bottom: 1rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
 }
 
 .intro {
@@ -298,6 +312,10 @@
     align-self: center;
     justify-self: center;
     margin: 0 auto 2rem auto;
+}
+
+.lowFiPrototype, .highFiPrototype {
+  display: none;
 }
 
 .overview {
@@ -399,6 +417,10 @@
   "designroles deliverableslist durationtools"
 }
 
+.buttonHoldersiteMap {
+  display: none;
+}
+
 .tools {
   display: flex;
   flex-wrap: wrap;
@@ -416,11 +438,21 @@
 
 
 @media only screen and (max-width: 1024px) {
+  .abtests img {
+    width: 96%;
+  }
 
   .flowChart{
     width: 96%;
     margin: 0 auto;
   }
+
+  .ia h2 {
+    width: 31%;
+    justify-self: center;
+    align-self: center;
+  }
+
 
   .siteMap{
     width: 96%;
@@ -431,9 +463,25 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .abtests img {
+    width: 96%;
+  }
+
   .brandimages{
     width: 96%;
     margin: 0 auto;
+  }
+
+  .buttonHoldersiteMap {
+    display: none;
+  }
+
+  .conclusion p {
+    width: 96%;
+  }
+
+  .conclusionimages img {
+    height: 200px;
   }
 
  .design h3 {
@@ -479,6 +527,11 @@
     font-size: 14px;
 
   }
+  .ia h2 {
+    width: 31%;
+    justify-self: center;
+    align-self: center;
+  }
   .iaimages{
     width: 96%;
     margin: 0 auto;
@@ -492,16 +545,24 @@
 }
 
 @media only screen and (max-width: 414px) {
-  .rolesContainer {
-    grid-template-columns: .5fr 11fr .5fr;
-    grid-template-areas:
-    ". design ."
-    ". designroles ."
-    ". deliverables ."
-    ". deliverableslist ."
-    ". durationtools .";
-
+  .ia h2 {
+    width: 65%;
+    justify-self: center;
+    align-self: center;
   }
+
+  .intro h1 {
+    font-size: 36px;
+  }
+
+  .buttonHoldersiteMap{
+    display: block;
+  }
+
+  .design {
+    margin: -1.5rem auto 0 auto;
+  }
+
   .designroles {
     margin-left: 0;
   }
@@ -512,7 +573,31 @@
 
   .deliverableslist {
     margin-left: 0;
+  }
 
+  .desktopHomeImage, .mobileHomeImage {
+    display: none;
+  }
+
+  .discovery {
+    grid-template-columns: .1fr 11.8fr .1fr;
+    grid-template-areas:
+    ". discoverytitle ."
+    ". discoveryur ."
+    ". discoveryca ."
+    ". discoveryuptitle. "
+    ". discoveryupimages .";
+  }
+
+  .discoveryupimages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .discoveryupimages img {
+    width: 100%;
   }
 
   .duration {
@@ -531,11 +616,60 @@
     align-items: center;
     margin-top: -1rem;
   }
+
+  .ia h2 {
+    margin-top: 0rem;
+  }
+
+  .ia p {
+    width: 90%;
+  }
+
+  .ia ul {
+    width: 90%;
+  }
+
+  .lowProtoImage, .highProtoImage {
+    display: none;
+  }
+
+  .lowFiPrototype, .highFiPrototype {
+    display: block;
+  }
+
+  .overview {
+    grid-template-columns: 12fr;
+    grid-auto-rows: minmax(.1rem, auto);
+    grid-gap: 1rem 1rem;
+    grid-template-areas:
+    "overviewtitle"
+    "overviewproblem"
+    "overviewsolution";
+  }
+
+  .rolesContainer {
+    grid-template-columns: .5fr 11fr .5fr;
+    grid-template-areas:
+    ". design ."
+    ". designroles ."
+    ". deliverables ."
+    ". deliverableslist ."
+    ". durationtools .";
+  }
+
+  .siteMap {
+    display: none;
+  }
+
   .tools {
       width: 65%;
       justify-self: center;
       align-self: center;
       margin-top: -1rem;
+  }
+
+  .userFlowDetails {
+    display: none;
   }
 
 }

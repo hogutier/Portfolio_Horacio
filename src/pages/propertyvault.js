@@ -11,8 +11,9 @@ import iconDiscovery from '../images/iconDiscovery.png'
 import iconIA from '../images/iconIA.png'
 import iconConclusion from '../images/iconConclusion.png'
 import iconDesigner from '../images/iconDesigner.png'
-import iconProductMgr from '../images/iconProductMgr.png'
-import iconDeveloper from '../images/iconDeveloper.png'
+import iconDeliverables from '../images/iconDeliverables.png'
+import iconDuration from '../images/iconDuration.png'
+import iconTools from '../images/iconTools.png'
 import CompetitiveAnalysis from '../images/CompetitiveAnalysis.png'
 import PersonaA from '../images/PersonaA.png'
 import PersonaB from '../images/PersonaB.png'
@@ -44,9 +45,12 @@ export default () => (
           specific focus on the Real Estate market to help Property Managers
           store, access and share property & tenant information in one place.
         </p>
-        <a href="https://invis.io/Z6OXOYQHSVP">
-          <Button name="View Prototype" />
-        </a>
+        <div className={propertyVaultStyles.buttonPrototype}>
+          <a href="https://invis.io/Z6OXOYQHSVP">
+            <Button name="View Prototype" />
+          </a>
+        </div>
+
         <p />
         <div className={propertyVaultStyles.prototypesContainer}>
           <div className={propertyVaultStyles.desktopHomeImage}>
@@ -82,7 +86,7 @@ export default () => (
           <div className={propertyVaultStyles.deliverables}>
             <img
               className={propertyVaultStyles.icon}
-              src={iconProductMgr}
+              src={iconDeliverables}
               alt="Deliverables Icon"
             />
             <h3>Deliverables</h3>
@@ -103,8 +107,8 @@ export default () => (
             <div className={propertyVaultStyles.duration}>
               <img
                 className={propertyVaultStyles.icon}
-                src={iconDeveloper}
-                alt="Developer Icon"
+                src={iconDuration}
+                alt="Duration Icon"
               />
               <h3>Project Duration</h3>
               <ul>
@@ -115,8 +119,8 @@ export default () => (
             <div className={propertyVaultStyles.tools}>
               <img
                 className={propertyVaultStyles.icon}
-                src={iconDeveloper}
-                alt="Developer Icon"
+                src={iconTools}
+                alt="Tools Icon"
               />
               <h3>Tools</h3>
               <ul>
@@ -287,22 +291,24 @@ export default () => (
           put myself in the shoes of our user personas to create the following
           user stories:{' '}
         </p>
-        <h4>Sign up process</h4>
-        <div className={propertyVaultStyles.flowChart}>
-          <img src={SignUpProcess} alt="Sign Up Process" />
-        </div>
+        <div className={propertyVaultStyles.userFlowDetails}>
+          <h4>Sign up process</h4>
+          <div className={propertyVaultStyles.flowChart}>
+            <img src={SignUpProcess} alt="Sign Up Process" />
+          </div>
 
-        <h4>View file/folder shared with tenant</h4>
-        <div className={propertyVaultStyles.flowChart}>
-          <img src={ViewFilesProcess} alt="View Files/Folders Process" />
-        </div>
+          <h4>View file/folder shared with tenant</h4>
+          <div className={propertyVaultStyles.flowChart}>
+            <img src={ViewFilesProcess} alt="View Files/Folders Process" />
+          </div>
 
-        <h4>Configure roles & access control</h4>
-        <div className={propertyVaultStyles.flowChart}>
-          <img
-            src={RolesAccessProcess}
-            alt="Configure roles & access control"
-          />
+          <h4>Configure roles & access control</h4>
+          <div className={propertyVaultStyles.flowChart}>
+            <img
+              src={RolesAccessProcess}
+              alt="Configure roles & access control"
+            />
+          </div>
         </div>
 
         <a href="https://drive.google.com/file/d/1lKziE9i_QQKT_BM5vVl5dsAilqEhreZZ/view">
@@ -317,6 +323,11 @@ export default () => (
         </p>
         <div className={propertyVaultStyles.siteMap}>
           <img src={Sitemap} alt="Sitemap" />
+        </div>
+        <div className={propertyVaultStyles.buttonHoldersiteMap}>
+          <a href="https://drive.google.com/open?id=1BjJGogY_BGca3ksoF-fF55BX8Wg9LShB">
+            <Button name="View Sitemap" />
+          </a>
         </div>
 
         <h3>Pen & Paper Wireframes</h3>
@@ -344,19 +355,37 @@ export default () => (
           Using Figma & InVision and referencing the brand style guide, the
           following prototypes were created:
         </p>
-        <a href="https://projects.invisionapp.com/share/ACOGLHEJUFK#/screens">
-          <img src={LowFidelityPrototype} alt="Low Fidelity Prototype" />
-        </a>
-        <a href="https://projects.invisionapp.com/share/Z6OXOYQHSVP#/screens">
-          <img src={HighFidelityPrototype} alt="High Fidelity Prototype" />
-        </a>
+
+        <div className={propertyVaultStyles.lowProtoImage}>
+          <a href="https://projects.invisionapp.com/share/ACOGLHEJUFK#/screens">
+            <img src={LowFidelityPrototype} alt="Low Fidelity Prototype" />
+          </a>
+        </div>
+        <div className={propertyVaultStyles.highProtoImage}>
+          <a href="https://projects.invisionapp.com/share/Z6OXOYQHSVP#/screens">
+            <img src={HighFidelityPrototype} alt="High Fidelity Prototype" />
+          </a>
+        </div>
+
+        <div className={propertyVaultStyles.lowFiPrototype}>
+          <a href="https://projects.invisionapp.com/share/ACOGLHEJUFK#/screens">
+            <Button name="Low-Fidelity Prototype" />
+          </a>
+        </div>
+
+        <div className={propertyVaultStyles.highFiPrototype}>
+          <a href="https://projects.invisionapp.com/share/Z6OXOYQHSVP#/screens">
+            <Button name="High-Fidelity Prototype" />
+          </a>
+        </div>
+
         <h3>Preference A/B Tests</h3>
         <p>
           To help make specific design decisions, the following preference tests
           were performed:
         </p>
         <h4>The Logo</h4>
-        <div>
+        <div className={propertyVaultStyles.abtests}>
           <img src={ABLogo} alt="Logo A/B Test" />
         </div>
 
@@ -364,14 +393,14 @@ export default () => (
           <Button name="See Test Details" />
         </a>
         <h4>Desktop Dashboard Home</h4>
-        <div>
+        <div className={propertyVaultStyles.abtests}>
           <img src={ABDesktopHome} alt="Desktop Dashboard Home A/B Test" />
         </div>
         <a href="https://app.usabilityhub.com/tests/bb420b68792a/results/8992c776c275">
           <Button name="See Test Details" />
         </a>
         <h4>Mobile Dashboard Home</h4>
-        <div>
+        <div className={propertyVaultStyles.abtests}>
           <img src={ABMobileHome} alt="Mobile Dashboard Home A/B Test" />
         </div>
         <a href="https://app.usabilityhub.com/tests/cf94a87464a0/results/f4f2e46afa9f">

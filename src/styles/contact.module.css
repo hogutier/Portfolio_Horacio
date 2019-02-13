@@ -54,6 +54,7 @@
   text-align: left;
 }
 
+
 .form {
   display: flex;
   flex-wrap: wrap;
@@ -90,9 +91,17 @@ display: block;
   margin-top: -1rem;
 }
 
+@media only screen and (max-width: 1024px) {
 
+.pulldown {
+  width: 49%;
+}
 
-@media only screen and (max-width: 768px) {
+select, input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
   .formitems {
     width: 70%;
   }
@@ -100,15 +109,31 @@ display: block;
   .worktogether {
     width: 70%;
   }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .first_name, .last_name, .phone_number, .email, .description {
+    padding-bottom: 1rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .formitems {
+    width: 80%;
+  }
+
+  .worktogether {
+    width: 80%;
+  }
 
   .worktogether h2 {
     font-size: 24px;
   }
 
-  .first_name, .last_name, .phone_number, .email, .description {
-    padding-bottom: 1rem;
-    width: 100%;
-    text-align: left;
+  .select {
+    appearance: none;
+    -webkit-appearance: none;
   }
 
   .service, .startDate {
@@ -120,13 +145,27 @@ display: block;
 }
 
 @media only screen and (max-width: 414px) {
-  .startDate {
-    padding-top: 1rem;
-  }
   .buttonholder{
     margin-top: 1rem;
     margin-bottom: .5rem;
   }
+
+  .formitems {
+    width: 90%;
+  }
+  .pulldown {
+    width: 100%;
+  }
+
+  .select {
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  .startDate {
+    padding-top: 1rem;
+
+  }
+
 }
 
 
