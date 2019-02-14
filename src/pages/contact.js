@@ -144,6 +144,9 @@ export default class Contact extends React.Component {
                   id="myList"
                   onChange={this.handleChange}
                 >
+                  <option value="" disabled selected>
+                    Select your option
+                  </option>
                   <option
                     className={contactStyles.field_divided}
                     name="service"
@@ -159,6 +162,9 @@ export default class Contact extends React.Component {
                   </option>
                   <option name="service" value="Product Management">
                     Product Management
+                  </option>
+                  <option name="service" value="Other">
+                    Other
                   </option>
                 </select>
               </div>
@@ -176,6 +182,9 @@ export default class Contact extends React.Component {
                   id="startDate"
                   onChange={this.handleChange}
                 >
+                  <option value="" disabled selected>
+                    Select your option
+                  </option>
                   <option
                     className={contactStyles.field_divided}
                     name="startDate"
