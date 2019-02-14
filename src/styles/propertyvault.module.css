@@ -82,6 +82,10 @@
   margin-top: -3rem;
 }
 
+.deliverableslist ul {
+  text-align: left;
+}
+
 .design {
   grid-area: design;
   padding-top: 0;
@@ -101,6 +105,10 @@
   justify-self: center;
   margin-top: -3rem;
   margin-left: 3rem;
+}
+
+.designroles ul {
+  text-align: left;
 }
 
 .desktopHomeImage {
@@ -237,6 +245,7 @@
 .duration ul {
   margin-top: -1rem;
   width: 100%;
+  text-align: left;
 }
 
 .durationtools {
@@ -442,6 +451,7 @@
 .tools ul {
   margin-top: -1rem;
   width: 100%;
+  text-align: left;
 }
 
 .userFlowDetails h4 {

@@ -11,6 +11,7 @@ import Line from './line'
 
 import layoutStyles from '../styles/layout.module.css'
 import footerStyles from '../styles/footer.module.css'
+import HamburgerMenu from './hamburger'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -35,7 +36,11 @@ const Layout = ({ children }) => (
           sitePortfolio={data.site.siteMetadata.portfolio}
         />
         <div className={layoutStyles.layoutStyles}>
-          <div>{children}</div>
+          <div className="hamburger">
+            <HamburgerMenu right pageWrapId={'page-wrap'} />
+          </div>
+
+          <div id="page-wrap">{children}</div>
         </div>
 
         <footer className={footerStyles.footerContainer}>

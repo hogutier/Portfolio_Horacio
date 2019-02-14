@@ -106,7 +106,10 @@
   .name {
     display: none;
   }
-
+.logo {
+  justify-self: flex-start;
+  align-self: flex-start;
+}
   .logo img {
     width: 40px;
   }
@@ -117,6 +120,9 @@
 
   .aboutnav {
     padding-right: .3rem;
+  }
+  .pages {
+    display: none;
   }
 
 }
