@@ -17,11 +17,16 @@
 }
 
 .branding p {
-  width: 60%;
+  width: 50%;
+  text-align: left;
 }
 
 .brandingicon {
   margin-top: 2rem;
+}
+
+.buttonHoldersiteMap {
+  display: none;
 }
 
 .conclusion {
@@ -134,7 +139,7 @@
 }
 
 .discovery p {
-  text-align: left;
+  text-align: center;
   width: 100%;
 
 }
@@ -164,6 +169,10 @@
   align-items: center;
   flex-wrap: wrap;
   margin-top: -1rem;
+}
+
+.discoveryur p {
+  text-align: center;
 }
 
 .discoveryca {
@@ -210,6 +219,7 @@
 
 .discoveryuptitle p {
   margin-top: -1rem;
+  text-align: left;
 }
 
 .duration {
@@ -265,12 +275,14 @@
 }
 
 .ia p {
-  width: 60%;
+  width: 50%;
+  text-align: left;
 }
 .ia h2 {
   width: 40%;
-  justify-self: center;
-  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .ia ul {
@@ -301,8 +313,8 @@
 }
 
 .intro p {
-  text-align: center;
-  width: 80%;
+  text-align: left;
+  width: 60%;
   margin: -1rem auto 1rem auto;
 }
 
@@ -417,10 +429,6 @@
   "designroles deliverableslist durationtools"
 }
 
-.buttonHoldersiteMap {
-  display: none;
-}
-
 .tools {
   display: flex;
   flex-wrap: wrap;
@@ -436,6 +444,10 @@
   width: 100%;
 }
 
+.userFlowDetails h4 {
+  text-align: center;
+}
+
 
 @media only screen and (max-width: 1024px) {
   .abtests img {
@@ -448,9 +460,10 @@
   }
 
   .ia h2 {
-    width: 31%;
-    justify-self: center;
-    align-self: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
   }
 
 
@@ -467,9 +480,10 @@
     width: 96%;
   }
 
-  .brandimages{
-    width: 96%;
+  .brandimages img{
+    width: 98%;
     margin: 0 auto;
+    padding-bottom: 1rem;
   }
 
   .buttonHoldersiteMap {
@@ -528,9 +542,9 @@
 
   }
   .ia h2 {
-    width: 31%;
-    justify-self: center;
-    align-self: center;
+    width: 70%;
+   margin-left: auto;
+   margin-right: auto;
   }
   .iaimages{
     width: 96%;
@@ -545,10 +559,26 @@
 }
 
 @media only screen and (max-width: 414px) {
+  .branding p {
+    width: 90%;
+    text-align: left;
+  }
+
   .ia h2 {
     width: 65%;
     justify-self: center;
     align-self: center;
+  }
+
+  .ia p {
+    text-align: left;
+  }
+
+  .intro p {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
   }
 
   .intro h1 {
@@ -619,6 +649,9 @@
 
   .ia h2 {
     margin-top: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
   }
 
   .ia p {
