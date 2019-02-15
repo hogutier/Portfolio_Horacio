@@ -1,4 +1,9 @@
 .headerContainer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
   display: grid;
   grid-template-columns: 1fr 4fr 6.8fr .2fr;
   grid-auto-rows: minmax(.1rem, auto);
@@ -6,10 +11,11 @@
   grid-template-areas:
   "logo        name        pages      ."
   "yellowLine  yellowLine  yellowLine yellowLine";
-  margin-top: 1rem;
+padding-top: 1rem;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  background-color: #191919;
 }
 .aboutnav {
   padding-right: 2rem;
@@ -106,10 +112,10 @@
   .name {
     display: none;
   }
-.logo {
-  justify-self: flex-start;
-  align-self: flex-start;
-}
+  .logo {
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
   .logo img {
     width: 40px;
   }
