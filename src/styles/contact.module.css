@@ -26,7 +26,7 @@
 
 .field_divided {
   width: 100%;
-  background: #191919;
+  background: transparent;
   border-color: #B6B6B6;
   color: #B6B6B6;
   border-width: .1rem;
@@ -90,6 +90,10 @@ display: block;
 
 .worktogether p {
   margin-top: -1rem;
+}
+
+.pulldown option {
+  background: #191919;
 }
 
 @media only screen and (max-width: 1024px) {
