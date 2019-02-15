@@ -60,8 +60,8 @@ html body {
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 24px;
-  width: 24px;
+  height: 30px;
+  width: 30px;
 }
 
 /* Color/shape of close button cross */
@@ -72,8 +72,9 @@ html body {
 /* General sidebar styles */
 .bm-menu {
   background: #191919;
-  padding: 2.5em 1.5em 0;
+  padding: 3em 1.5em 0;
   font-size: 1.15em;
+  margin-top: -1.5rem;
 }
 
 /* Morph shape necessary with bubble or elastic */
