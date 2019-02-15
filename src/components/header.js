@@ -4,9 +4,13 @@ import React from 'react'
 import headerStyles from '../styles/header.module.css'
 import Logo from '../images/logoYellow.png'
 import Line from './line'
+import HamburgerMenu from './hamburger'
 
 const Header = ({ siteTitle, siteAbout, sitePortfolio, siteContact }) => (
   <section className={headerStyles.headerContainer}>
+    <div className="hamburger">
+      <HamburgerMenu right pageWrapId={'page-wrap'} />
+    </div>
     <div className={headerStyles.logo}>
       <Link to="/">
         <img src={Logo} alt="Logo" />
@@ -20,7 +24,7 @@ const Header = ({ siteTitle, siteAbout, sitePortfolio, siteContact }) => (
       </h5>
     </div>
 
-    <div className={headerStyles.pages}>
+    <div id="page-wrap" className={headerStyles.pages}>
       <div className={headerStyles.aboutnav}>
         <h5>
           <Link to="/about/" className={headerStyles.link}>
