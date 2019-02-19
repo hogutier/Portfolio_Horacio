@@ -625,7 +625,7 @@ pre tt:after {
 
 .layoutStyles {
   margin: 0 auto;
-  /* max-width: 1080px; */
+  max-width: 1080px;
   /* padding: 0 1.0875rem 1.45rem; */
   color: #b6b6b6;
   background-color: #191919;

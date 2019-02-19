@@ -16,6 +16,8 @@ padding-top: 1rem;
   align-items: center;
   flex-wrap: nowrap;
   background-color: #191919;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 .aboutnav {
   padding-right: 2rem;

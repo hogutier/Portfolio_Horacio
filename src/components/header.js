@@ -9,7 +9,7 @@ import HamburgerMenu from './hamburger'
 const Header = ({ siteTitle, siteAbout, sitePortfolio, siteContact }) => (
   <section className={headerStyles.headerContainer}>
     <div className="hamburger">
-      <HamburgerMenu right pageWrapId={'page-wrap'} />
+      <HamburgerMenu right pageWrapId={'page-wrap'} width={'60%'} />
     </div>
     <div className={headerStyles.logo}>
       <Link to="/">

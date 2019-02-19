@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import HeroImage from '../components/imgLightbulb'
 import SEO from '../components/seo'
 import { Link } from 'gatsby'
+import Button from '../components/button'
 
 import indexBodyStyles from '../styles/indexBody.module.css'
 import iconRealEstate from '../images/iconRealEstate.png'
@@ -27,7 +28,8 @@ const IndexPage = () => (
     />
     <section className={indexBodyStyles.indexBodyContainer}>
       <h2 className={indexBodyStyles.welcome}>
-        Hi, I'm Horacio from Austin, Texas
+        Hi, I'm <span className={indexBodyStyles.myname}>Horacio</span> from
+        Austin, Texas
       </h2>
       <div className={indexBodyStyles.productmanager}>
         <h3>Product Manager</h3>
@@ -67,6 +69,7 @@ const IndexPage = () => (
             UX/UI Design & <br />
             Branding
           </p>
+          <Button name="More Details" />
         </Link>
       </div>
 

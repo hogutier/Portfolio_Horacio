@@ -13,6 +13,12 @@ html body {
   margin: 0 auto;
 }
 
+/*
+THIS IS THE CSS FOR THE HAMBURGER MENU
+ "react-burger-menu": "^2.6.5"
+ https://github.com/negomi/react-burger-menu
+*/
+
 #App {
   font-family: sans-serif;
   /* Give app full page to work with */
@@ -60,21 +66,34 @@ html body {
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
+  position: absolute;
   height: 30px;
   width: 30px;
+  right: 29px !important;
+  top: -23px !important;
+
+}
+
+/* This positions the cross centrally in the button */
+.bm-cross-button > span {
+  top: 2px !important;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
   background: #E2BE1C;;
+  position: absolute;
+  /* This targets the actual elements that make up the cross */
+  width: 5px !important;
+  height: 25px !important;
 }
 
 /* General sidebar styles */
 .bm-menu {
   background: #191919;
-  padding: 3em 1.5em 0;
+  padding: 4em 1.5em 0;
   font-size: 1.15em;
-  margin-top: -1.5rem;
+  margin-top: -2.5rem;
 }
 
 /* Morph shape necessary with bubble or elastic */
