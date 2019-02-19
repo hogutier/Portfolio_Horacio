@@ -136,6 +136,7 @@ p {
 .project1 p {
   margin-top: -1rem;
   margin-bottom: .2rem;
+  color: rgb(182,182,182,.8);
 }
 
 .project1 button {
