@@ -169,6 +169,11 @@ p {
   line-height: 1;
 }
 
+.welcome h2 {
+  margin-bottom: 0;
+  padding-top: 1rem;
+}
+
 
 
 @media only screen and (max-width: 768px) {
