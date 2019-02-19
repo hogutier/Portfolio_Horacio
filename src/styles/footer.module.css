@@ -61,6 +61,11 @@
   .social {
     width: 70%;
     margin: 0 auto 1rem auto;
+
+  }
+  .linkedin, .twitter, .github, .message{
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -69,10 +74,14 @@
     font-size: 20px;
     margin-top: -1rem;
     margin-bottom: 0rem;
+    padding-top: 0rem;
+    margin-top: -3rem;
   }
 
   .date {
     margin-top: 0px;
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
   }
 
   .date p {
@@ -118,6 +127,11 @@
   .social {
     width: 50%;
     margin: 0 auto 1rem auto;
+  }
+
+  .linkedin, .twitter, .github, .message{
+    padding-left: .5rem;
+    padding-right: .5rem;
   }
 
 }

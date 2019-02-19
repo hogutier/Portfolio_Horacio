@@ -51,8 +51,6 @@ a {
   margin-bottom: 0rem;
 }
 
-
-
 h3 {
   text-align: center;
 }
@@ -202,19 +200,23 @@ p {
 }
 
 @media only screen and (max-width: 414px) {
-  .designerhero > p {
-    display: none;
-  }
-  .developer > p {
-    display: none;
-  }
 
   .designerhero > h3 {
     font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .designerhero > p {
+    display: none;
   }
 
   .developer > h3 {
     font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .developer > p {
+    display: none;
   }
 
   .featuredprojects h2 {
@@ -225,14 +227,17 @@ p {
     grid-gap: .2rem .2rem;
   }
 
+  .productmanager > h3 {
+    font-size: 18px;
+    padding-bottom: 5px;
+    line-height: 1.2;
+  }
+
   .productmanager > p {
     display: none;
   }
 
-  .productmanager > h3 {
-    font-size: 18px;
-    padding-bottom: 5px;
-  }
+
 
   .project1 h3 {
     font-size: 20px;
@@ -252,9 +257,13 @@ p {
   }
 
   .welcome {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     padding-top: 2rem;
+  }
+
+  .welcome h2 {
+    font-size: 18px;
   }
 }
 
