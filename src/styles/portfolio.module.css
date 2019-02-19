@@ -41,8 +41,9 @@ a {
   align-self: center;
   justify-self: center;
   text-align: center;
-  margin-top: 1.1rem;
-  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
+  margin-bottom: 0rem;
 }
 
 .propertyVault h3 {
@@ -51,6 +52,7 @@ a {
 
 .propertyVault p {
   margin-top: -1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: .2rem;
+  color: rgb(182,182,182,.8);
 }
 

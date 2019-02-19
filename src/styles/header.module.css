@@ -68,7 +68,8 @@ padding-top: 1rem;
   background-color: #E2BE1C;
   height: .1rem;
   width: 100%;
-  margin: 0 auto;
+  margin: 1px auto;
+  padding: 1px;
 
 }
 
@@ -76,6 +77,8 @@ padding-top: 1rem;
 
   .headerContainer {
     grid-gap: 0rem .3rem;
+    width: 98%;
+    margin: 0 auto;
   }
 
   .logo {
@@ -110,6 +113,8 @@ padding-top: 1rem;
   grid-template-areas:
   ". logo        pages      ."
   "yellowLine  yellowLine  yellowLine yellowLine";
+  width: 98%;
+  margin: 0 auto;
   }
   .name {
     display: none;

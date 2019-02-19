@@ -176,7 +176,10 @@ p {
 
 
 @media only screen and (max-width: 768px) {
-
+  .indexBodyContainer {
+    width: 98%;
+    margin: 0 auto;
+  }
   .productmanager p {
     font-size: 13px;
   }
@@ -200,7 +203,10 @@ p {
 }
 
 @media only screen and (max-width: 414px) {
-
+  .indexBodyContainer {
+    width: 98%;
+    margin: 0 auto;
+  }
   .designerhero > h3 {
     font-size: 18px;
     line-height: 1.2;

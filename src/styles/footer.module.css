@@ -58,6 +58,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .footerContainer {
+    width: 98%;
+    margin: 0 auto;
+  }
   .social {
     width: 70%;
     margin: 0 auto 1rem auto;
@@ -70,6 +74,10 @@
 }
 
 @media only screen and (max-width: 414px) {
+  .footerContainer {
+    width: 98%;
+    margin: 0 auto;
+  }
   .connect h2 {
     font-size: 20px;
     margin-top: -1rem;

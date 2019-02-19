@@ -96,7 +96,10 @@ display: block;
   background: #191919;
 }
 @media only screen and (max-width: 1024px) {
-
+  .contactContainer {
+    width: 98%;
+    margin: 0 auto;
+  }
 
 .pulldown {
   width: 49%;
@@ -118,6 +121,10 @@ select, input {
 
 
 @media only screen and (max-width: 768px) {
+  .contactContainer {
+    width: 98%;
+    margin: 0 auto;
+  }
   .first_name, .last_name, .phone_number, .email, .description {
     padding-bottom: 1rem;
     width: 100%;
@@ -150,6 +157,10 @@ select, input {
 }
 
 @media only screen and (max-width: 414px) {
+  .contactContainer {
+    width: 98%;
+    margin: 0 auto;
+  }
   .buttonholder{
     margin-top: 1rem;
     margin-bottom: .5rem;

@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import portfolioStyles from '../styles/portfolio.module.css'
 import iconRealEstate from '../images/iconRealEstate.png'
+import Button from '../components/button'
 
 /*  Will include commented sections below when these case studies are ready to be published
  import iconBusyBus from '../images/iconBusyBus.png'
@@ -20,6 +21,7 @@ const PortfolioPage = () => (
             UX/UI Design & <br />
             Branding
           </p>
+          <Button name="More Details" />
         </Link>
       </div>
 
