@@ -86,6 +86,7 @@
 
 label {
 display: block;
+padding-bottom: .3rem;
 }
 
 .pulldown option {
