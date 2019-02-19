@@ -283,6 +283,7 @@ export default () => (
         </ul>
         <a href="https://drive.google.com/open?id=1GodrqA5JKi_Cag9u7k5ctZ9m3kGfXpBvCmyBpCIjI6M">
           <Button name="All Stories" />
+          <p />
         </a>
         <h3>User Flows</h3>
         <p>
@@ -291,17 +292,18 @@ export default () => (
           put myself in the shoes of our user personas to create the following
           user stories:{' '}
         </p>
+        <p />
         <div className={propertyVaultStyles.userFlowDetails}>
           <h4>Sign up process</h4>
           <div className={propertyVaultStyles.flowChart}>
             <img src={SignUpProcess} alt="Sign Up Process" />
           </div>
-
+          <p />
           <h4>View file/folder shared with tenant</h4>
           <div className={propertyVaultStyles.flowChart}>
             <img src={ViewFilesProcess} alt="View Files/Folders Process" />
           </div>
-
+          <p />
           <h4>Configure roles & access control</h4>
           <div className={propertyVaultStyles.flowChart}>
             <img
@@ -314,7 +316,7 @@ export default () => (
         <a href="https://drive.google.com/file/d/1lKziE9i_QQKT_BM5vVl5dsAilqEhreZZ/view">
           <Button name="All User Flows" />
         </a>
-
+        <p />
         <h3>Sitemap</h3>
         <p>
           Now that we have a clear idea on what our web application will do with
@@ -329,7 +331,7 @@ export default () => (
             <Button name="View Sitemap" />
           </a>
         </div>
-
+        <p />
         <h3>Pen & Paper Wireframes</h3>
         <p>
           This phase of the project was the first attempt at visualizing all of
@@ -384,6 +386,7 @@ export default () => (
           To help make specific design decisions, the following preference tests
           were performed:
         </p>
+        <p />
         <h4>The Logo</h4>
         <div className={propertyVaultStyles.abtests}>
           <img src={ABLogo} alt="Logo A/B Test" />
@@ -392,6 +395,7 @@ export default () => (
         <a href="https://app.usabilityhub.com/tests/1acf51d436ec/results/d1166ccf5bb8">
           <Button name="See Test Details" />
         </a>
+        <p />
         <h4>Desktop Dashboard Home</h4>
         <div className={propertyVaultStyles.abtests}>
           <img src={ABDesktopHome} alt="Desktop Dashboard Home A/B Test" />
@@ -399,6 +403,7 @@ export default () => (
         <a href="https://app.usabilityhub.com/tests/bb420b68792a/results/8992c776c275">
           <Button name="See Test Details" />
         </a>
+        <p />
         <h4>Mobile Dashboard Home</h4>
         <div className={propertyVaultStyles.abtests}>
           <img src={ABMobileHome} alt="Mobile Dashboard Home A/B Test" />

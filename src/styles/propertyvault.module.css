@@ -59,11 +59,17 @@
 
 .conclusion h2 {
   margin-top: .2rem;
+  margin-bottom: 3rem;
 }
 
 .conclusion p {
   width: 60%;
   text-align: left;
+}
+
+.conclusion img {
+  padding-top: 2rem;
+  margin-bottom: -.5rem;
 }
 
 .conclusionimages {
@@ -74,6 +80,7 @@
   align-items: center;
   justify-items: center;
   width: 90%;
+  padding-bottom: 3rem;
 }
 
 .deliverables {
@@ -283,18 +290,18 @@
 }
 
 .homePageMockup {
-  width: 25%;
-  height: 20rem;
+  width: 30%;
+  height: 25rem;
 }
 
 .homePageSketch {
-  width: 25%;
-  height: 20rem;
+  width: 30%;
+  height: 25rem;
 }
 
 .homePageWireframe {
-  width: 25%;
-  height: 20rem;
+  width: 30%;
+  height: 25rem;
 }
 
 .ia {
@@ -307,6 +314,8 @@
   align-items: center;
   align-content: center;
   padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 0rem;
 }
 
 .ia p {
@@ -328,9 +337,16 @@
   margin-top: 1rem;
 }
 
+.ia img {
+  padding-top: 1.5rem;
+  margin-top: 0rem;
+}
+
 .iatitle {
   justify-self: center;
   align-self: center;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
 }
 
 .icon {
@@ -610,15 +626,31 @@
 }
 
 @media only screen and (max-width: 414px) {
+  .abtests {
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+
   .branding p {
     width: 90%;
     text-align: left;
+  }
+
+  .conclusionimages {
+    flex-direction: column;
   }
 
   .ia h2 {
     width: 65%;
     justify-self: center;
     align-self: center;
+  }
+
+  .ia img {
+    padding-top: 0rem;
   }
 
   .ia p {
@@ -654,6 +686,15 @@
   .buttonHoldersiteMap{
     display: block;
   }
+
+  .conclusion {
+    padding-bottom: 1rem;
+  }
+
+  .conclusionimages {
+    padding-bottom: 0rem;
+  }
+
 
   .design {
     margin: -1.5rem auto 0 auto;
@@ -725,11 +766,19 @@
     margin-top: -1rem;
   }
 
+  .homePageMockup, .homePageSketch, .homePageWireframe {
+    display: none;
+  }
+
   .ia h2 {
     margin-top: 0rem;
     margin-left: auto;
     margin-right: auto;
     width: 65%;
+  }
+
+  .ia img {
+    margin-bottom: 0rem;
   }
 
   .ia p {
@@ -738,6 +787,14 @@
 
   .ia ul {
     width: 90%;
+  }
+
+  .iaimages {
+    padding-bottom: 1rem;
+  }
+
+  .iatitle {
+    margin-bottom: 1rem;
   }
 
   .intro h1 {
@@ -773,6 +830,10 @@
 
   .overviewsolution {
     margin-bottom: -3.5rem;
+  }
+
+  .propertyVaultContainer{
+    margin-bottom: -1rem;
   }
 
   .rolesContainer {
