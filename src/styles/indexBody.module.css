@@ -203,10 +203,6 @@ p {
 }
 
 @media only screen and (max-width: 414px) {
-  .indexBodyContainer {
-    width: 98%;
-    margin: 0 auto;
-  }
   .designerhero > h3 {
     font-size: 18px;
     line-height: 1.2;
@@ -225,12 +221,29 @@ p {
     display: none;
   }
 
+  .featuredprojects {
+    padding-top: .5rem;
+
+  }
   .featuredprojects h2 {
     font-size: 20px;
+    padding-bottom: 0rem;
+  }
+
+  .heroimage {
+    padding-bottom: 1.5rem;
+    margin-bottom: 0rem;
   }
 
   .indexBodyContainer {
+    width: 98%;
+    margin: 0 auto;
     grid-gap: .2rem .2rem;
+  }
+
+  .productmanager {
+    margin-top: 0rem;
+    padding-bottom: 1rem;
   }
 
   .productmanager > h3 {
@@ -243,7 +256,11 @@ p {
     display: none;
   }
 
-
+  .project1 {
+    padding-top: .5rem;
+    padding-bottom: 0rem;
+    margin-bottom: -2.5rem;
+  }
 
   .project1 h3 {
     font-size: 20px;
@@ -258,14 +275,10 @@ p {
     margin-top: -1rem;
   }
 
-  .project1 {
-    margin-bottom: -10px;
-  }
-
   .welcome {
     font-size: 18px;
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
 
   .welcome h2 {
