@@ -41,9 +41,10 @@ a {
   align-self: center;
   justify-self: center;
   text-align: center;
-  padding-top: 1rem;
-  padding-bottom: 0;
-  margin-bottom: 0rem;
+  padding-top: 4rem;
+  margin-top: -.5rem;
+  padding-bottom: 4rem;
+  margin-bottom: -1rem;
 }
 
 .propertyVault h3 {
@@ -55,4 +56,17 @@ a {
   margin-bottom: .2rem;
   color: rgb(182,182,182,.8);
 }
+
+
+@media only screen and (max-width: 414px) {
+  .propertyVault {
+    padding-top: 1rem;
+    margin-top: -.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: -1rem;
+  }
+}
+
+
+
 

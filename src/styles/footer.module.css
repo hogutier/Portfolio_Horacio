@@ -94,6 +94,7 @@
 
   .date p {
     font-size: 12px;
+    padding-top: .5rem;
   }
 
   .designerhero > p {

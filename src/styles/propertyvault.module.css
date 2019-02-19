@@ -13,7 +13,16 @@
   flex-wrap: wrap;
   align-content: center;
   flex-direction: column;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 0rem;
+}
+
+.branding h2 {
+  padding-bottom: 2rem;
+}
+
+.branding h3 {
+  padding-top: 0rem;
 }
 
 .branding p {
@@ -22,7 +31,11 @@
 }
 
 .brandingicon {
-  margin-top: 2rem;
+  margin-top: 4rem;
+}
+
+.brandimages {
+  padding-bottom: 2rem;
 }
 
 .buttonHoldersiteMap {
@@ -80,6 +93,7 @@
   grid-area: deliverableslist;
   justify-self: center;
   margin-top: -3rem;
+  color: rgb(182,182,182,.8);
 }
 
 .deliverableslist ul {
@@ -105,6 +119,7 @@
   justify-self: center;
   margin-top: -3rem;
   margin-left: 3rem;
+  color: rgb(182,182,182,.8);
 }
 
 .designroles ul {
@@ -152,6 +167,22 @@
 
 }
 
+.discoveryca {
+  grid-area: discoveryca;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+
+.discoveryca p {
+  text-align: center;
+}
+
 .discoverytitle {
   grid-area: discoverytitle;
   align-self: center;
@@ -161,10 +192,51 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .discoverytitle h2 {
   margin-top: -1rem;
+}
+
+.discoveryupimages {
+  grid-area: discoveryupimages;
+  align-self: center;
+  justify-self: center;
+  text-align: left;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 2rem;
+}
+
+.discoveryupimages img {
+  display: block;
+  width: 100%;
+}
+
+.discoveryuptitle {
+  grid-area: discoveryuptitle;
+  align-self: center;
+  justify-self: center;
+  text-align: left;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.discoveryuptitle h3 {
+  padding-top: 2rem;
+
+}
+
+.discoveryuptitle p {
+  margin-top: -1rem;
+  text-align: left;
 }
 
 .discoveryur {
@@ -183,53 +255,6 @@
   text-align: center;
 }
 
-.discoveryca {
-  grid-area: discoveryca;
-  align-self: center;
-  justify-self: center;
-  text-align: center;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.discoveryca p {
-  text-align: center;
-}
-
-.discoveryupimages {
-  grid-area: discoveryupimages;
-  align-self: center;
-  justify-self: center;
-  text-align: left;
-  display:flex;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: center;
-}
-
-.discoveryupimages img {
-  display: block;
-  width: 40%;
-}
-
-.discoveryuptitle {
-  grid-area: discoveryuptitle;
-  align-self: center;
-  justify-self: center;
-  text-align: left;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.discoveryuptitle p {
-  margin-top: -1rem;
-  text-align: left;
-}
-
 .duration {
   display: flex;
   flex-wrap: wrap;
@@ -246,6 +271,7 @@
   margin-top: -1rem;
   width: 100%;
   text-align: left;
+  color: rgb(182,182,182,.8);
 }
 
 .durationtools {
@@ -318,7 +344,8 @@
 
 .intro h1 {
   text-align: center;
-  margin-top: 1.7rem;
+  margin-top: .5rem;
+  padding-top: 4rem;
 }
 
 .intro p {
@@ -360,6 +387,10 @@
   grid-area: overviewtitle;
   align-self: center;
   justify-self: center;
+  margin-top: -2rem;
+  padding-top: 4rem;
+  margin-bottom: -3rem;
+  padding-bottom: 4rem;
 }
 
 .overviewtitle img {
@@ -371,16 +402,21 @@
   grid-area: overviewproblem;
   width: 95%;
   padding-left: 1rem;
+  margin-bottom: -1rem;
+  padding-bottom: 4rem;
 }
 
 .overviewproblem p {
   text-align: left;
+
 }
 
 .overviewsolution {
   grid-area: overviewsolution;
   width: 95%;
   padding-left: 1rem;
+  margin-bottom: -1rem;
+  padding-bottom: 4rem;
 }
 
 .overviewsolution p {
@@ -423,7 +459,8 @@
   ". desktopHomeImage mobileHomeImage .";
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: -1rem;
+  padding-bottom: 4rem;
 }
 
 .rolesContainer {
@@ -436,7 +473,9 @@
   align-content: center;
   grid-template-areas:
   "design      deliverables     durationtools"
-  "designroles deliverableslist durationtools"
+  "designroles deliverableslist durationtools";
+  padding-bottom: 4rem;
+  margin-bottom: -2rem;
 }
 
 .tools {
@@ -453,6 +492,7 @@
   margin-top: -1rem;
   width: 100%;
   text-align: left;
+  color: rgb(182,182,182,.8);
 }
 
 .userFlowDetails h4 {
@@ -594,6 +634,21 @@
 
   .intro h1 {
     font-size: 36px;
+      text-align: center;
+      margin-top: -.7rem;
+      padding-top: 1rem;
+  }
+  .brandimages {
+    padding-bottom: 0rem;
+  }
+
+  .branding h2 {
+    padding-bottom: 0rem;
+  }
+
+  .brandingicon {
+    margin-top: 0rem;
+    padding-top: 2rem;
   }
 
   .buttonHoldersiteMap{
@@ -630,6 +685,15 @@
     ". discoveryupimages .";
   }
 
+  .discoveryca {
+    padding-top: 0rem;
+  }
+
+  .discoverytitle {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
   .discoveryupimages {
     display: flex;
     flex-direction: column;
@@ -641,11 +705,14 @@
     width: 100%;
   }
 
+  .discoveryuptitle {
+    margin-top: -2rem;
+  }
+
   .duration {
     width: 65%;
     justify-self: center;
     align-self: center;
-
   }
 
   .durationtools {
@@ -673,6 +740,10 @@
     width: 90%;
   }
 
+  .intro h1 {
+    margin-top: 0rem;
+  }
+
   .lowProtoImage, .highProtoImage {
     display: none;
   }
@@ -691,6 +762,19 @@
     "overviewsolution";
   }
 
+  .overviewtitle {
+    margin-top: -4rem;
+    margin-bottom: -5rem;
+  }
+
+  .overviewproblem {
+    margin-bottom: -5rem;
+  }
+
+  .overviewsolution {
+    margin-bottom: -3.5rem;
+  }
+
   .rolesContainer {
     grid-template-columns: .5fr 11fr .5fr;
     grid-template-areas:
@@ -699,6 +783,10 @@
     ". deliverables ."
     ". deliverableslist ."
     ". durationtools .";
+    margin-top: -3rem;
+    padding-top: 0rem;
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
   }
 
   .siteMap {
