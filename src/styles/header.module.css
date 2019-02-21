@@ -1,9 +1,13 @@
-.headerContainer {
+.headerBackground {
+  background-color: #191919;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 2;
+}
+
+.headerContainer {
   display: grid;
   grid-template-columns: 1fr 4fr 6.8fr .2fr;
   grid-auto-rows: minmax(.1rem, auto);
@@ -66,11 +70,10 @@ padding-top: 1rem;
 .yellowLine {
   grid-area: yellowLine;
   background-color: #E2BE1C;
-  height: .1rem;
+  height: 2px;
+  padding: 0px;
   width: 100%;
-  margin: 1px auto;
-  padding: 1px;
-
+  margin: 0px auto 0px auto;
 }
 
 @media only screen and (max-width: 768px) {

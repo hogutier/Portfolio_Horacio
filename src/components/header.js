@@ -7,7 +7,8 @@ import Line from './line'
 import HamburgerMenu from './hamburger'
 
 const Header = ({ siteTitle, siteAbout, sitePortfolio, siteContact }) => (
-  <section className={headerStyles.headerContainer}>
+  <div className={headerStyles.headerBackground}>
+      <section className={headerStyles.headerContainer}>
     <div className="hamburger">
       <HamburgerMenu right pageWrapId={'page-wrap'} width={'60%'} />
     </div>
@@ -51,6 +52,8 @@ const Header = ({ siteTitle, siteAbout, sitePortfolio, siteContact }) => (
     </div>
     <Line />
   </section>
+  </div>
+
 )
 
 Header.propTypes = {

@@ -88,6 +88,8 @@ img {
   justify-content: center;
   align-content: center;
   padding-top: 77.141px;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .myname {

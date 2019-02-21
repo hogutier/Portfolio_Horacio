@@ -21,6 +21,8 @@
   "formitems";
   color: #B6B6B6;
   padding-top: 77.141px;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .form input {
