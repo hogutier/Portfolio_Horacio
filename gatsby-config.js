@@ -31,8 +31,8 @@ module.exports = {
         name: 'gatsby-starter-default',
         short_name: 'starter',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#f2f2f2',
+        theme_color: '#f2f2f2',
         display: 'minimal-ui',
         icon: 'src/images/logoBlack.png' // This path is relative to the root of the site.
       }
@@ -42,10 +42,24 @@ module.exports = {
       options: {
         trackingId: 'UA-134170205-1'
       }
-    }
-
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Horacio Gutierrez Portfolio Site',
+        short_name: 'Horacio',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: 'standalone',
+        icon: 'src/images/logoBlack.png', // This path is relative to the root of the site.
+        include_favicon: true // Include favicon
+      }
+    },
+    'gatsby-plugin-offline'
   ]
 }
