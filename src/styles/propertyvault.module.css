@@ -4,9 +4,13 @@
   }
 
 .branding {
+  grid-area: branding;
+  background-color: #f2f2f2;
+}
+
+.brandingContent {
   color: #191919;
   background-color: #f2f2f2;
-  grid-area: branding;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,17 +19,19 @@
   flex-direction: column;
   padding-bottom: 2rem;
   margin-bottom: 0rem;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
-.branding h2 {
+.brandingContent h2 {
   padding-bottom: 2rem;
 }
 
-.branding h3 {
+.brandingContent h3 {
   padding-top: 0rem;
 }
 
-.branding p {
+.brandingContent p {
   width: 50%;
   text-align: left;
 }
@@ -46,6 +52,13 @@
   color: #191919;
   background-color: #f2f2f2;
   grid-area: conclusion;
+  margin-bottom: -.1rem;
+  z-index: 1;
+}
+
+.conclusionContent {
+  color: #191919;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,20 +67,22 @@
   padding-top: 1rem;
   margin-bottom: .8rem;
   padding-bottom: 1rem;
+  max-width: 1080px;
+  margin: 0 auto;
   z-index: 2;
 }
 
-.conclusion h2 {
+.conclusionContent h2 {
   margin-top: .2rem;
   margin-bottom: 3rem;
 }
 
-.conclusion p {
+.conclusionContent p {
   width: 50%;
   text-align: left;
 }
 
-.conclusion img {
+.conclusionContent img {
   padding-top: 2rem;
   margin-bottom: -.5rem;
 }
@@ -141,8 +156,12 @@
 }
 
 .discovery {
-  display: grid;
+  background-color: #191919;
   grid-area: discovery;
+}
+
+.discoveryContent {
+  display: grid;
   grid-template-columns: 3fr 6fr 3fr;
   grid-auto-rows: minmax(.1rem, auto);
   grid-gap: 1rem 1rem;
@@ -159,20 +178,21 @@
   align-content: center;
   align-items: center;
   text-align: center;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
-.discovery img {
+.discoveryContent img {
   display: block;
 }
 
-.discovery h2 {
+.discoveryContent h2 {
   width: 100%;
 }
 
-.discovery p {
+.discoveryContent p {
   text-align: center;
   width: 100%;
-
 }
 
 .discoveryca {
@@ -309,6 +329,11 @@
   color: #B6B6B6;
   background-color: #191919;
   grid-area: ia;
+}
+
+.iaContent {
+  color: #B6B6B6;
+  background-color: #191919;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -317,28 +342,30 @@
   padding-top: 1rem;
   padding-bottom: 2rem;
   margin-bottom: 0rem;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
-.ia p {
+.iaContent p {
   width: 50%;
   text-align: left;
 }
-.ia h2 {
+.iaContent h2 {
   width: 40%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-.ia ul {
+.iaContent ul {
   margin-bottom: 0rem;
 }
 
-.ia h3 {
+.iaContent h3 {
   margin-top: 1rem;
 }
 
-.ia img {
+.iaContent img {
   padding-top: 1.5rem;
   margin-top: 0rem;
 }
@@ -356,22 +383,28 @@
 }
 
 .intro {
+  background-color: #191919;
   grid-area: intro;
 }
 
-.intro h1 {
+.introContent {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.introContent h1 {
   text-align: center;
   margin-top: .5rem;
   padding-top: 4rem;
 }
 
-.intro p {
+.introContent p {
   text-align: left;
   width: 60%;
   margin: -1rem auto 1rem auto;
 }
 
-.intro a {
+.introContent a {
     display: block;
     text-align: center;
     align-self: center;
@@ -385,6 +418,10 @@
 
 .overview {
   grid-area: overview;
+  background-color: #f2f2f2;
+}
+
+.overviewContent {
   display: grid;
   grid-template-columns: 6fr 6fr;
   grid-auto-rows: minmax(.1rem, auto);
@@ -398,6 +435,8 @@
   margin-bottom: 1rem;
   justify-content: center;
   align-items: flex-start;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .overviewtitle {
@@ -536,8 +575,6 @@
 
 
 .propertyVaultContainer {
-  /* color: #B6B6B6;
-  background-color: #191919; */
   display: grid;
   grid-template-columns: 4fr 4fr 4fr;
   grid-auto-rows: minmax(.1rem, auto);
@@ -615,7 +652,7 @@
     margin: 0 auto;
   }
 
-  .ia h2 {
+  .iaContent h2 {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -646,7 +683,7 @@
     display: none;
   }
 
-  .conclusion p {
+  .conclusionContent p {
     width: 96%;
   }
 
@@ -676,7 +713,7 @@
     font-size: 14px;
   }
 
-  .discovery {
+  .discoveryContent {
     grid-template-columns: .5fr 11fr .5fr;
     grid-template-areas:
     ".  discoverytitle  ."
@@ -688,6 +725,27 @@
 
   .discoveryupimages {
     width: 70%;
+    margin: 0 auto;
+  }
+
+  .duration {
+    margin-top: -1rem;
+  }
+  .duration h3 {
+    font-size: 16px;
+  }
+
+  .duration ul {
+    font-size: 14px;
+
+  }
+  .iaContent h2 {
+    width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  .iaimages{
+    width: 96%;
     margin: 0 auto;
   }
 
@@ -705,26 +763,6 @@
     padding-top: 2rem;
   }
 
-  .duration {
-    margin-top: -1rem;
-  }
-  .duration h3 {
-    font-size: 16px;
-  }
-
-  .duration ul {
-    font-size: 14px;
-
-  }
-  .ia h2 {
-    width: 70%;
-   margin-left: auto;
-   margin-right: auto;
-  }
-  .iaimages{
-    width: 96%;
-    margin: 0 auto;
-  }
   .tools h3 {
     font-size: 16px;
   }
@@ -742,7 +780,7 @@
   }
 
 
-  .branding p {
+  .brandingContent p {
     width: 90%;
     text-align: left;
   }
@@ -768,7 +806,7 @@
     display: block;
   }
 
-  .conclusion {
+  .conclusionContent {
     padding-bottom: 1rem;
   }
 
@@ -797,7 +835,7 @@
     display: none;
   }
 
-  .discovery {
+  .discoveryContent {
     grid-template-columns: .1fr 11.8fr .1fr;
     grid-template-areas:
     ". discoverytitle ."
@@ -851,48 +889,34 @@
     display: none;
   }
 
-  .ia h2 {
+  .iaContent h2 {
     width: 65%;
     justify-self: center;
     align-self: center;
   }
 
-  .ia img {
+  .iaContent img {
     padding-top: 0rem;
   }
 
-  .ia p {
+  .iaContent p {
     text-align: left;
     width: 90%;
   }
 
-  .intro p {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-  }
-
-  .intro h1 {
-    font-size: 36px;
-      text-align: center;
-      margin-top: -.7rem;
-      padding-top: 1rem;
-  }
-
-  .ia h2 {
+  .iaContent h2 {
     margin-top: 0rem;
     margin-left: auto;
     margin-right: auto;
     width: 65%;
   }
 
-  .ia img {
+  .iaContent img {
     margin-bottom: 0rem;
   }
 
 
-  .ia ul {
+  .iaContent ul {
     width: 90%;
   }
 
@@ -908,6 +932,20 @@
     margin-top: 0rem;
   }
 
+  .introContent p {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .introContent h1 {
+    font-size: 36px;
+      text-align: center;
+      margin-top: -.7rem;
+      padding-top: 1rem;
+  }
+
   .lowProtoImage, .highProtoImage {
     display: none;
   }
@@ -916,7 +954,7 @@
     display: block;
   }
 
-  .overview {
+  .overviewContent {
     grid-template-columns: 12fr;
     grid-auto-rows: minmax(.1rem, auto);
     grid-gap: 1rem 1rem;
