@@ -25,18 +25,18 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography'
       }
     },
-    {
+    /*  {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Horacio Gutierrez Portfolio Site',
+        short_name: 'Horacio Portfolio',
         start_url: '/',
         background_color: '#f2f2f2',
         theme_color: '#f2f2f2',
-        display: 'minimal-ui',
+        display: 'browser',
         icon: 'src/images/logoBlack.png' // This path is relative to the root of the site.
       }
-    },
+    }, */
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
@@ -49,13 +49,13 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Horacio Gutierrez Portfolio Site',
-        short_name: 'Horacio',
+        short_name: 'Horacio-Portfolio',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#f2f2f2',
+        theme_color: '#f2f2f2',
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
-        display: 'standalone',
+        display: 'browser',
         icon: 'src/images/logoBlack.png', // This path is relative to the root of the site.
         include_favicon: true // Include favicon
       }
