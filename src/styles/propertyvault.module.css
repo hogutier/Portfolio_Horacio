@@ -151,7 +151,8 @@
   ".  discoveryur     ."
   ".  discoveryca     ."
   ".  discoveryuptitle     ."
-  "discoveryupimages discoveryupimages discoveryupimages";
+  "discoveryupimages discoveryupimages discoveryupimages"
+  "personas personas personas";
   color: #B6B6B6;
   background-color: #191919;
   justify-content: center;
@@ -446,6 +447,94 @@
   width: 70%
 }
 
+
+.personas {
+  grid-area: personas;
+  justify-self: center;
+  align-self: center;
+  color: #B6B6B6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.personaA, .personaB {
+  border: 1px solid #e2be1c;
+  width: 400px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.personaA h3 {
+  line-height: 1;
+  padding-top: 2rem;
+  padding-bottom: .5rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+
+.personaA p {
+  line-height: 1.33;
+  margin: 0 auto;
+  padding-bottom: .5rem;
+  text-align: center;
+  width: 90%;
+}
+
+.personaA ol {
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+.personaB h3 {
+  line-height: 1;
+  padding-top: 2rem;
+  padding-bottom: .5rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+
+.personaB p {
+  line-height: 1.33;
+  margin: 0 auto;
+  padding-bottom: .5rem;
+  text-align: center;
+  width: 90%;
+}
+
+.personaB ol {
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+.personaBfrustrations {
+  padding-top: 1.2rem;
+}
+.personaAquote {
+
+  width: 90%;
+  margin: 0 auto;
+}
+
+.personaBquote {
+  padding-top: 3.9rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.personaAvatar img {
+  width: 40%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 0rem;
+}
+
+
 .propertyVaultContainer {
   /* color: #B6B6B6;
   background-color: #191919; */
@@ -597,6 +686,25 @@
     "discoveryupimages discoveryupimages discoveryupimages";
   }
 
+  .discoveryupimages {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .personaB {
+    margin-top: 2rem;
+  }
+
+  .personaAquote {
+    margin-top: 0;
+    padding-top: 2rem;
+  }
+
+  .personaBquote {
+    margin-top: 0;
+    padding-top: 2rem;
+  }
+
   .duration {
     margin-top: -1rem;
   }
@@ -643,33 +751,6 @@
     flex-direction: column;
   }
 
-  .ia h2 {
-    width: 65%;
-    justify-self: center;
-    align-self: center;
-  }
-
-  .ia img {
-    padding-top: 0rem;
-  }
-
-  .ia p {
-    text-align: left;
-  }
-
-  .intro p {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-  }
-
-  .intro h1 {
-    font-size: 36px;
-      text-align: center;
-      margin-top: -.7rem;
-      padding-top: 1rem;
-  }
   .brandimages {
     padding-bottom: 0rem;
   }
@@ -771,6 +852,35 @@
   }
 
   .ia h2 {
+    width: 65%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .ia img {
+    padding-top: 0rem;
+  }
+
+  .ia p {
+    text-align: left;
+    width: 90%;
+  }
+
+  .intro p {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .intro h1 {
+    font-size: 36px;
+      text-align: center;
+      margin-top: -.7rem;
+      padding-top: 1rem;
+  }
+
+  .ia h2 {
     margin-top: 0rem;
     margin-left: auto;
     margin-right: auto;
@@ -781,9 +891,6 @@
     margin-bottom: 0rem;
   }
 
-  .ia p {
-    width: 90%;
-  }
 
   .ia ul {
     width: 90%;
@@ -830,6 +937,36 @@
 
   .overviewsolution {
     margin-bottom: -3.5rem;
+  }
+
+  .personas {
+    flex-direction: column;
+  }
+
+  .personas ol {
+    margin-left: 0px;
+  }
+
+  .personaAvatar {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .personaA, .personaB {
+    width: 300px;
+  }
+
+  .personaB {
+    margin-top: 2rem;
+  }
+
+  .personaBfrustrations {
+    padding-top: 0rem;
+  }
+
+  .personaBquote {
+    padding-top: 1rem;
+
   }
 
   .propertyVaultContainer{

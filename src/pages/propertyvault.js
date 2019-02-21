@@ -15,8 +15,8 @@ import iconDeliverables from '../images/iconDeliverables.png'
 import iconDuration from '../images/iconDuration.png'
 import iconTools from '../images/iconTools.png'
 import CompetitiveAnalysis from '../images/CompetitiveAnalysis.png'
-import PersonaA from '../images/PersonaA.png'
-import PersonaB from '../images/PersonaB.png'
+import tom from '../images/tom.png'
+import mike from '../images/mike.png'
 import LogoSketches from '../images/LogoSketches.png'
 import LogoRefined from '../images/LogoRefined.png'
 import BrandStyleGuide from '../images/BrandStyleGuide.png'
@@ -220,8 +220,72 @@ export default () => (
           </p>
         </div>
         <div className={propertyVaultStyles.discoveryupimages}>
-          <img src={PersonaA} alt="User Persona Tom" />
-          <img src={PersonaB} alt="User Persona Mike" />
+          <div className={propertyVaultStyles.personas}>
+            <div className={propertyVaultStyles.personaA}>
+              <div className={propertyVaultStyles.personaAvatar}>
+                <img src={tom} alt="User Persona Tom" />
+              </div>
+
+              <h3>Tom</h3>
+              <p>Property Manager</p>
+              <p>Age: 43 - Location: Austin, TX - Gender: Male</p>
+              <h3>Motivation</h3>
+              <p>
+                Tom currently stores all property/tenant information in a file
+                cabinet and local hard drive. It would be great to have a
+                solution to store & organize everything in the cloud with the
+                option to share relevant information with certain tenants or
+                communities.
+              </p>
+              <h3>Frustrations</h3>
+
+              <ol>
+                <li>Takes a long time to keep everyone informed</li>
+                <li>Difficult keep backup copies of important files</li>
+                <li>Hard to keep everything organized</li>
+                <li>Doesn’t know who has seen the information shared</li>
+              </ol>
+              <div className={propertyVaultStyles.personaAquote}>
+                <h6>
+                  “If I had a solution to upload, organize and share property &
+                  tenant information, it would make my life a lot easier”
+                </h6>
+              </div>
+            </div>
+            <div className={propertyVaultStyles.personaB}>
+              <div className={propertyVaultStyles.personaAvatar}>
+                <img src={mike} alt="User Persona Mike" />
+              </div>
+              <h3>Mike</h3>
+              <p>Tenant</p>
+              <p>Age: 18 - Location: Austin, TX - Gender: Male</p>
+              <h3>Motivation</h3>
+              <p>
+                Mike currently has to go to the leasing office to inquire about
+                the lease contract, maintenance requests and BBQ pit
+                reservations. He also needs to visit the billboard to stay
+                informed of future tenant meetings.
+              </p>
+              <div className={propertyVaultStyles.personaBfrustrations}>
+                <h3>Frustrations</h3>
+              </div>
+
+              <ol>
+                <li>
+                  Hates having to walk to the leasing office to reserve bbq pit
+                  and to stay informed of what’s going on around the property
+                </li>
+                <li>Can’t view leasing contract online</li>
+              </ol>
+              <div className={propertyVaultStyles.personaBquote}>
+                <h6>
+                  “If I could have a single place online to take care of my
+                  needs around the property, I could spend my time more
+                  efficiently at school and with my friends”
+                </h6>
+              </div>
+            </div>
+          </div>
         </div>
       </article>
 
