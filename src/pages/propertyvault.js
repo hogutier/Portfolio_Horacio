@@ -47,7 +47,11 @@ export default () => (
             store, access and share property & tenant information in one place.
           </p>
           <div className={propertyVaultStyles.buttonPrototype}>
-            <a href="https://invis.io/Z6OXOYQHSVP">
+            <a
+              href="https://invis.io/Z6OXOYQHSVP"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button name="View Prototype" />
             </a>
           </div>
@@ -200,7 +204,11 @@ export default () => (
                 Management Cloud Storage Service
               </li>
             </ul>
-            <a href="https://docs.google.com/forms/d/1gV6LB6otU2QJBnmYf1cgYuiJhQyCauzxu3mzxNWFg-Q/edit?usp=sharing">
+            <a
+              href="https://docs.google.com/forms/d/1gV6LB6otU2QJBnmYf1cgYuiJhQyCauzxu3mzxNWFg-Q/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button name="View Survey" />
             </a>
           </div>
@@ -209,7 +217,11 @@ export default () => (
             <h3>Competitive Analysis</h3>
             <img src={CompetitiveAnalysis} alt="Competitive Analysis Chart" />
             <p>To view more details, click on the button below:</p>
-            <a href="https://drive.google.com/open?id=16m4NiOa0KVsNUPanjVzKXqxtm5H-eBKxlwqL_4nDsYs">
+            <a
+              href="https://drive.google.com/open?id=16m4NiOa0KVsNUPanjVzKXqxtm5H-eBKxlwqL_4nDsYs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button name="SWOT Analysis" />
             </a>
           </div>
@@ -351,7 +363,11 @@ export default () => (
               As an admin, I want to configure available roles & access control
             </li>
           </ul>
-          <a href="https://drive.google.com/open?id=1GodrqA5JKi_Cag9u7k5ctZ9m3kGfXpBvCmyBpCIjI6M">
+          <a
+            href="https://drive.google.com/open?id=1GodrqA5JKi_Cag9u7k5ctZ9m3kGfXpBvCmyBpCIjI6M"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button name="All Stories" />
             <p />
           </a>
@@ -383,7 +399,11 @@ export default () => (
             </div>
           </div>
 
-          <a href="https://drive.google.com/file/d/1lKziE9i_QQKT_BM5vVl5dsAilqEhreZZ/view">
+          <a
+            href="https://drive.google.com/file/d/1lKziE9i_QQKT_BM5vVl5dsAilqEhreZZ/view"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button name="All User Flows" />
           </a>
           <p />
@@ -397,7 +417,11 @@ export default () => (
             <img src={Sitemap} alt="Sitemap" />
           </div>
           <div className={propertyVaultStyles.buttonHoldersiteMap}>
-            <a href="https://drive.google.com/open?id=1BjJGogY_BGca3ksoF-fF55BX8Wg9LShB">
+            <a
+              href="https://drive.google.com/open?id=1BjJGogY_BGca3ksoF-fF55BX8Wg9LShB"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button name="View Sitemap" />
             </a>
           </div>
@@ -441,13 +465,21 @@ export default () => (
           </div>
 
           <div className={propertyVaultStyles.lowFiPrototype}>
-            <a href="https://projects.invisionapp.com/share/ACOGLHEJUFK#/screens">
+            <a
+              href="https://projects.invisionapp.com/share/ACOGLHEJUFK#/screens"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button name="Low-Fidelity Prototype" />
             </a>
           </div>
 
           <div className={propertyVaultStyles.highFiPrototype}>
-            <a href="https://projects.invisionapp.com/share/Z6OXOYQHSVP#/screens">
+            <a
+              href="https://projects.invisionapp.com/share/Z6OXOYQHSVP#/screens"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button name="High-Fidelity Prototype" />
             </a>
           </div>
@@ -463,7 +495,11 @@ export default () => (
             <img src={ABLogo} alt="Logo A/B Test" />
           </div>
 
-          <a href="https://app.usabilityhub.com/tests/1acf51d436ec/results/d1166ccf5bb8">
+          <a
+            href="https://app.usabilityhub.com/tests/1acf51d436ec/results/d1166ccf5bb8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button name="See Test Details" />
           </a>
           <p />
@@ -471,7 +507,11 @@ export default () => (
           <div className={propertyVaultStyles.abtests}>
             <img src={ABDesktopHome} alt="Desktop Dashboard Home A/B Test" />
           </div>
-          <a href="https://app.usabilityhub.com/tests/bb420b68792a/results/8992c776c275">
+          <a
+            href="https://app.usabilityhub.com/tests/bb420b68792a/results/8992c776c275"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button name="See Test Details" />
           </a>
           <p />
@@ -479,7 +519,11 @@ export default () => (
           <div className={propertyVaultStyles.abtests}>
             <img src={ABMobileHome} alt="Mobile Dashboard Home A/B Test" />
           </div>
-          <a href="https://app.usabilityhub.com/tests/cf94a87464a0/results/f4f2e46afa9f">
+          <a
+            href="https://app.usabilityhub.com/tests/cf94a87464a0/results/f4f2e46afa9f"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button name="See Test Details" />
           </a>
         </article>

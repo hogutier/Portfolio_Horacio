@@ -51,6 +51,10 @@ padding-top: 1rem;
   text-decoration: none;
 }
 
+.link:hover {
+  color: white;
+}
+
 .pages {
   display: flex;
   grid-area: pages;

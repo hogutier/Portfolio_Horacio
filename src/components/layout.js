@@ -55,7 +55,11 @@ const Layout = ({ children }) => (
               </Link>
             </div>
             <div className={footerStyles.linkedin}>
-              <a href="https://www.linkedin.com/in/hogutier/">
+              <a
+                href="https://www.linkedin.com/in/hogutier/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   className={footerStyles.social}
                   src={logoLinkedin}
@@ -64,7 +68,11 @@ const Layout = ({ children }) => (
               </a>
             </div>
             <div className={footerStyles.twitter}>
-              <a href="https://twitter.com/Horacio_Gtz">
+              <a
+                href="https://twitter.com/Horacio_Gtz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   className={footerStyles.social}
                   src={logoTwitter}
@@ -73,7 +81,11 @@ const Layout = ({ children }) => (
               </a>
             </div>
             <div className={footerStyles.github}>
-              <a href="https://github.com/hogutier">
+              <a
+                href="https://github.com/hogutier"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   className={footerStyles.social}
                   src={logoGithub}
