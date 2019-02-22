@@ -17,9 +17,9 @@ const DesktopHomeImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        file: file(relativePath: { eq: "PropertyVaultDesktop.png" }) {
+        file: file(relativePath: { eq: "desktopHomeImageSkeumorphic.png" }) {
           childImageSharp {
-            fluid(maxWidth: 400) {
+            fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid
             }
           }

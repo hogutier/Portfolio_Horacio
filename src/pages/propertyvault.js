@@ -1,9 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import propertyVaultStyles from '../styles/propertyvault.module.css'
-
 import DesktopHomeImage from '../components/imgDesktopHome'
-import MobileHomeImage from '../components/imgMobileHome'
 import Button from '../components/button'
 import iconOverview from '../images/iconOverview.png'
 import iconBranding from '../images/iconBranding.png'
@@ -57,13 +55,10 @@ export default () => (
           </div>
 
           <p />
+
           <div className={propertyVaultStyles.prototypesContainer}>
             <div className={propertyVaultStyles.desktopHomeImage}>
               <DesktopHomeImage />
-            </div>
-
-            <div className={propertyVaultStyles.mobileHomeImage}>
-              <MobileHomeImage />
             </div>
           </div>
 
@@ -241,9 +236,22 @@ export default () => (
                   <img src={tom} alt="User Persona Tom" />
                 </div>
 
-                <h3>Tom</h3>
-                <p>Property Manager</p>
-                <p>Age: 43 - Location: Austin, TX - Gender: Male</p>
+                <h3 className={propertyVaultStyles.personaTomMike}>Tom</h3>
+                <ul>
+                  <li>
+                    <strong>Role:</strong> Property Manager
+                  </li>
+                  <li>
+                    <strong>Age: </strong>43{' '}
+                  </li>
+                  <li>
+                    <strong>Location: </strong>Austin, TX{' '}
+                  </li>
+                  <li>
+                    <strong>Gender: </strong>Male{' '}
+                  </li>
+                </ul>
+
                 <h3>Motivation</h3>
                 <p>
                   Tom currently stores all property/tenant information in a file
@@ -271,9 +279,22 @@ export default () => (
                 <div className={propertyVaultStyles.personaAvatar}>
                   <img src={mike} alt="User Persona Mike" />
                 </div>
-                <h3>Mike</h3>
-                <p>Tenant</p>
-                <p>Age: 18 - Location: Austin, TX - Gender: Male</p>
+                <h3 className={propertyVaultStyles.personaTomMike}>Mike</h3>
+                <ul>
+                  <li>
+                    <strong>Role:</strong> Tenant
+                  </li>
+                  <li>
+                    <strong>Age: </strong>18{' '}
+                  </li>
+                  <li>
+                    <strong>Location: </strong>Austin, TX{' '}
+                  </li>
+                  <li>
+                    <strong>Gender: </strong>Male{' '}
+                  </li>
+                </ul>
+
                 <h3>Motivation</h3>
                 <p>
                   Mike currently has to go to the leasing office to inquire
