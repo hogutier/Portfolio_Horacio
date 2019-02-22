@@ -1,6 +1,59 @@
 
+  .abtests {
+    padding-top: 0rem;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .abtests img {
-    width: 96%;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 0rem;
+    margin-top: 0rem;
+  }
+
+  .abtestsDesktop {
+    padding-top: 0rem;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .abtestsDesktop img {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 0rem;
+    margin-top: 0rem;
+  }
+
+  .abtestsMobile {
+    padding-top: 0rem;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .abtestsMobile img {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 0rem;
+    margin-top: 0rem;
   }
 
 .branding {
@@ -48,6 +101,11 @@
   display: none;
 }
 
+.buttonPrototype {
+  width: 60%;
+  margin: 0 auto;
+}
+
 .conclusion {
   color: #191919;
   background-color: #f2f2f2;
@@ -91,7 +149,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   justify-items: center;
   width: 90%;
@@ -153,6 +211,15 @@
   align-self: center;
   justify-self: center;
   width: 70%;
+  margin-top: 0rem;
+
+}
+
+.desktopHomeImageConclusion {
+  grid-area: desktopHomeImage;
+  align-self: center;
+  justify-self: center;
+  width: 50%;
   margin-top: 0rem;
 
 }
@@ -678,8 +745,24 @@
 
 
 @media only screen and (max-width: 1024px) {
+  .abtests {
+    flex-direction: column;
+  }
+
   .abtests img {
-    width: 96%;
+    width: 60%;
+    margin: 2rem auto 0rem auto;
+    padding-top: 0rem;
+  }
+
+  .abtestsDesktop {
+    flex-direction: column;
+  }
+
+  .abtestsDesktop img {
+    width: 60%;
+    margin: 2rem auto 0rem auto;
+    padding-top: 0rem;
   }
 
   .flowChart{
@@ -705,7 +788,34 @@
 
 @media only screen and (max-width: 768px) {
   .abtests img {
-    width: 96%;
+    flex-direction: column;
+  }
+
+  .abtests img {
+    width: 50%;
+    margin: 2rem auto 0rem auto;
+    padding-top: 0rem;
+  }
+
+
+  .abtestsDesktop {
+    flex-direction: column;
+  }
+
+  .abtestsDesktop img {
+    width: 50%;
+    margin: 2rem auto 0rem auto;
+    padding-top: 0rem;
+  }
+
+  .abtestsMobile {
+    flex-direction: column;
+  }
+
+  .abtestsMobile img {
+    width: 50%;
+    margin: 2rem auto 0rem auto;
+    padding-top: 0rem;
   }
 
   .brandimages img{
@@ -808,11 +918,23 @@
 
 @media only screen and (max-width: 414px) {
   .abtests {
-    padding-bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    display: none;
   }
+
+  .abtestsDesktop {
+
+    display: none;
+  }
+
+  .abtestsMobile {
+    display: none;
+  }
+
+  .abtestsp {
+    display: none;
+  }
+
+
 
 
   .brandingContent p {

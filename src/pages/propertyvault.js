@@ -26,12 +26,13 @@ import PenPaperWireframes from '../images/PenPaperWireframes.png'
 import DigitalWireframes from '../images/DigitalWireframes.png'
 import LowFidelityPrototype from '../images/LowFidelityPrototype.png'
 import HighFidelityPrototype from '../images/HighFidelityPrototype.png'
-import ABLogo from '../images/ABLogo.png'
-import ABDesktopHome from '../images/ABDesktopHome.png'
-import ABMobileHome from '../images/ABMobileHome.png'
-import HomepageSketch from '../images/HomepageSketch.png'
-import HomepageWireframe from '../images/HomepageWireframe.png'
-import HomepageMockup from '../images/HomepageMockup.png'
+import ABLogoA1 from '../images/ABLogoA1.png'
+import ABLogoB1 from '../images/ABLogoB1.png'
+import ABDesktopHomeA from '../images/ABDesktopHomeA1.png'
+import ABDesktopHomeB from '../images/ABDesktopHomeB1.png'
+
+import ABMobileHomeA1 from '../images/ABMobileHomeA1.png'
+import ABMobileHomeB1 from '../images/ABMobileHomeB1.png'
 
 export default () => (
   <Layout>
@@ -512,8 +513,15 @@ export default () => (
           </p>
           <p />
           <h4>The Logo</h4>
+          <p className={propertyVaultStyles.abtestsp}>
+            The logo with the lock performed better and the difference was 95.0%
+            likely to be statistically significant. This means that we can be
+            confident that it is actually better, and not performing better due
+            to random chance.
+          </p>
           <div className={propertyVaultStyles.abtests}>
-            <img src={ABLogo} alt="Logo A/B Test" />
+            <img src={ABLogoA1} alt="Logo A/B Test" />
+            <img src={ABLogoB1} alt="Logo A/B Test" />
           </div>
 
           <a
@@ -525,8 +533,16 @@ export default () => (
           </a>
           <p />
           <h4>Desktop Dashboard Home</h4>
-          <div className={propertyVaultStyles.abtests}>
-            <img src={ABDesktopHome} alt="Desktop Dashboard Home A/B Test" />
+          <p className={propertyVaultStyles.abtestsp}>
+            The first version of Desktop Dashboard Home performed better, and
+            the difference is 90.0% likely to be statistically significant. This
+            means that we can be fairly confident that it is actually better,
+            and not performing better due to random chance.
+          </p>
+          <div className={propertyVaultStyles.abtestsDesktop}>
+            <img src={ABDesktopHomeA} alt="Desktop Dashboard Home A/B Test" />
+
+            <img src={ABDesktopHomeB} alt="Desktop Dashboard Home A/B Test" />
           </div>
           <a
             href="https://app.usabilityhub.com/tests/bb420b68792a/results/8992c776c275"
@@ -537,8 +553,16 @@ export default () => (
           </a>
           <p />
           <h4>Mobile Dashboard Home</h4>
-          <div className={propertyVaultStyles.abtests}>
-            <img src={ABMobileHome} alt="Mobile Dashboard Home A/B Test" />
+          <p className={propertyVaultStyles.abtestsp}>
+            Mobile Home version 2 performed better, and the difference is 90.0%
+            likely to be statistically significant. This means that we can be
+            fairly confident that it is actually better, and not performing
+            better due to random chance.
+          </p>
+          <div className={propertyVaultStyles.abtestsMobile}>
+            <img src={ABMobileHomeA1} alt="Desktop Dashboard Home A/B Test" />
+
+            <img src={ABMobileHomeB1} alt="Desktop Dashboard Home A/B Test" />
           </div>
           <a
             href="https://app.usabilityhub.com/tests/cf94a87464a0/results/f4f2e46afa9f"
@@ -570,21 +594,9 @@ export default () => (
             project:
           </p>
           <div className={propertyVaultStyles.conclusionimages}>
-            <img
-              className={propertyVaultStyles.homePageSketch}
-              src={HomepageSketch}
-              alt="Pen & Paper Sketch of Homepage"
-            />
-            <img
-              className={propertyVaultStyles.homePageWireframe}
-              src={HomepageWireframe}
-              alt="Wireframe of Homepage"
-            />
-            <img
-              className={propertyVaultStyles.homePageMockup}
-              src={HomepageMockup}
-              alt="Mockup of Homepage"
-            />
+            <div className={propertyVaultStyles.desktopHomeImageConclusion}>
+              <DesktopHomeImage />
+            </div>
           </div>
         </article>
       </div>
