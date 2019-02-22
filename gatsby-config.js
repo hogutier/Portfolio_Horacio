@@ -28,8 +28,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'ggaatsby-starter-default',
-        short_name: 'starter',
+        name: 'horacio-portfolio',
+        short_name: 'horacio',
         start_url: '/',
         background_color: '#f2f2f2',
         theme_color: '#f2f2f2',
@@ -42,7 +42,6 @@ module.exports = {
       options: {
         trackingId: 'UA-134170205-1'
       }
-    },
-    'gatsby-plugin-remove-serviceworker'
+    }
   ]
 }
