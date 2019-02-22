@@ -28,7 +28,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
+        name: 'ggaatsby-starter-default',
         short_name: 'starter',
         start_url: '/',
         background_color: '#f2f2f2',
@@ -43,6 +43,6 @@ module.exports = {
         trackingId: 'UA-134170205-1'
       }
     },
-    'gatsby-plugin-offline'
+    'gatsby-plugin-remove-serviceworker'
   ]
 }
