@@ -1,3 +1,7 @@
+.aboutnav {
+  padding-right: 2rem;
+}
+
 .headerBackground {
   background-color: #191919;
   position: fixed;
@@ -15,7 +19,7 @@
   grid-template-areas:
   "logo        name        pages      ."
   "yellowLine  yellowLine  yellowLine yellowLine";
-padding-top: 1rem;
+  padding-top: 1rem;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
@@ -23,9 +27,7 @@ padding-top: 1rem;
   max-width: 1080px;
   margin: 0 auto;
 }
-.aboutnav {
-  padding-right: 2rem;
-}
+
 
 .logo a {
   height: 0px;
@@ -39,6 +41,10 @@ padding-top: 1rem;
   justify-self: flex-end;
   margin-bottom: -.7rem;
   /* margin-left: 2.5%; */
+}
+
+.logo img {
+width: 70%;
 }
 
 .name {
@@ -95,7 +101,7 @@ padding-top: 1rem;
   }
 
   .logo img {
-    width: 50px;
+    width: 80%;
   }
 
   .link {
@@ -112,7 +118,7 @@ padding-top: 1rem;
 
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 580px) {
   .headerContainer {
   grid-template-columns: .1fr 5.9fr 5.9fr .1fr;
   grid-auto-rows: minmax(.1rem, auto);
