@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 import headerStyles from '../styles/header.module.css'
-import Logo from '../images/logoYellow.png'
+import Logo from '../images/logoYellow.svg'
 import Line from './line'
 import HamburgerMenu from './hamburger'
 
