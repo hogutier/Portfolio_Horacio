@@ -32,9 +32,9 @@ const IndexPage = () => (
         <Typing>
           <h2>
             Hi, I'm <span className={indexBodyStyles.myname}>Horacio</span> from
-            Monterrey, Mexico
-            <Typing.Backspace count={17} />
             Austin, Texas
+            <Typing.Backspace count={13} />
+            Monterrey, Mexico
           </h2>
         </Typing>
       </div>
