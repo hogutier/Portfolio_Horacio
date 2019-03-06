@@ -29,7 +29,7 @@ const Layout = ({ children }) => (
           siteContact={data.site.siteMetadata.contact}
           sitePortfolio={data.site.siteMetadata.portfolio}
         />
-        <div className={layoutStyles.layoutStyles}>
+        <div className={layoutStyles.layout}>
           <div>{children}</div>
         </div>
 
