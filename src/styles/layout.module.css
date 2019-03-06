@@ -183,14 +183,7 @@ textarea {
   -webkit-appearance: button;
   font: inherit;
 }
-html {
-  font-size: 10px;
-  line-height: 133%;
-  font-family: georgia, serif;
-  box-sizing: border-box;
-  overflow-y: scroll;
-  margin: 0 auto;
-}
+
 * {
   box-sizing: inherit;
 }
