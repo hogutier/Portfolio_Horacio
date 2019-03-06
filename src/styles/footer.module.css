@@ -55,6 +55,11 @@
 .social {
   flex-shrink: .5;
   width: 80%;
+  margin-bottom: 1rem;
+}
+
+.social:hover {
+  fill: #E2BE1C;
 }
 
 @media only screen and (max-width: 768px) {
@@ -137,6 +142,7 @@
     width: 50%;
     margin: 0 auto 1rem auto;
   }
+
 
   .linkedin, .twitter, .github, .message{
     padding-left: .5rem;
