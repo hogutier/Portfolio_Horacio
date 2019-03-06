@@ -19,6 +19,8 @@
 
 .footerBackground {
   background-color: #191919;
+  margin: 0 auto;
+  max-width: 1080px;
 }
 
 .footerContainer {
@@ -32,7 +34,7 @@
   "methods"
   "date";
   max-width: 1080px;
-  margin: 0rem auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 
 .message {
