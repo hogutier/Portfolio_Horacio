@@ -17,6 +17,10 @@
   padding-bottom: 3rem;
 }
 
+.footerBackground {
+  background-color: #191919;
+}
+
 .footerContainer {
   display: grid;
   grid-template-columns: 12fr;

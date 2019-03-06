@@ -4,6 +4,10 @@ THIS IS THE CSS FOR THE HAMBURGER MENU
  https://github.com/negomi/react-burger-menu
 */
 
+html {
+  background-color: #191919;
+}
+
 #App {
   font-family: sans-serif;
   /* Give app full page to work with */
