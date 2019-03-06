@@ -40,8 +40,8 @@ const Layout = ({ children }) => (
           </div>
 
           <div className={footerStyles.methods}>
-            <Link to="/contact/">
-              <div className={footerStyles.message}>
+            <div className={footerStyles.message}>
+              <Link to="/contact/">
                 <svg
                   className={footerStyles.social}
                   alt="Message"
@@ -57,14 +57,15 @@ const Layout = ({ children }) => (
                     fill="#A7A7A7"
                   />
                 </svg>
-              </div>
-            </Link>
-            <a
-              href="https://www.linkedin.com/in/hogutier/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className={footerStyles.linkedin}>
+              </Link>
+            </div>
+
+            <div className={footerStyles.linkedin}>
+              <a
+                href="https://www.linkedin.com/in/hogutier/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg
                   className={footerStyles.social}
                   alt="Linkedin"
@@ -80,14 +81,15 @@ const Layout = ({ children }) => (
                     fill="#A7A7A7"
                   />
                 </svg>
-              </div>
-            </a>
-            <a
-              href="https://twitter.com/Horacio_Gtz"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className={footerStyles.twitter}>
+              </a>
+            </div>
+
+            <div className={footerStyles.twitter}>
+              <a
+                href="https://twitter.com/Horacio_Gtz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg
                   className={footerStyles.social}
                   alt="Twitter"
@@ -103,14 +105,15 @@ const Layout = ({ children }) => (
                     fill="#A7A7A7"
                   />
                 </svg>
-              </div>
-            </a>
-            <a
-              href="https://github.com/hogutier"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className={footerStyles.github}>
+              </a>
+            </div>
+
+            <div className={footerStyles.github}>
+              <a
+                href="https://github.com/hogutier"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg
                   className={footerStyles.social}
                   width="50"
@@ -125,8 +128,8 @@ const Layout = ({ children }) => (
                     fill="#A7A7A7"
                   />
                 </svg>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
           <div className={footerStyles.date}>
             <p>© {new Date().getFullYear()} Horacio Gutierrez</p>
