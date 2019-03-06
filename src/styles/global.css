@@ -1,12 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #191919;
+}
+
+html body {
+  width: 100%;
+  margin: 0 auto;
+}
+
 /*
 THIS IS THE CSS FOR THE HAMBURGER MENU
  "react-burger-menu": "^2.6.5"
  https://github.com/negomi/react-burger-menu
 */
-
-html {
-  background-color: #191919;
-}
 
 #App {
   font-family: sans-serif;
