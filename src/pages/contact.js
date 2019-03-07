@@ -91,12 +91,7 @@ export default class Contact extends React.Component {
                 />
               </div>
 
-              <div
-                className={[
-                  contactStyles.phone_number,
-                  contactStyles.field_divided
-                ].join(' ')}
-              >
+              <div className={contactStyles.phone_number}>
                 <label htmlFor="phone">Phone</label>
                 <input
                   className={contactStyles.field_divided}
@@ -106,12 +101,7 @@ export default class Contact extends React.Component {
                   onChange={this.handleChange}
                 />
               </div>
-              <div
-                className={[
-                  contactStyles.email,
-                  contactStyles.field_divided
-                ].join(' ')}
-              >
+              <div className={contactStyles.email}>
                 <label htmlFor="email">Email</label>
                 <input
                   className={contactStyles.field_divided}
@@ -121,7 +111,7 @@ export default class Contact extends React.Component {
                   onChange={this.handleChange}
                 />
               </div>
-              <div className={contactStyles.field_full}>
+              <div className={contactStyles.description}>
                 <label htmlFor="description">Project Description</label>
                 <p>
                   <textarea

@@ -36,25 +36,32 @@
   width: 100%;
   background: transparent;
   border-color: #B6B6B6;
-  color: #B6B6B6;
+  color:  #f9f3d2;
   border-width: .1rem;
   border-radius: 3px;
   text-align: left;
+  padding-left: 10px;
 }
 
 .field_full {
   width: 100%;
   background: transparent;
   border-color: #B6B6B6;
-  color: #B6B6B6;
+  color:  #f9f3d2;
   border-width: .1rem;
   border-radius: 3px;
   text-align: left;
+  padding-left: 10px;
 }
 
-.first_name, .last_name, .phone_number, .email, .description {
+.first_name, .last_name, .phone_number, .email {
   padding-bottom: 1rem;
   width: 49%;
+  text-align: left;
+}
+
+.description {
+  width: 100%;
   text-align: left;
 }
 
