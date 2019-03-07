@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   siteMetadata: {
     title: 'HORACIO GUTIERREZ',
@@ -40,13 +42,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: 'UA-134170205-1'
+        trackingId: process.env.trackingId
       }
     },
     {
       resolve: 'gatsby-plugin-crisp-chat',
       options: {
-        websiteId: 'b392140c-4a2f-4c56-b687-89fb7d002ee5',
+        websiteId: process.env.websiteId,
         //  Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
         enableDuringDevelop: true
       }
