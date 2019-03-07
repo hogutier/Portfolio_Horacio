@@ -59,7 +59,7 @@
 .social {
   flex-shrink: .5;
   margin-bottom: 1rem;
-  width: 50px;
+  width: 40px;
 
 }
 
@@ -74,7 +74,7 @@
     margin: 0 auto;
   }
   .social {
-    width: 70%;
+    width: 35px;
     margin: 0 auto 1rem auto;
 
   }
@@ -145,7 +145,7 @@
   }
 
   .social {
-    width: 50%;
+    width: 25px;
     margin: 0 auto 1rem auto;
   }
 
