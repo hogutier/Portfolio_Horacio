@@ -707,6 +707,13 @@
   padding-bottom: 4rem;
 }
 
+.quote {
+  font-style: italic;
+  font-weight: 700;
+  text-indent: -10px;
+  padding-left: 10px;
+}
+
 .rolesContainer {
   display: grid;
   grid-template-columns: 4fr 4fr 4fr;

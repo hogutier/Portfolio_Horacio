@@ -177,7 +177,8 @@ export default () => (
             </p>
             <ul>
               <li>
-                72% of participants believed the most important features are:
+                <strong>72% </strong>
+                of participants believed the most important features are:
                 <ul>
                   <li>Sharing files with others.</li>
                   <li>Controlling who has access to view/edit files.</li>
@@ -188,16 +189,19 @@ export default () => (
                 </ul>
               </li>
               <li>
-                90% of participants will use a Desktop or Laptop to access the
+                <strong>90% </strong>
+                of participants will use a Desktop or Laptop to access the
                 online storage service.
               </li>
               <li>
-                95% of participants liked Email as the preferred method to share
+                <strong>95% </strong>
+                of participants liked Email as the preferred method to share
                 files/folders.
               </li>
               <li>
-                79% of participants liked the idea of using a Property
-                Management Cloud Storage Service
+                <strong>79% </strong>
+                of participants liked the idea of using a Property Management
+                Cloud Storage Service
               </li>
             </ul>
             <a
@@ -270,7 +274,7 @@ export default () => (
                   <li>Doesn’t know who has seen the information shared</li>
                 </ol>
                 <div className={propertyVaultStyles.personaAquote}>
-                  <h6>
+                  <h6 className={propertyVaultStyles.quote}>
                     “If I had a solution to upload, organize and share property
                     & tenant information, it would make my life a lot easier”
                   </h6>
@@ -316,7 +320,7 @@ export default () => (
                   <li>Can’t view leasing contract online</li>
                 </ol>
                 <div className={propertyVaultStyles.personaBquote}>
-                  <h6>
+                  <h6 className={propertyVaultStyles.quote}>
                     “If I could have a single place online to take care of my
                     needs around the property, I could spend my time more
                     efficiently at school and with my friends”
@@ -514,7 +518,7 @@ export default () => (
           <p />
           <h4>The Logo</h4>
           <p className={propertyVaultStyles.abtestsp}>
-            The logo with the lock performed better and the difference was 95.0%
+            The logo with the lock performed better and the difference was 95%
             likely to be statistically significant. This means that we can be
             confident that it is actually better, and not performing better due
             to random chance.
@@ -535,7 +539,7 @@ export default () => (
           <h4>Desktop Dashboard Home</h4>
           <p className={propertyVaultStyles.abtestsp}>
             The first version of Desktop Dashboard Home performed better, and
-            the difference is 90.0% likely to be statistically significant. This
+            the difference is 90% likely to be statistically significant. This
             means that we can be fairly confident that it is actually better,
             and not performing better due to random chance.
           </p>
@@ -554,7 +558,7 @@ export default () => (
           <p />
           <h4>Mobile Dashboard Home</h4>
           <p className={propertyVaultStyles.abtestsp}>
-            Mobile Home version 2 performed better, and the difference is 90.0%
+            Mobile Home version 2 performed better, and the difference is 90%
             likely to be statistically significant. This means that we can be
             fairly confident that it is actually better, and not performing
             better due to random chance.
