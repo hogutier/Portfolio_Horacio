@@ -32,7 +32,7 @@ const Layout = ({ children }) => (
         <div className={layoutStyles.layout}>
           <div>{children}</div>
         </div>
-    {/*     <div className={footerStyles.footerBackground}>
+        <div className={footerStyles.footerBackground}>
           <footer className={footerStyles.footerContainer}>
             <Line />
             <div className={footerStyles.connect}>
@@ -135,7 +135,7 @@ const Layout = ({ children }) => (
               <p>© {new Date().getFullYear()} Horacio Gutierrez</p>
             </div>
           </footer>
-        </div> */}
+        </div>
       </>
     )}
   />
