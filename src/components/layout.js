@@ -43,10 +43,9 @@ const Layout = ({ children }) => (
               <div className={footerStyles.message}>
                 <Link to="/contact/">
                   <svg
+                    preserveAspectRatio="xMidYMid meet"
                     className={footerStyles.social}
                     alt="Message"
-                    width="50"
-                    height="38"
                     viewBox="0 0 50 38"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -67,10 +66,9 @@ const Layout = ({ children }) => (
                   rel="noopener noreferrer"
                 >
                   <svg
+                    preserveAspectRatio="xMidYMid meet"
                     className={footerStyles.social}
                     alt="Linkedin"
-                    width="50"
-                    height="50"
                     viewBox="0 0 50 50"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -91,10 +89,9 @@ const Layout = ({ children }) => (
                   rel="noopener noreferrer"
                 >
                   <svg
+                    preserveAspectRatio="xMidYMid meet"
                     className={footerStyles.social}
                     alt="Twitter"
-                    width="50"
-                    height="42"
                     viewBox="0 0 50 42"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -115,9 +112,8 @@ const Layout = ({ children }) => (
                   rel="noopener noreferrer"
                 >
                   <svg
+                    preserveAspectRatio="xMidYMid meet"
                     className={footerStyles.social}
-                    width="50"
-                    height="50"
                     viewBox="0 0 50 50"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"

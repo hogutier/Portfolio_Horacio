@@ -59,7 +59,10 @@
 .social {
   flex-shrink: .5;
   margin-bottom: 1rem;
+  width: 50px;
+
 }
+
 
 .socialsvg:hover {
   fill: #E2BE1C;
