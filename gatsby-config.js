@@ -1,6 +1,12 @@
+let activeEnv = process.env.ACTIVE_ENV || process.env.NODE_ENV || 'development'
+
+console.log(`Using environment config: '${activeEnv}'`)
+
 require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`
+  path: `.env.${activeEnv}`
 })
+
+console.log(process.env)
 
 module.exports = {
   siteMetadata: {
