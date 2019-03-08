@@ -1,12 +1,9 @@
-let activeEnv = process.env.ACTIVE_ENV || process.env.NODE_ENV || 'development'
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').load()
+}
 
-console.log(`Using environment config: '${activeEnv}'`)
-
-require('dotenv').config({
-  path: `.env.${activeEnv}`
-})
-
-console.log(process.env)
+console.log('Tracking ID: ', process.env.trackingId)
+console.log('Website ID: ', process.env.websiteId)
 
 module.exports = {
   siteMetadata: {
@@ -50,13 +47,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: process.env.trackingId
+        trackingId: `${process.env.trackingId}`
       }
     },
     {
       resolve: 'gatsby-plugin-crisp-chat',
       options: {
-        websiteId: process.env.websiteId,
+        websiteId: `${process.env.websiteId}`,
         //  Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
         enableDuringDevelop: true
       }
