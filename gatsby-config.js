@@ -2,9 +2,6 @@ if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config()
 }
 
-console.log('****TRACKINGID***', process.env.trackingId)
-console.log('****WEBSITEID***', process.env.websiteId)
-
 module.exports = {
   siteMetadata: {
     title: 'HORACIO GUTIERREZ',
