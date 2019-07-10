@@ -49,7 +49,7 @@ const IndexPage = () => (
       <div className={indexBodyStyles.designerhero}>
         <h3>UI/UX Designer</h3>
         <p>
-          Digital Designer with a passion for creating beautiul and functional
+          Digital Designer with a passion for creating beautiful and functional
           user experiences.
         </p>
       </div>
