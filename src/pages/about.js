@@ -19,7 +19,7 @@ export default () => (
         <p>
           I’m a veteran in the technology industry with 20+ years of experience
           working for tech giants like Cisco Systems and Dell Technologies. I’m
-          the CEO and founder of Perfectec, a software solutions company, where
+          the CEO and founder of Capitaltec, a software solutions company, where
           I currently offer consulting, product management, design and software
           development of web/mobile apps and e-commerce stores to small/medium
           businesses and government institutions in the United States and
