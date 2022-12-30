@@ -6,7 +6,7 @@
   "author": "Horacio Gutierrez <hogutier@yahoo.com>",
   "dependencies": {
     "dotenv": "^6.2.0",
-    "gatsby": "^2.1.23",
+    "gatsby": "^2.32.13",
     "gatsby-cli": "^2.4.13",
     "gatsby-image": "^2.0.31",
     "gatsby-plugin-crisp-chat": "^2.1.0",
